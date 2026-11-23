@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-CATEGORIES = ("anime", "animal", "human", "aquatic", "couples", "robot", "spirit")
+CATEGORIES = ("anime", "animal", "human", "aquatic", "couples", "robot", "spirit", "plushie")
 EVENT_KINDS = ("success", "failure", "idle", "praise")
 
 
