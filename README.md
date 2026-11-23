@@ -19,12 +19,17 @@ Each pet is a complete character, not a skin:
   pet can be drawn exactly as described.
 - **Bond / level system** — shared work earns bond XP. Wins count, praise
   counts, and sticking around after a failure counts almost as much.
+- **Actions & movements** — pets *do* things: a shared action library
+  (walk, dance, sleep, celebrate…), category-flavoured moves (gods
+  levitate and bless, devils cackle and vanish in smoke), and one
+  signature move per pet — every action carrying an animation prompt
+  and gameplay effects.
 - **Agent-integration API** — plain-dict reactions any agent framework can
   consume without importing petforge types.
 
 ## The roster
 
-34 original pets across eight categories:
+46 original pets across ten categories:
 
 | Category | Pets |
 |---|---|
@@ -36,6 +41,8 @@ Each pet is a complete character, not a skin:
 | `robot` | Unit-7 "Seven" · Glitch · Motherboard Maeve |
 | `spirit` | Wisp · Djinn Tonic · Auntie Aurora · Dragon · Phoenix |
 | `plushie` | Labubu · Rasgulla · Jalebi · Chidiya |
+| `gods` | Vaelion · Solenne · Lunessa · Thalassor · Noctua · Sylvarra |
+| `devils` | Pimwick · Seraphel · Grimfang · Vex · Emberlyn · Doctor Fester |
 
 `couples` pets are paired duos with two voices — Peanut charges ahead while
 Pickle checks the map; Bit & Byte finish each other's sentences (and each
@@ -74,6 +81,41 @@ drops straight into logs, traces, dashboards or a chief agent's report.
 
 Reaction lines rotate per pet instead of repeating at random, so a long
 session keeps feeling fresh.
+
+## Actions & movements
+
+Pets don't just react — they *move*. Every pet has a repertoire built
+from three layers:
+
+| Layer | Examples | Who gets it |
+|---|---|---|
+| Shared actions | `idle-breathe` · `walk` · `run` · `jump` · `dance` · `spin` · `wave` · `bow` · `sleep` · `eat` · `play` · `celebrate` · `hide` · `peek` | (almost) every pet |
+| Category flavours | aquatic: `swim` `dive` `splash` · robot: `hover` `charge` · spirit: `float` `vanish` `glow-pulse` · gods: `levitate` `bless` `thunder-gesture` · devils: `cackle` `smoke-vanish` `tail-flick` · … | pets of that category |
+| Signature move | Vaelion's *Forecast: Glory*, Glitch's *Pixel Zoomie Render*, Grimfang's *Gatekeeper's Fetch* | one per pet, unique |
+
+Every action entry carries:
+
+- a **description** of the performance,
+- an **animation prompt** — image-to-video style (what moves, how, and
+  whether it loops or plays once), so a pet can later be animated into
+  real video from its appearance prompt, and
+- **gameplay effects** — stat deltas (joy/focus/affection/energy), a
+  bond-XP gain, and an energy cost. Dancing is joyful but tiring;
+  sleeping restores energy; a signature move is the biggest bond boost
+  a pet has.
+
+```python
+buddy = forge.adopt("vaelion")
+print([a.id for a in buddy.available_actions()])   # his whole repertoire
+performance = buddy.act("bless")                    # validated + applied
+print(performance["description"])                   # "Vaelion: Raised a hand…"
+print(performance["animation"])                     # the motion prompt
+buddy.act("vaelion-signature")                      # his unique move
+buddy.act("swim")                                   # ValueError — gods don't swim
+```
+
+CLI: `petforge --pet pimwick --act cackle` performs actions after the
+demo shift, and every demo ends with the pet's signature move.
 
 ## Demo output (real run)
 
@@ -132,7 +174,7 @@ src/petforge/
 ├── companion.py   # Companion + PetForge: the adopt/react agent API
 ├── cli.py         # demo CLI (petforge --pet <id> | --list)
 └── data/
-    └── catalogue.json   # the 34 pets, all content data-driven
+    └── catalogue.json   # the 46 pets + the action library, all content data-driven
 ```
 
 Adding a pet is a JSON edit — no code changes. The test suite validates that

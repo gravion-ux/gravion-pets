@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "petforge"
-version = "0.3.0"
-description = "Forge a companion pet for your agent: personality cores, a mood engine, bond levels, and reactions to task outcomes."
+version = "0.4.0"
+description = "Forge a companion pet for your agent: personality cores, a mood engine, bond levels, an action & movement system, and reactions to task outcomes."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
