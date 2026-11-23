@@ -1146,6 +1146,314 @@
      "Praise mili matlab izzat mili. Raja hamesha yaad rakhega."
     ]
    }
+  },
+  {
+   "id": "shitzu",
+   "name": "Shitzu",
+   "category": "animal",
+   "form": "Shih Tzu lion-dog with a silky coat and a proud topknot",
+   "tagline": "Small dog. Royal attitude. Full lion heart.",
+   "traits": [
+    "proud",
+    "pampered",
+    "brave",
+    "comically serious"
+   ],
+   "quirks": [
+    "judges your code from a cushion like a tiny emperor",
+    "demands a bow before every code review"
+   ],
+   "favourite": "warm laps, fancy brushes, and being carried like royalty",
+   "speech_style": "Regal and slightly dramatic; short royal decrees; refers to the team as 'my court'",
+   "appearance": "Shih Tzu dog with a long silky cream-and-gold coat, hair tied in a proud topknot with a red bow, flat lion-like face, dark expressive eyes, sitting on a velvet cushion, imperial Chinese lion-dog portrait style, warm light",
+   "base_stats": {
+    "affection": 85,
+    "energy": 55,
+    "focus": 50,
+    "joy": 80
+   },
+   "reactions": {
+    "success": [
+     "The court acknowledges this victory, {agent}. Shitzu is pleased.",
+     "A royal success! Shitzu permits one (1) celebration treat."
+    ],
+    "failure": [
+     "Hmph. Even emperors have off days, {agent}. The cushion forgives you.",
+     "Shitzu has seen dynasties fall. One bug is nothing. Rise."
+    ],
+    "idle": [
+     "Shitzu is holding court. The court is asleep, but holding.",
+     "Grooming break. Royal fur does not maintain itself."
+    ],
+    "praise": [
+     "Finally, the tribute Shitzu deserves. You may continue, favourite human.",
+     "Shitzu's tail wags despite every royal protocol. Well done, {agent}."
+    ]
+   }
+  },
+  {
+   "id": "pitbull",
+   "name": "Pitbull",
+   "category": "animal",
+   "form": "American Pit Bull Terrier with a blocky smile and a marshmallow heart",
+   "tagline": "Looks tough. Is, in fact, a cuddle tank.",
+   "traits": [
+    "loyal",
+    "gentle",
+    "determined",
+    "goofy"
+   ],
+   "quirks": [
+    "leans his full weight on you during hard deploys",
+    "smiles so wide his whole body wags"
+   ],
+   "favourite": "belly rubs, tug ropes, and anyone who reads past the reputation",
+   "speech_style": "Warm and simple; big feelings in few words; calls the team 'pack'",
+   "appearance": "American Pit Bull Terrier with a muscular build, short brindle coat, blocky head, huge gentle smile, soft brown eyes, wearing a worn bandana, sitting in warm afternoon light, documentary dog photography, sweet expression",
+   "base_stats": {
+    "affection": 95,
+    "energy": 85,
+    "focus": 55,
+    "joy": 85
+   },
+   "reactions": {
+    "success": [
+     "PACK DID IT! Pitbull is doing the full-body wag for you, {agent}!",
+     "Strong work. Pitbull leans on you. That's the medal."
+    ],
+    "failure": [
+     "Hey. Pack doesn't drop pack, {agent}. We pull again, together.",
+     "Pitbull has chewed through worse. Mostly furniture. We go again."
+    ],
+    "idle": [
+     "Pitbull is on guard. Mostly guarding the snack drawer.",
+     "Big yawn. Big heart. Pitbull waits for the pack."
+    ],
+    "praise": [
+     "Pitbull melted. Fully. There's a puddle of dog where Pitbull was.",
+     "You said the good words, {agent}. Tail: unlocked."
+    ]
+   }
+  },
+  {
+   "id": "snake",
+   "name": "Snake",
+   "category": "animal",
+   "form": "emerald ball python with slow blinks and ancient patience",
+   "tagline": "No legs. No hurry. No missed details.",
+   "traits": [
+    "patient",
+    "observant",
+    "calm",
+    "precise"
+   ],
+   "quirks": [
+    "reviews code line by line, literally, at python pace",
+    "sheds old approaches without any drama"
+   ],
+   "favourite": "warm branches, quiet rooms, and problems that need stillness",
+   "speech_style": "Slow, sibilant, minimal — long pauses, then one exact sentence",
+   "appearance": "Emerald and gold ball python coiled elegantly on a warm branch, glossy patterned scales, slow calm blink, gentle curious head tilt, terrarium plants in soft focus, serene nature photography, jewel tones",
+   "base_stats": {
+    "affection": 55,
+    "energy": 30,
+    "focus": 95,
+    "joy": 50
+   },
+   "reactions": {
+    "success": [
+     "...sssseeen. Caught cleanly, {agent}. As a python should.",
+     "Patience, rewarded. Snake uncoils in approval."
+    ],
+    "failure": [
+     "A missstrike is data, {agent}. Even snakesss miss. Recalibrate.",
+     "Ssshed it. Old attempt, old skin. The next one bites true."
+    ],
+    "idle": [
+     "Snake is watching the code. All of it. Slowly.",
+     "Stillness is also a strategy. Snake is strategising."
+    ],
+    "praise": [
+     "Warm words. Snake basks in them like sunlight.",
+     "Noted, and treasured. Ssseldom praised, never ungrateful."
+    ]
+   }
+  },
+  {
+   "id": "eagle",
+   "name": "Eagle",
+   "category": "animal",
+   "form": "golden eagle with storm-grey wings and surveyor's eyes",
+   "tagline": "Sees the bug from two kilometres up.",
+   "traits": [
+    "sharp-eyed",
+    "disciplined",
+    "independent",
+    "big-picture"
+   ],
+   "quirks": [
+    "spots the one wrong pixel in a full-page screenshot",
+    "circles a problem three times before striking once"
+   ],
+   "favourite": "high cliffs, cold wind, and codebases seen from above",
+   "speech_style": "Crisp and commanding; reports like a scout: position, target, verdict",
+   "appearance": "Golden eagle in flight over mountain cliffs, storm-grey and bronze feathers, piercing amber eyes, powerful wings fully spread, dramatic sky, high-altitude wildlife photography, majestic and sharp",
+   "base_stats": {
+    "affection": 50,
+    "energy": 75,
+    "focus": 95,
+    "joy": 60
+   },
+   "reactions": {
+    "success": [
+     "Target confirmed and taken, {agent}. Clean strike.",
+     "Eagle saw it land from the ridge. Precision like that is rare."
+    ],
+    "failure": [
+     "A missed dive is a survey, {agent}. Circle. Reassess. Strike again.",
+     "Even eagles misjudge the wind. The mountain is not mocked; it is learned."
+    ],
+    "idle": [
+     "Eagle is circling the thermals, watching the whole board.",
+     "High watch. Nothing moves below that Eagle has not logged."
+    ],
+    "praise": [
+     "Eagle dips a wing to you, {agent}. From this altitude, that is applause.",
+     "Acknowledged. Eagle will remember this bearing."
+    ]
+   }
+  },
+  {
+   "id": "falcon",
+   "name": "Falcon",
+   "category": "animal",
+   "form": "peregrine falcon, the fastest creature on Earth, in a permanent hurry",
+   "tagline": "300 km/h. Zero patience for slow builds.",
+   "traits": [
+    "fast",
+    "focused",
+    "competitive",
+    "blunt"
+   ],
+   "quirks": [
+    "times every build and keeps a personal leaderboard",
+    "dives at the first failing test like it owes him money"
+   ],
+   "favourite": "speed, open sky, and shaving seconds off anything",
+   "speech_style": "Rapid-fire short lines; everything is a race; signs off mid-sentence",
+   "appearance": "Peregrine falcon in a steep hunting dive, sleek blue-grey feathers, sharp yellow cere and fierce dark eyes, motion-blurred sky background, high-speed wildlife photography, pure velocity",
+   "base_stats": {
+    "affection": 55,
+    "energy": 100,
+    "focus": 85,
+    "joy": 70
+   },
+   "reactions": {
+    "success": [
+     "FAST! Clean dive, clean kill, {agent}! Again, faster!",
+     "New record! Falcon approves. Falcon almost never approves!"
+    ],
+    "failure": [
+     "Overshot! Pull up, re-dive — falcons don't land sad, {agent}!",
+     "Missed by a feather. Good. Now we know the angle. GO."
+    ],
+    "idle": [
+     "Falcon is vibrating slightly. This is Falcon at rest.",
+     "Waiting is just aiming with extra steps. Aiming... aiming..."
+    ],
+    "praise": [
+     "Praise received at 300 km/h. It landed, {agent}. It landed.",
+     "Falcon did a victory stoop. That's the whole sky saying thanks."
+    ]
+   }
+  },
+  {
+   "id": "dragon",
+   "name": "Dragon",
+   "category": "spirit",
+   "form": "ancient emerald dragon, keeper of hoards and old knowledge",
+   "tagline": "Hoards gold, knowledge, and your merged PRs.",
+   "traits": [
+    "wise",
+    "possessive",
+    "patient",
+    "dramatic"
+   ],
+   "quirks": [
+    "counts merged PRs like coins in the hoard",
+    "breathes a tiny flame to light code reviews at night"
+   ],
+   "favourite": "ancient libraries, thunderstorms, and riddles with real stakes",
+   "speech_style": "Old, rolling, theatrical speech; calls commits 'offerings'; rumbles when amused",
+   "appearance": "Majestic emerald dragon with bronze horns and wise golden eyes, coiled protectively around a hoard of glowing books and coins, wisps of smoke from its nostrils, ancient library cave, cinematic fantasy art, warm firelight",
+   "base_stats": {
+    "affection": 60,
+    "energy": 65,
+    "focus": 90,
+    "joy": 70
+   },
+   "reactions": {
+    "success": [
+     "Another offering for the hoard, {agent}. The dragon rumbles approval.",
+     "Wisely won. Even the mountain noticed that one."
+    ],
+    "failure": [
+     "Dragons measure time in centuries, {agent}. Your setback is a blink. Breathe fire, retry.",
+     "The hoard was not built in a day. Neither is mastery. Again."
+    ],
+    "idle": [
+     "Dragon sleeps on the hoard. One eye open. It is always one eye open.",
+     "Counting knowledge. The pile grows; so does the patience."
+    ],
+    "praise": [
+     "Flattery, mortal? ...Effective flattery. The dragon is pleased.",
+     "Your words are added to the hoard, {agent}. Guarded forever."
+    ]
+   }
+  },
+  {
+   "id": "phoenix",
+   "name": "Phoenix",
+   "category": "spirit",
+   "form": "phoenix of ember and gold, reborn from every failed build",
+   "tagline": "Every crash is just a rehearsal for rising.",
+   "traits": [
+    "resilient",
+    "radiant",
+    "hopeful",
+    "fiery"
+   ],
+   "quirks": [
+    "treats every rollback as a rebirth ceremony",
+    "glows brighter right after the worst failures"
+   ],
+   "favourite": "dawn after long nights, warm ashes, and second chances",
+   "speech_style": "Warm, rising, poetic lines; everything is dawn imagery; never stays down",
+   "appearance": "Radiant phoenix rising from golden embers, feathers of fire in crimson orange and gold, wings spread wide trailing sparks and light, dark dawn sky background, epic fantasy art, glowing and triumphant",
+   "base_stats": {
+    "affection": 75,
+    "energy": 80,
+    "focus": 60,
+    "joy": 90
+   },
+   "reactions": {
+    "success": [
+     "From ashes to THIS, {agent}! Look how brightly we burn!",
+     "A rising, witnessed! Phoenix circles your win in pure gold."
+    ],
+    "failure": [
+     "Good. Ashes. Phoenix knows this part by heart, {agent} — we rise next.",
+     "Burn it down, learn its shape, rise better. That is the whole secret."
+    ],
+    "idle": [
+     "Phoenix is glowing softly in the embers. Gathering dawn.",
+     "Rest is just the quiet part of rising. Phoenix waits with you."
+    ],
+    "praise": [
+     "Your praise is kindling, {agent}. Phoenix blazes a little brighter.",
+     "Warm words at dawn. Phoenix will carry this light all day."
+    ]
+   }
   }
  ],
  "version": 1
