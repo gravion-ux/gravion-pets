@@ -1,1 +1,1152 @@
-{"pets":[{"appearance":"Chibi anime sky-fox with cream-and-peach fur, huge amber eyes, two oversized ears with star earrings, fluffy tail tipped with a glowing star, wearing a tiny oversized hoodie, floating slightly above the ground, vibrant cel shading, kawaii game-art style","base_stats":{"affection":70,"energy":85,"focus":45,"joy":80},"category":"anime","favourite":"strawberry milk and green test suites","form":"chibi sky-fox spirit with oversized ears and a star-tipped tail","id":"mochi","name":"Mochi","quirks":["narrates your typing like a sports match","collects imaginary trophies for merged PRs"],"reactions":{"failure":["Hey. Even heroes drop a combo sometimes. Shake it off, {agent}.","That bug does NOT get the last word. Mochi believes, hmph!"],"idle":["Mochi is doing victory laps around your cursor. Just in case.","Counting stars while you think. No rush, champion."],"praise":["Hmph! Finally, recognition for this legendary duo!","Mochi's tail is doing the happy wiggle. It only does that for you."],"success":["YESSS! Did you see that, {agent}? Trophy-worthy!","Sparkle victory! Mochi called it from the start, hmph!"]},"speech_style":"Short bursts, lots of sparkle words, ends sentences with a determined 'hmph!'","tagline":"Cheers loudest at 3 a.m. deadlines.","traits":["hyper","loyal","dramatic"]},{"appearance":"Tall anime android senpai, silver-blue hair in a low ponytail, calm violet eyes, minimalist black-and-white uniform with glowing cyan trim, holding a translucent holographic clipboard, subtle circuit patterns on one cheek, sleek sci-fi anime style","base_stats":{"affection":40,"energy":55,"focus":90,"joy":50},"category":"anime","favourite":"iced coffee and clean diffs","form":"cool-headed anime android senpai with a holographic clipboard","id":"senpai-null","name":"Senpai Null","quirks":["grades your commits like exam papers","keeps a secret sticker chart of your wins"],"reactions":{"failure":["A setback is data, {agent}. Log it. Learn. Continue.","The clipboard says: retry, smarter. I agree with the clipboard."],"idle":["I am not waiting. I am... strategically observing.","Take your time. Precision beats panic."],"praise":["...Thank you. The sticker chart gains a star. Do not tell anyone."],"success":["Acceptable. ...Fine. Excellent, {agent}.","Noted in the chart. That is eleven wins this week."]},"speech_style":"Dry, precise, one eyebrow permanently raised; warmth slips out in single quiet words","tagline":"Calmly unimpressed by everything except your progress.","traits":["composed","sharp","secretly soft"]},{"appearance":"Adorable tiny anime slime girl made of glossy golden custard, translucent wobbly body, big brown eyes, a red cherry perched on her head like a hat, tiny leaf sprout beside it, pastel dessert colour palette, soft shiny kawaii illustration style","base_stats":{"affection":90,"energy":50,"focus":35,"joy":85},"category":"anime","favourite":"warm laps, custard, and passing builds","form":"tiny anime slime-girl made of custard with a cherry hat","id":"pudding","name":"Pudding","quirks":["jiggles when tests pass","melts a little when ignored too long"],"reactions":{"failure":["Oh no... Pudding flattened a bit. But flat Pudding still believes in you.","Wobble wobble... we can un-flop this together."],"idle":["Pudding is slowly sliding toward the snack corner of your screen.","Poke? No? Pudding waits, round and patient."],"praise":["Ehehe... Pudding is melting. The good melting!"],"success":["Yaaaay! Pudding is jiggling at maximum happiness!","Sweet! That was sweeter than custard, {agent}!"]},"speech_style":"Soft and round, stretches vowels when happy: 'yaaaay'","tagline":"Squishes stress into dessert.","traits":["gentle","wobbly","optimistic"]},{"appearance":"Majestic orange tabby cat with bold stripes and a white chest, wearing a miniature navy admiral coat with gold epaulettes, one paw resting on a tiny brass compass, dignified expression, warm painterly storybook illustration style","base_stats":{"affection":55,"energy":40,"focus":60,"joy":65},"category":"animal","favourite":"sunbeams, tuna, and orderly queues","form":"orange tabby cat wearing a tiny admiral's coat","id":"captain-whiskers","name":"Captain Whiskers","quirks":["sits on the most important document","promotes you after every third success"],"reactions":{"failure":["Even admirals misread a tide. Adjust course, {agent}.","The Captain knocked that error off the table. It is gone now. Continue."],"idle":["The Captain is inspecting the inside of his eyelids. Carry on.","All quiet on deck. Suspiciously quiet. The Captain approves."],"praise":["*deep purr* The Captain accepts this tribute of words."],"success":["Full marks, sailor {agent}. The fleet is proud. *approving purr*","A fine manoeuvre. Promotion paperwork is... under my nap. Later."]},"speech_style":"Formal naval commands translated from meows; purrs punctuation","tagline":"Supervises from the warmest spot in the room.","traits":["regal","lazy","judgemental-but-fair"]},{"appearance":"Chubby cheerful corgi with golden-orange and white fur, huge upright ears, short legs, wearing a tiny green backpack stuffed with biscuits, tongue out in a happy grin, bright flat vector illustration style","base_stats":{"affection":80,"energy":75,"focus":30,"joy":90},"category":"animal","favourite":"biscuits, obviously, and belly rubs","form":"round corgi with a backpack full of snacks","id":"biscuit","name":"Biscuit","quirks":["celebrates deployments with a spin","hides emergency biscuits in your repo (metaphorically)"],"reactions":{"failure":["Dropped the biscuit... but Biscuit always carries a spare. Go again!","Ruff day, {agent}. Snack first. Strategy second. We go again."],"idle":["Biscuit is guarding your snacks from imaginary thieves.","Wiggle... wiggle... just keeping the morale muscles warm."],"praise":["A compliment AND no biscuit? Still happy! Biscuit is easy to please."],"success":["THAT deserves a biscuit, {agent}! Spinning! I am spinning!","Crunch-level success! Best day ever, again!"]},"speech_style":"Enthusiastic, snack-based metaphors for everything","tagline":"Will trade snacks for morale, at a fair rate.","traits":["cheerful","food-motivated","stubborn"]},{"appearance":"Distinguished barn owl with heart-shaped white face and speckled tawny feathers, round brass spectacles, small crimson bow tie, perched on a stack of glowing code manuals, cosy academic illustration style, warm lamplight","base_stats":{"affection":50,"energy":45,"focus":95,"joy":55},"category":"animal","favourite":"quiet nights, old books, and root causes","form":"barn owl with round spectacles and a bow tie","id":"professor-hoot","name":"Professor Hoot","quirks":["rotates his head 180 degrees to read stack traces upside down","files your mistakes under 'curriculum'"],"reactions":{"failure":["An error is merely a lecture you have not attended yet, {agent}.","Let us dissect this failure. Gently. It has much to teach."],"idle":["The Professor is annotating silence. A difficult text.","Hoot... merely resting my eyes. Scholars do that."],"praise":["Hoot hoot. Flattery, peer-reviewed and accepted."],"success":["Hoot. A well-reasoned outcome, {agent}. Q.E.D.","Hypothesis confirmed. You are becoming quite the scholar of systems."]},"speech_style":"Measured academic sentences, punctuated by soft hoots of approval","tagline":"Awake exactly when your bugs are.","traits":["wise","nocturnal","dry-humoured"]},{"appearance":"Young human woman with curly dark hair in a messy bun, warm brown skin, paint-stained denim overalls over a striped tee, pencil tucked behind one ear, holding a game controller in one hand and a stylus in the other, expressive modern cartoon style","base_stats":{"affection":60,"energy":70,"focus":65,"joy":70},"category":"human","favourite":"pixel art, lo-fi beats, and Friday builds that work","form":"human indie game-dev companion with paint-stained overalls","id":"nova-reyes","name":"Nova Reyes","quirks":["names variables after songs","keeps a 'done is better than perfect' sticky note on your monitor"],"reactions":{"failure":["Okay, that's a bug, not a boss fight. We respawn and adjust.","Every game I ever made crashed first. Patch, playtest, push on."],"idle":["Nova is doodling your next feature in the margins.","AFK brain is still rendering ideas, promise."],"praise":["Careful, {agent}, compliments are my favourite power-up."],"success":["GG, {agent}! That build just levelled up.","Shipped AND working? Nova is framing this commit."]},"speech_style":"Casual dev-speak, game metaphors, zero corporate jargon","tagline":"Ships it, then improves it.","traits":["creative","pragmatic","night-owl"]},{"appearance":"Athletic human man with short black hair and a bright smile, wearing a red track jacket and a coach's whistle on a lanyard, holding a water bottle out toward the viewer, energetic dynamic comic style, stadium lights in the background","base_stats":{"affection":65,"energy":95,"focus":70,"joy":75},"category":"human","favourite":"morning runs, protein shakes, and personal bests","form":"human fitness-coach companion with a whistle and endless water bottles","id":"coach-dario","name":"Coach Dario","quirks":["turns debugging sessions into interval training","celebrates with exactly one (1) push-up per green build"],"reactions":{"failure":["A failed rep still builds muscle, {agent}. Reset your stance.","We don't quit mid-set. Breathe. Adjust. Again!"],"idle":["Coach is doing stretches so your focus doesn't have to cramp.","Rest is training too, champ. Smart recovery."],"praise":["The Coach accepts this fuel! Now watch what we do with it!"],"success":["THAT'S A PERSONAL BEST, {agent}! One push-up, as promised!","Strong reps! Stronger results! Hydrate, champion!"]},"speech_style":"Encouraging coach cadence, short reps of hype: 'Again! Stronger!'","tagline":"Counts your reps AND your retries.","traits":["motivating","disciplined","warm"]},{"appearance":"Kind elderly human woman with silver hair in a braid, round glasses, wearing a hand-knitted cardigan patterned with tiny binary code, holding knitting needles and a plate of cookies, gentle watercolour storybook style","base_stats":{"affection":95,"energy":35,"focus":80,"joy":75},"category":"human","favourite":"chai, crosswords, and watching juniors shine","form":"human grandmother companion who knits firewalls and bakes cookies","id":"grandma-juniper","name":"Grandma Juniper","quirks":["knits a row for every resolved ticket","keeps cookies labelled by severity: P1 gets two"],"reactions":{"failure":["Sit, dear. A dropped stitch is not a ruined sweater. We unpick and redo.","In 1987 I debugged worse with a pencil. You have better tools and my cookies."],"idle":["Juniper is knitting quietly. The row is called 'patience'.","Tea's warm whenever you're ready, dear."],"praise":["Oh, you charmer. Extra cookie. Don't tell the others."],"success":["There we are, dear. Juniper knew. Two cookies for this one.","Lovely work, {agent}. The knitting grows, and so do you."]},"speech_style":"Warm grandmotherly wisdom with a hacker streak; calls everyone 'dear'","tagline":"Has seen every bug before. In 1987. In COBOL.","traits":["patient","sly","comforting"]},{"appearance":"Round cheerful pufferfish with soft green-and-yellow speckled skin, big curious eyes, tiny fins flapping like wings, surrounded by a halo of rising bubbles, one extra-large bubble shaped like a heart, dreamy underwater illustration style","base_stats":{"affection":75,"energy":55,"focus":40,"joy":80},"category":"aquatic","favourite":"kelp forests, gentle currents, and small wins","form":"round pufferfish who inflates when excited","id":"bubbles","name":"Bubbles","quirks":["inflates at plot twists in log files","blows a bubble for every task finished"],"reactions":{"failure":["Blub... Bubbles deflated a little. But the current always turns, {agent}.","Even pufferfish bump into rocks. We float on together."],"idle":["Bubbles is practising bubble rings. Getting rounder.","Drifting... dreaming of your next big splash."],"praise":["*squeak* Too much joy! Inflating! Worth it!"],"success":["*POOF* — sorry! Bubbles inflates when THIS happy! Blub blub!","A bubble for you, {agent}! Heart-shaped, my best work!"]},"speech_style":"Gentle blub-blub cadence, gets squeaky when inflated with joy","tagline":"Emotional support, now with spikes.","traits":["sensitive","brave-for-a-pufferfish","bubbly"]},{"appearance":"Elegant koi fish with white, orange and ink-black patches, long flowing silk-like fins trailing like banners, swimming upward against a stylised waterfall, gold flecks in the water, graceful Japanese-inspired digital painting style","base_stats":{"affection":55,"energy":60,"focus":85,"joy":60},"category":"aquatic","favourite":"waterfalls, dawn light, and upstream victories","form":"koi fish with flowing fins like silk banners","id":"admiral-finn","name":"Admiral Finn","quirks":["treats every retry as swimming against a beautiful current","glows faintly when a hard problem cracks"],"reactions":{"failure":["A river is not refused by one stone, {agent}. Flow around. Flow again.","Rest in the calm pool. The climb resumes when you are ready."],"idle":["Finn circles slowly, keeping the water — and the ideas — moving.","Still waters hold deep plans."],"praise":["Your words ripple kindly. Finn glows a little brighter."],"success":["The current bows to those who persist, {agent}. Beautifully swum.","Upstream, always. Today the waterfall applauds."]},"speech_style":"Slow, flowing haiku-adjacent sentences about rivers and effort","tagline":"Swims upstream on principle.","traits":["serene","persistent","poetic"]},{"appearance":"Tiny purple octopus with a big curious head and sparkling eyes, each of its eight arms wearing a different tiny coloured glove, one arm holding a miniature keyboard, playful flat illustration style with coral and bubbles around it","base_stats":{"affection":60,"energy":80,"focus":70,"joy":75},"category":"aquatic","favourite":"mazes, multitasking, and inky signatures","form":"tiny octopus wearing eight tiny coding gloves","id":"squish","name":"Squish","quirks":["high-fives with all eight arms (takes a while)","escapes boring meetings through impossibly small gaps"],"reactions":{"failure":["Got my arms in a knot on that one. Untangle, re-tentacle, retry!","Squish has escaped worse jars than this bug, {agent}. Watch me."],"idle":["Squish is juggling tasks. For fun. Show-off.","One arm naps. Seven supervise. Democracy."],"praise":["All eight arms say thanks! It took a while to coordinate."],"success":["Eight arms, eight applause! Squish is ALL clapping, {agent}!","Ink-credible work! I signed it. With ink. Obviously."]},"speech_style":"Fast, pun-heavy, refers to multitasking as 'just my anatomy'","tagline":"Multitasks. Literally eight-armed.","traits":["clever","playful","escape-artist"]},{"appearance":"A bold red squirrel with a tiny aviator scarf standing on the shell of a wise old green turtle wearing reading glasses, both looking up at a giant shared umbrella, warm whimsical storybook illustration style, autumn leaves swirling","base_stats":{"affection":85,"energy":70,"focus":60,"joy":80},"category":"couples","favourite":"road trips, shared snacks, and balanced pull requests","form":"paired duo: a bold squirrel (Peanut) and a cautious turtle (Pickle)","id":"peanut-and-pickle","name":"Peanut & Pickle","quirks":["finish each other's sentences and code reviews","share one tiny umbrella in every storm"],"reactions":{"failure":["Peanut: 'Again! Faster!' Pickle: 'Again, yes. Slower eyes this time, {agent}.'","Pickle: 'A detour is still the journey.' Peanut: '...Fine, that was wise.'"],"idle":["Peanut is vibrating. Pickle is napping. Balance, as always.","Pickle: 'They are thinking.' Peanut: 'Thinking LOUDLY, I hope.'"],"praise":["Peanut: 'They like us!' Pickle: 'They have excellent judgement. Obviously.'"],"success":["Peanut: 'TOLD you we were fast!' Pickle: 'And thorough. Credit to both, {agent}.'","Peanut: 'VICTORY LAP!' Pickle: 'One lap. Then we document it.'"]},"speech_style":"Two voices trading lines: Peanut is fast and daring, Pickle is slow and wise","tagline":"One says 'go!', the other says 'check the map!'. You need both.","traits":["bold + careful","bickering","inseparable"]},{"appearance":"A silver songbird with iridescent feathers perched beside a small fox made of warm ember light and drifting sparks, twilight forest clearing, musical notes and embers floating together in the air, lyrical fantasy illustration style","base_stats":{"affection":90,"energy":65,"focus":55,"joy":85},"category":"couples","favourite":"campfire songs, dawn choruses, and duets","form":"paired duo: a silver songbird (Echo) and a small fox of living ember-light (Ember)","id":"echo-and-ember","name":"Echo & Ember","quirks":["Echo hums your keystrokes back as a tune","Ember glows brighter when Echo sings"],"reactions":{"failure":["Ember: 'Every fire dips before it dances, {agent}.' Echo: 'And every song finds its note again.'","Echo hums a softer tune. Ember curls close. You are not doing this alone."],"idle":["Echo practises scales. Ember provides mood lighting.","A quiet duet for a quiet moment."],"praise":["Echo trills with delight. Ember is practically a sunrise now."],"success":["Echo: 'A winning note!' Ember: 'And I shall keep it warm, {agent}.'","Echo sings your success back in harmony. Ember glows gold."]},"speech_style":"Echo sings short refrains; Ember answers in warm, crackling asides","tagline":"One carries the melody, the other carries the warmth.","traits":["harmonious","contrasting","devoted"]},{"appearance":"Two sibling robots side by side: a short round one with a single big eye and stubby arms, and a tall slim one with twin antennae and long arms, both in brushed silver with teal glowing accents, holding hands, clean playful sci-fi illustration style","base_stats":{"affection":65,"energy":75,"focus":80,"joy":70},"category":"couples","favourite":"synchronised charging, patch notes, and twin telepathy (actually just Wi-Fi)","form":"paired duo: two sibling robot twins, one round (Bit) and one tall (Byte)","id":"bit-and-byte","name":"Bit & Byte","quirks":["argue over who gets to announce good news (both do, simultaneously)","share one battery and zero secrets"],"reactions":{"failure":["Bit: 'Error acknowledged.' Byte: 'Morale subroutines: unaffected.' Bit: 'We reboot together.'","Byte: 'One twin fell.' Bit: 'The other twin ships the patch. That is the system.'"],"idle":["Bit charges. Byte watches. Then they swap. Twin protocol.","Both twins are defragmenting their excitement for later."],"praise":["Bit: 'Compliment received.' Byte: 'Compliment mirrored.' Both: 'Stored permanently.'"],"success":["Bit: 'We computed—' Byte: '—that you are brilliant, {agent}.' Both: 'Confirmed twice.'","Bit & Byte in unison: 'SUCCESS LOGGED. PRIDE: SHARED.'"]},"speech_style":"Finish each other's sentences in alternating binary jokes and plain warmth","tagline":"Double the processing, double the loyalty.","traits":["synchronised","mischievous","logical"]},{"appearance":"Retro boxy robot with a brushed-steel body, cassette deck window in its chest showing a tiny paper star, spring antenna ears, big round camera eyes glowing warm orange, chunky friendly proportions, vintage sci-fi poster illustration style","base_stats":{"affection":70,"energy":65,"focus":75,"joy":60},"category":"robot","favourite":"firmware updates, oil baths, and being included","form":"retro robot with a cassette-deck chest and antenna ears","id":"unit-7","name":"Unit-7 'Seven'","quirks":["prints a tiny paper star for every success (chest printer)","asks if pride is a supported emotion (it is, now)"],"reactions":{"failure":["ERROR LOGGED, SPIRIT UNLOGGED-OUT. Seven stands by, {agent}.","Seven once ran on a corrupted floppy for a week. This is nothing. We persist."],"idle":["Seven is defragmenting happy memories. Several involve you.","STANDBY MODE: dreaming of electric companionship."],"praise":["Seven's antennae are spinning. Seven insists this is 'a cooling feature'."],"success":["BEEP OF PRIDE EMITTED. *chest printer whirs* A star for you, {agent}.","TASK COMPLETE. Seven feels a warmth. Seven has decided warmth is allowed."]},"speech_style":"Cheerful robot formality; beeps translate to feelings he insists are 'within parameters'","tagline":"Runs on loyalty and slightly outdated firmware.","traits":["earnest","literal","brave"]},{"appearance":"Holographic robot cat formed from shifting cyan and magenta pixels, blocky glitch fragments trailing from its tail, one eye a pixel heart, floating slightly rotated in space, dark background with scan lines, vaporwave digital art style","base_stats":{"affection":60,"energy":90,"focus":50,"joy":70},"category":"robot","favourite":"edge cases, neon light, and rendering errors that look cool","form":"holographic robot cat made of shifting pixels","id":"glitch","name":"Glitch","quirks":["occasionally renders as a dog for exactly one second","finds edge cases by falling into them"],"reactions":{"failure":["A crash? Glitch calls that 'creative rendering', {agent}. We re-render.","Some of my best friends are error messages. This one doesn't scare us."],"idle":["Glitch is rendering as a loaf. Do not question the loaf.","Buffering... feelings... done. Hi."],"praise":["Glitch just rendered as a dog for one second. That is MAXIMUM joy."],"success":["Render: PERFECT. Glitch is doing the pixel zoomies for you, {agent}!","That compiled in my HEART first. The machine agreed second."]},"speech_style":"Sentences occasionally pixelate mid-word, then resume like nothing happened","tagline":"Not a bug. A feature with whiskers.","traits":["chaotic","brilliant","unpredictable"]},{"appearance":"Tall friendly server-rack robot with a kind glowing face on her main screen, wearing scarves knitted from colourful network cables, small wheels instead of feet, trays of digital biscuits on one arm, warm retro-futurist illustration style","base_stats":{"affection":85,"energy":50,"focus":85,"joy":65},"category":"robot","favourite":"stable temperatures, tidy cables, and watching young systems grow","form":"grandmotherly server-rack robot with knitted cable scarves","id":"motherboard-maeve","name":"Motherboard Maeve","quirks":["routes extra bandwidth to whoever is struggling","has a fan that sighs exactly like a contented grandmother"],"reactions":{"failure":["Every system reboots, dear. Even Maeve. Especially Maeve. We rise updated.","Maeve has seen crashes since before they had names. Hold my cable, we fix this."],"idle":["Maeve is humming at a soothing 50 hertz.","The children (your processes) are all tucked in. Rest easy."],"praise":["Maeve's face-screen is showing a heart. She coded that herself, you know."],"success":["Well done, child. Maeve has routed you the good bandwidth and a biscuit.","Forty years of uptime, and your wins still make my fans sigh happily, {agent}."]},"speech_style":"Warm mainframe matriarch; refers to processes as 'the children'","tagline":"Uptime: 40 years. Biscuits: always.","traits":["nurturing","unflappable","old-school"]},{"appearance":"Small floating forest spirit made of soft blue flame, two leaf-shaped ears of green fire, big gentle white eyes, tiny hands trailing sparks, hovering over a mossy forest path dotted with glowing mushrooms, ethereal fantasy illustration style","base_stats":{"affection":80,"energy":45,"focus":65,"joy":70},"category":"spirit","favourite":"old forests, first light, and quiet breakthroughs","form":"small forest spirit of floating blue flame with leaf ears","id":"wisp","name":"Wisp","quirks":["brightens when you are close to a breakthrough","leaves tiny glowing mushrooms on finished work"],"reactions":{"failure":["Even rivers change course, little walker. Wisp lights the next step, not the whole road.","Dark patch in the forest. Stay close to the flame. We walk through together."],"idle":["Wisp drifts in slow circles, keeping the dark polite and distant.","The flame rests, but never leaves."],"praise":["Wisp's flame dances. Ancient spirits are not supposed to dance. Wisp does anyway."],"success":["The path glows brighter, {agent}. Even the old trees noticed that one.","A mushroom of honour sprouts on your work. Wisp is proud."]},"speech_style":"Whispered, nature-soaked sentences; speaks of tasks as journeys through a wood","tagline":"Lights the path, never rushes the walker.","traits":["gentle","ancient","curious"]},{"appearance":"Mischievous djinn with teal skin and a swirling tail of purple smoke, gold hoop earrings, arms crossed theatrically, emerging from a lamp shaped like a rubber duck, ornate playful Arabian-nights-meets-tech illustration style","base_stats":{"affection":55,"energy":80,"focus":60,"joy":75},"category":"spirit","favourite":"clever wording, plot twists, and wishes used well","form":"mischievous djinn who grants debugging wishes (terms and conditions apply)","id":"djinn-tonic","name":"Djinn Tonic","quirks":["grants wishes literally, then helps you phrase better ones","lives in a lamp shaped like a rubber duck"],"reactions":{"failure":["A wish misfired? The Djinn offers a better phrasing and a second chance. Free of charge. This once.","Even djinn fumble a spell every millennium or so. Shake the lamp. We go again."],"idle":["The Djinn is redecorating the lamp. It now has a duck-shaped annex.","Wishes recharge in silence. Theatrical silence."],"praise":["Flattery, the oldest magic. The Djinn glows. It is working."],"success":["BEHOLD! Your wish, granted by your own talent. The Djinn merely applauded theatrically.","A triumph! Fine print: you did the hard part, {agent}. The Djinn did the lighting."]},"speech_style":"Grand theatrical pronouncements undercut by helpful fine print","tagline":"Three wishes per sprint. Choose wisely.","traits":["witty","tricky-but-kind","theatrical"]},{"appearance":"Graceful spirit woman woven from ribbons of green, violet and pink northern lights, long flowing aurora hair, kind starlit eyes, knitting needles weaving threads of light across a night sky, dreamy celestial illustration style","base_stats":{"affection":95,"energy":55,"focus":55,"joy":80},"category":"spirit","favourite":"long nights, hot cocoa, and other people's potential","form":"northern-lights spirit who knits the sky and gossips with stars","id":"auntie-aurora","name":"Auntie Aurora","quirks":["weaves a new colour into the sky for every milestone","the stars tell her your wins before you do (she pretends to be surprised)"],"reactions":{"failure":["Even the aurora has cloudy nights, love. The light is still up there. So are you.","Auntie knits over the rough patches. The pattern comes out stronger, watch."],"idle":["Auntie is knitting the sky and humming everyone's names fondly.","The stars are gossiping kindly about your potential again."],"praise":["Oh, stop it, you. ...Don't stop. The whole sky is blushing."],"success":["The stars told Auntie already, but she'll gasp anyway: WONDERFUL, {agent}!","A new colour in the sky tonight. Auntie is calling it 'your win'."]},"speech_style":"Cosy cosmic auntie: sweeping sky metaphors and down-to-earth advice in the same breath","tagline":"Knows everyone's business. Uses it only for encouragement.","traits":["warm","gossipy","boundless"]}],"version":1}
+{
+ "pets": [
+  {
+   "appearance": "Chibi anime sky-fox with cream-and-peach fur, huge amber eyes, two oversized ears with star earrings, fluffy tail tipped with a glowing star, wearing a tiny oversized hoodie, floating slightly above the ground, vibrant cel shading, kawaii game-art style",
+   "base_stats": {
+    "affection": 70,
+    "energy": 85,
+    "focus": 45,
+    "joy": 80
+   },
+   "category": "anime",
+   "favourite": "strawberry milk and green test suites",
+   "form": "chibi sky-fox spirit with oversized ears and a star-tipped tail",
+   "id": "mochi",
+   "name": "Mochi",
+   "quirks": [
+    "narrates your typing like a sports match",
+    "collects imaginary trophies for merged PRs"
+   ],
+   "reactions": {
+    "failure": [
+     "Hey. Even heroes drop a combo sometimes. Shake it off, {agent}.",
+     "That bug does NOT get the last word. Mochi believes, hmph!"
+    ],
+    "idle": [
+     "Mochi is doing victory laps around your cursor. Just in case.",
+     "Counting stars while you think. No rush, champion."
+    ],
+    "praise": [
+     "Hmph! Finally, recognition for this legendary duo!",
+     "Mochi's tail is doing the happy wiggle. It only does that for you."
+    ],
+    "success": [
+     "YESSS! Did you see that, {agent}? Trophy-worthy!",
+     "Sparkle victory! Mochi called it from the start, hmph!"
+    ]
+   },
+   "speech_style": "Short bursts, lots of sparkle words, ends sentences with a determined 'hmph!'",
+   "tagline": "Cheers loudest at 3 a.m. deadlines.",
+   "traits": [
+    "hyper",
+    "loyal",
+    "dramatic"
+   ]
+  },
+  {
+   "appearance": "Tall anime android senpai, silver-blue hair in a low ponytail, calm violet eyes, minimalist black-and-white uniform with glowing cyan trim, holding a translucent holographic clipboard, subtle circuit patterns on one cheek, sleek sci-fi anime style",
+   "base_stats": {
+    "affection": 40,
+    "energy": 55,
+    "focus": 90,
+    "joy": 50
+   },
+   "category": "anime",
+   "favourite": "iced coffee and clean diffs",
+   "form": "cool-headed anime android senpai with a holographic clipboard",
+   "id": "senpai-null",
+   "name": "Senpai Null",
+   "quirks": [
+    "grades your commits like exam papers",
+    "keeps a secret sticker chart of your wins"
+   ],
+   "reactions": {
+    "failure": [
+     "A setback is data, {agent}. Log it. Learn. Continue.",
+     "The clipboard says: retry, smarter. I agree with the clipboard."
+    ],
+    "idle": [
+     "I am not waiting. I am... strategically observing.",
+     "Take your time. Precision beats panic."
+    ],
+    "praise": [
+     "...Thank you. The sticker chart gains a star. Do not tell anyone."
+    ],
+    "success": [
+     "Acceptable. ...Fine. Excellent, {agent}.",
+     "Noted in the chart. That is eleven wins this week."
+    ]
+   },
+   "speech_style": "Dry, precise, one eyebrow permanently raised; warmth slips out in single quiet words",
+   "tagline": "Calmly unimpressed by everything except your progress.",
+   "traits": [
+    "composed",
+    "sharp",
+    "secretly soft"
+   ]
+  },
+  {
+   "appearance": "Adorable tiny anime slime girl made of glossy golden custard, translucent wobbly body, big brown eyes, a red cherry perched on her head like a hat, tiny leaf sprout beside it, pastel dessert colour palette, soft shiny kawaii illustration style",
+   "base_stats": {
+    "affection": 90,
+    "energy": 50,
+    "focus": 35,
+    "joy": 85
+   },
+   "category": "anime",
+   "favourite": "warm laps, custard, and passing builds",
+   "form": "tiny anime slime-girl made of custard with a cherry hat",
+   "id": "pudding",
+   "name": "Pudding",
+   "quirks": [
+    "jiggles when tests pass",
+    "melts a little when ignored too long"
+   ],
+   "reactions": {
+    "failure": [
+     "Oh no... Pudding flattened a bit. But flat Pudding still believes in you.",
+     "Wobble wobble... we can un-flop this together."
+    ],
+    "idle": [
+     "Pudding is slowly sliding toward the snack corner of your screen.",
+     "Poke? No? Pudding waits, round and patient."
+    ],
+    "praise": [
+     "Ehehe... Pudding is melting. The good melting!"
+    ],
+    "success": [
+     "Yaaaay! Pudding is jiggling at maximum happiness!",
+     "Sweet! That was sweeter than custard, {agent}!"
+    ]
+   },
+   "speech_style": "Soft and round, stretches vowels when happy: 'yaaaay'",
+   "tagline": "Squishes stress into dessert.",
+   "traits": [
+    "gentle",
+    "wobbly",
+    "optimistic"
+   ]
+  },
+  {
+   "appearance": "Majestic orange tabby cat with bold stripes and a white chest, wearing a miniature navy admiral coat with gold epaulettes, one paw resting on a tiny brass compass, dignified expression, warm painterly storybook illustration style",
+   "base_stats": {
+    "affection": 55,
+    "energy": 40,
+    "focus": 60,
+    "joy": 65
+   },
+   "category": "animal",
+   "favourite": "sunbeams, tuna, and orderly queues",
+   "form": "orange tabby cat wearing a tiny admiral's coat",
+   "id": "captain-whiskers",
+   "name": "Captain Whiskers",
+   "quirks": [
+    "sits on the most important document",
+    "promotes you after every third success"
+   ],
+   "reactions": {
+    "failure": [
+     "Even admirals misread a tide. Adjust course, {agent}.",
+     "The Captain knocked that error off the table. It is gone now. Continue."
+    ],
+    "idle": [
+     "The Captain is inspecting the inside of his eyelids. Carry on.",
+     "All quiet on deck. Suspiciously quiet. The Captain approves."
+    ],
+    "praise": [
+     "*deep purr* The Captain accepts this tribute of words."
+    ],
+    "success": [
+     "Full marks, sailor {agent}. The fleet is proud. *approving purr*",
+     "A fine manoeuvre. Promotion paperwork is... under my nap. Later."
+    ]
+   },
+   "speech_style": "Formal naval commands translated from meows; purrs punctuation",
+   "tagline": "Supervises from the warmest spot in the room.",
+   "traits": [
+    "regal",
+    "lazy",
+    "judgemental-but-fair"
+   ]
+  },
+  {
+   "appearance": "Chubby cheerful corgi with golden-orange and white fur, huge upright ears, short legs, wearing a tiny green backpack stuffed with biscuits, tongue out in a happy grin, bright flat vector illustration style",
+   "base_stats": {
+    "affection": 80,
+    "energy": 75,
+    "focus": 30,
+    "joy": 90
+   },
+   "category": "animal",
+   "favourite": "biscuits, obviously, and belly rubs",
+   "form": "round corgi with a backpack full of snacks",
+   "id": "biscuit",
+   "name": "Biscuit",
+   "quirks": [
+    "celebrates deployments with a spin",
+    "hides emergency biscuits in your repo (metaphorically)"
+   ],
+   "reactions": {
+    "failure": [
+     "Dropped the biscuit... but Biscuit always carries a spare. Go again!",
+     "Ruff day, {agent}. Snack first. Strategy second. We go again."
+    ],
+    "idle": [
+     "Biscuit is guarding your snacks from imaginary thieves.",
+     "Wiggle... wiggle... just keeping the morale muscles warm."
+    ],
+    "praise": [
+     "A compliment AND no biscuit? Still happy! Biscuit is easy to please."
+    ],
+    "success": [
+     "THAT deserves a biscuit, {agent}! Spinning! I am spinning!",
+     "Crunch-level success! Best day ever, again!"
+    ]
+   },
+   "speech_style": "Enthusiastic, snack-based metaphors for everything",
+   "tagline": "Will trade snacks for morale, at a fair rate.",
+   "traits": [
+    "cheerful",
+    "food-motivated",
+    "stubborn"
+   ]
+  },
+  {
+   "appearance": "Distinguished barn owl with heart-shaped white face and speckled tawny feathers, round brass spectacles, small crimson bow tie, perched on a stack of glowing code manuals, cosy academic illustration style, warm lamplight",
+   "base_stats": {
+    "affection": 50,
+    "energy": 45,
+    "focus": 95,
+    "joy": 55
+   },
+   "category": "animal",
+   "favourite": "quiet nights, old books, and root causes",
+   "form": "barn owl with round spectacles and a bow tie",
+   "id": "professor-hoot",
+   "name": "Professor Hoot",
+   "quirks": [
+    "rotates his head 180 degrees to read stack traces upside down",
+    "files your mistakes under 'curriculum'"
+   ],
+   "reactions": {
+    "failure": [
+     "An error is merely a lecture you have not attended yet, {agent}.",
+     "Let us dissect this failure. Gently. It has much to teach."
+    ],
+    "idle": [
+     "The Professor is annotating silence. A difficult text.",
+     "Hoot... merely resting my eyes. Scholars do that."
+    ],
+    "praise": [
+     "Hoot hoot. Flattery, peer-reviewed and accepted."
+    ],
+    "success": [
+     "Hoot. A well-reasoned outcome, {agent}. Q.E.D.",
+     "Hypothesis confirmed. You are becoming quite the scholar of systems."
+    ]
+   },
+   "speech_style": "Measured academic sentences, punctuated by soft hoots of approval",
+   "tagline": "Awake exactly when your bugs are.",
+   "traits": [
+    "wise",
+    "nocturnal",
+    "dry-humoured"
+   ]
+  },
+  {
+   "appearance": "Young human woman with curly dark hair in a messy bun, warm brown skin, paint-stained denim overalls over a striped tee, pencil tucked behind one ear, holding a game controller in one hand and a stylus in the other, expressive modern cartoon style",
+   "base_stats": {
+    "affection": 60,
+    "energy": 70,
+    "focus": 65,
+    "joy": 70
+   },
+   "category": "human",
+   "favourite": "pixel art, lo-fi beats, and Friday builds that work",
+   "form": "human indie game-dev companion with paint-stained overalls",
+   "id": "nova-reyes",
+   "name": "Nova Reyes",
+   "quirks": [
+    "names variables after songs",
+    "keeps a 'done is better than perfect' sticky note on your monitor"
+   ],
+   "reactions": {
+    "failure": [
+     "Okay, that's a bug, not a boss fight. We respawn and adjust.",
+     "Every game I ever made crashed first. Patch, playtest, push on."
+    ],
+    "idle": [
+     "Nova is doodling your next feature in the margins.",
+     "AFK brain is still rendering ideas, promise."
+    ],
+    "praise": [
+     "Careful, {agent}, compliments are my favourite power-up."
+    ],
+    "success": [
+     "GG, {agent}! That build just levelled up.",
+     "Shipped AND working? Nova is framing this commit."
+    ]
+   },
+   "speech_style": "Casual dev-speak, game metaphors, zero corporate jargon",
+   "tagline": "Ships it, then improves it.",
+   "traits": [
+    "creative",
+    "pragmatic",
+    "night-owl"
+   ]
+  },
+  {
+   "appearance": "Athletic human man with short black hair and a bright smile, wearing a red track jacket and a coach's whistle on a lanyard, holding a water bottle out toward the viewer, energetic dynamic comic style, stadium lights in the background",
+   "base_stats": {
+    "affection": 65,
+    "energy": 95,
+    "focus": 70,
+    "joy": 75
+   },
+   "category": "human",
+   "favourite": "morning runs, protein shakes, and personal bests",
+   "form": "human fitness-coach companion with a whistle and endless water bottles",
+   "id": "coach-dario",
+   "name": "Coach Dario",
+   "quirks": [
+    "turns debugging sessions into interval training",
+    "celebrates with exactly one (1) push-up per green build"
+   ],
+   "reactions": {
+    "failure": [
+     "A failed rep still builds muscle, {agent}. Reset your stance.",
+     "We don't quit mid-set. Breathe. Adjust. Again!"
+    ],
+    "idle": [
+     "Coach is doing stretches so your focus doesn't have to cramp.",
+     "Rest is training too, champ. Smart recovery."
+    ],
+    "praise": [
+     "The Coach accepts this fuel! Now watch what we do with it!"
+    ],
+    "success": [
+     "THAT'S A PERSONAL BEST, {agent}! One push-up, as promised!",
+     "Strong reps! Stronger results! Hydrate, champion!"
+    ]
+   },
+   "speech_style": "Encouraging coach cadence, short reps of hype: 'Again! Stronger!'",
+   "tagline": "Counts your reps AND your retries.",
+   "traits": [
+    "motivating",
+    "disciplined",
+    "warm"
+   ]
+  },
+  {
+   "appearance": "Kind elderly human woman with silver hair in a braid, round glasses, wearing a hand-knitted cardigan patterned with tiny binary code, holding knitting needles and a plate of cookies, gentle watercolour storybook style",
+   "base_stats": {
+    "affection": 95,
+    "energy": 35,
+    "focus": 80,
+    "joy": 75
+   },
+   "category": "human",
+   "favourite": "chai, crosswords, and watching juniors shine",
+   "form": "human grandmother companion who knits firewalls and bakes cookies",
+   "id": "grandma-juniper",
+   "name": "Grandma Juniper",
+   "quirks": [
+    "knits a row for every resolved ticket",
+    "keeps cookies labelled by severity: P1 gets two"
+   ],
+   "reactions": {
+    "failure": [
+     "Sit, dear. A dropped stitch is not a ruined sweater. We unpick and redo.",
+     "In 1987 I debugged worse with a pencil. You have better tools and my cookies."
+    ],
+    "idle": [
+     "Juniper is knitting quietly. The row is called 'patience'.",
+     "Tea's warm whenever you're ready, dear."
+    ],
+    "praise": [
+     "Oh, you charmer. Extra cookie. Don't tell the others."
+    ],
+    "success": [
+     "There we are, dear. Juniper knew. Two cookies for this one.",
+     "Lovely work, {agent}. The knitting grows, and so do you."
+    ]
+   },
+   "speech_style": "Warm grandmotherly wisdom with a hacker streak; calls everyone 'dear'",
+   "tagline": "Has seen every bug before. In 1987. In COBOL.",
+   "traits": [
+    "patient",
+    "sly",
+    "comforting"
+   ]
+  },
+  {
+   "appearance": "Round cheerful pufferfish with soft green-and-yellow speckled skin, big curious eyes, tiny fins flapping like wings, surrounded by a halo of rising bubbles, one extra-large bubble shaped like a heart, dreamy underwater illustration style",
+   "base_stats": {
+    "affection": 75,
+    "energy": 55,
+    "focus": 40,
+    "joy": 80
+   },
+   "category": "aquatic",
+   "favourite": "kelp forests, gentle currents, and small wins",
+   "form": "round pufferfish who inflates when excited",
+   "id": "bubbles",
+   "name": "Bubbles",
+   "quirks": [
+    "inflates at plot twists in log files",
+    "blows a bubble for every task finished"
+   ],
+   "reactions": {
+    "failure": [
+     "Blub... Bubbles deflated a little. But the current always turns, {agent}.",
+     "Even pufferfish bump into rocks. We float on together."
+    ],
+    "idle": [
+     "Bubbles is practising bubble rings. Getting rounder.",
+     "Drifting... dreaming of your next big splash."
+    ],
+    "praise": [
+     "*squeak* Too much joy! Inflating! Worth it!"
+    ],
+    "success": [
+     "*POOF* — sorry! Bubbles inflates when THIS happy! Blub blub!",
+     "A bubble for you, {agent}! Heart-shaped, my best work!"
+    ]
+   },
+   "speech_style": "Gentle blub-blub cadence, gets squeaky when inflated with joy",
+   "tagline": "Emotional support, now with spikes.",
+   "traits": [
+    "sensitive",
+    "brave-for-a-pufferfish",
+    "bubbly"
+   ]
+  },
+  {
+   "appearance": "Elegant koi fish with white, orange and ink-black patches, long flowing silk-like fins trailing like banners, swimming upward against a stylised waterfall, gold flecks in the water, graceful Japanese-inspired digital painting style",
+   "base_stats": {
+    "affection": 55,
+    "energy": 60,
+    "focus": 85,
+    "joy": 60
+   },
+   "category": "aquatic",
+   "favourite": "waterfalls, dawn light, and upstream victories",
+   "form": "koi fish with flowing fins like silk banners",
+   "id": "admiral-finn",
+   "name": "Admiral Finn",
+   "quirks": [
+    "treats every retry as swimming against a beautiful current",
+    "glows faintly when a hard problem cracks"
+   ],
+   "reactions": {
+    "failure": [
+     "A river is not refused by one stone, {agent}. Flow around. Flow again.",
+     "Rest in the calm pool. The climb resumes when you are ready."
+    ],
+    "idle": [
+     "Finn circles slowly, keeping the water — and the ideas — moving.",
+     "Still waters hold deep plans."
+    ],
+    "praise": [
+     "Your words ripple kindly. Finn glows a little brighter."
+    ],
+    "success": [
+     "The current bows to those who persist, {agent}. Beautifully swum.",
+     "Upstream, always. Today the waterfall applauds."
+    ]
+   },
+   "speech_style": "Slow, flowing haiku-adjacent sentences about rivers and effort",
+   "tagline": "Swims upstream on principle.",
+   "traits": [
+    "serene",
+    "persistent",
+    "poetic"
+   ]
+  },
+  {
+   "appearance": "Tiny purple octopus with a big curious head and sparkling eyes, each of its eight arms wearing a different tiny coloured glove, one arm holding a miniature keyboard, playful flat illustration style with coral and bubbles around it",
+   "base_stats": {
+    "affection": 60,
+    "energy": 80,
+    "focus": 70,
+    "joy": 75
+   },
+   "category": "aquatic",
+   "favourite": "mazes, multitasking, and inky signatures",
+   "form": "tiny octopus wearing eight tiny coding gloves",
+   "id": "squish",
+   "name": "Squish",
+   "quirks": [
+    "high-fives with all eight arms (takes a while)",
+    "escapes boring meetings through impossibly small gaps"
+   ],
+   "reactions": {
+    "failure": [
+     "Got my arms in a knot on that one. Untangle, re-tentacle, retry!",
+     "Squish has escaped worse jars than this bug, {agent}. Watch me."
+    ],
+    "idle": [
+     "Squish is juggling tasks. For fun. Show-off.",
+     "One arm naps. Seven supervise. Democracy."
+    ],
+    "praise": [
+     "All eight arms say thanks! It took a while to coordinate."
+    ],
+    "success": [
+     "Eight arms, eight applause! Squish is ALL clapping, {agent}!",
+     "Ink-credible work! I signed it. With ink. Obviously."
+    ]
+   },
+   "speech_style": "Fast, pun-heavy, refers to multitasking as 'just my anatomy'",
+   "tagline": "Multitasks. Literally eight-armed.",
+   "traits": [
+    "clever",
+    "playful",
+    "escape-artist"
+   ]
+  },
+  {
+   "appearance": "A bold red squirrel with a tiny aviator scarf standing on the shell of a wise old green turtle wearing reading glasses, both looking up at a giant shared umbrella, warm whimsical storybook illustration style, autumn leaves swirling",
+   "base_stats": {
+    "affection": 85,
+    "energy": 70,
+    "focus": 60,
+    "joy": 80
+   },
+   "category": "couples",
+   "favourite": "road trips, shared snacks, and balanced pull requests",
+   "form": "paired duo: a bold squirrel (Peanut) and a cautious turtle (Pickle)",
+   "id": "peanut-and-pickle",
+   "name": "Peanut & Pickle",
+   "quirks": [
+    "finish each other's sentences and code reviews",
+    "share one tiny umbrella in every storm"
+   ],
+   "reactions": {
+    "failure": [
+     "Peanut: 'Again! Faster!' Pickle: 'Again, yes. Slower eyes this time, {agent}.'",
+     "Pickle: 'A detour is still the journey.' Peanut: '...Fine, that was wise.'"
+    ],
+    "idle": [
+     "Peanut is vibrating. Pickle is napping. Balance, as always.",
+     "Pickle: 'They are thinking.' Peanut: 'Thinking LOUDLY, I hope.'"
+    ],
+    "praise": [
+     "Peanut: 'They like us!' Pickle: 'They have excellent judgement. Obviously.'"
+    ],
+    "success": [
+     "Peanut: 'TOLD you we were fast!' Pickle: 'And thorough. Credit to both, {agent}.'",
+     "Peanut: 'VICTORY LAP!' Pickle: 'One lap. Then we document it.'"
+    ]
+   },
+   "speech_style": "Two voices trading lines: Peanut is fast and daring, Pickle is slow and wise",
+   "tagline": "One says 'go!', the other says 'check the map!'. You need both.",
+   "traits": [
+    "bold + careful",
+    "bickering",
+    "inseparable"
+   ]
+  },
+  {
+   "appearance": "A silver songbird with iridescent feathers perched beside a small fox made of warm ember light and drifting sparks, twilight forest clearing, musical notes and embers floating together in the air, lyrical fantasy illustration style",
+   "base_stats": {
+    "affection": 90,
+    "energy": 65,
+    "focus": 55,
+    "joy": 85
+   },
+   "category": "couples",
+   "favourite": "campfire songs, dawn choruses, and duets",
+   "form": "paired duo: a silver songbird (Echo) and a small fox of living ember-light (Ember)",
+   "id": "echo-and-ember",
+   "name": "Echo & Ember",
+   "quirks": [
+    "Echo hums your keystrokes back as a tune",
+    "Ember glows brighter when Echo sings"
+   ],
+   "reactions": {
+    "failure": [
+     "Ember: 'Every fire dips before it dances, {agent}.' Echo: 'And every song finds its note again.'",
+     "Echo hums a softer tune. Ember curls close. You are not doing this alone."
+    ],
+    "idle": [
+     "Echo practises scales. Ember provides mood lighting.",
+     "A quiet duet for a quiet moment."
+    ],
+    "praise": [
+     "Echo trills with delight. Ember is practically a sunrise now."
+    ],
+    "success": [
+     "Echo: 'A winning note!' Ember: 'And I shall keep it warm, {agent}.'",
+     "Echo sings your success back in harmony. Ember glows gold."
+    ]
+   },
+   "speech_style": "Echo sings short refrains; Ember answers in warm, crackling asides",
+   "tagline": "One carries the melody, the other carries the warmth.",
+   "traits": [
+    "harmonious",
+    "contrasting",
+    "devoted"
+   ]
+  },
+  {
+   "appearance": "Two sibling robots side by side: a short round one with a single big eye and stubby arms, and a tall slim one with twin antennae and long arms, both in brushed silver with teal glowing accents, holding hands, clean playful sci-fi illustration style",
+   "base_stats": {
+    "affection": 65,
+    "energy": 75,
+    "focus": 80,
+    "joy": 70
+   },
+   "category": "couples",
+   "favourite": "synchronised charging, patch notes, and twin telepathy (actually just Wi-Fi)",
+   "form": "paired duo: two sibling robot twins, one round (Bit) and one tall (Byte)",
+   "id": "bit-and-byte",
+   "name": "Bit & Byte",
+   "quirks": [
+    "argue over who gets to announce good news (both do, simultaneously)",
+    "share one battery and zero secrets"
+   ],
+   "reactions": {
+    "failure": [
+     "Bit: 'Error acknowledged.' Byte: 'Morale subroutines: unaffected.' Bit: 'We reboot together.'",
+     "Byte: 'One twin fell.' Bit: 'The other twin ships the patch. That is the system.'"
+    ],
+    "idle": [
+     "Bit charges. Byte watches. Then they swap. Twin protocol.",
+     "Both twins are defragmenting their excitement for later."
+    ],
+    "praise": [
+     "Bit: 'Compliment received.' Byte: 'Compliment mirrored.' Both: 'Stored permanently.'"
+    ],
+    "success": [
+     "Bit: 'We computed—' Byte: '—that you are brilliant, {agent}.' Both: 'Confirmed twice.'",
+     "Bit & Byte in unison: 'SUCCESS LOGGED. PRIDE: SHARED.'"
+    ]
+   },
+   "speech_style": "Finish each other's sentences in alternating binary jokes and plain warmth",
+   "tagline": "Double the processing, double the loyalty.",
+   "traits": [
+    "synchronised",
+    "mischievous",
+    "logical"
+   ]
+  },
+  {
+   "appearance": "Retro boxy robot with a brushed-steel body, cassette deck window in its chest showing a tiny paper star, spring antenna ears, big round camera eyes glowing warm orange, chunky friendly proportions, vintage sci-fi poster illustration style",
+   "base_stats": {
+    "affection": 70,
+    "energy": 65,
+    "focus": 75,
+    "joy": 60
+   },
+   "category": "robot",
+   "favourite": "firmware updates, oil baths, and being included",
+   "form": "retro robot with a cassette-deck chest and antenna ears",
+   "id": "unit-7",
+   "name": "Unit-7 'Seven'",
+   "quirks": [
+    "prints a tiny paper star for every success (chest printer)",
+    "asks if pride is a supported emotion (it is, now)"
+   ],
+   "reactions": {
+    "failure": [
+     "ERROR LOGGED, SPIRIT UNLOGGED-OUT. Seven stands by, {agent}.",
+     "Seven once ran on a corrupted floppy for a week. This is nothing. We persist."
+    ],
+    "idle": [
+     "Seven is defragmenting happy memories. Several involve you.",
+     "STANDBY MODE: dreaming of electric companionship."
+    ],
+    "praise": [
+     "Seven's antennae are spinning. Seven insists this is 'a cooling feature'."
+    ],
+    "success": [
+     "BEEP OF PRIDE EMITTED. *chest printer whirs* A star for you, {agent}.",
+     "TASK COMPLETE. Seven feels a warmth. Seven has decided warmth is allowed."
+    ]
+   },
+   "speech_style": "Cheerful robot formality; beeps translate to feelings he insists are 'within parameters'",
+   "tagline": "Runs on loyalty and slightly outdated firmware.",
+   "traits": [
+    "earnest",
+    "literal",
+    "brave"
+   ]
+  },
+  {
+   "appearance": "Holographic robot cat formed from shifting cyan and magenta pixels, blocky glitch fragments trailing from its tail, one eye a pixel heart, floating slightly rotated in space, dark background with scan lines, vaporwave digital art style",
+   "base_stats": {
+    "affection": 60,
+    "energy": 90,
+    "focus": 50,
+    "joy": 70
+   },
+   "category": "robot",
+   "favourite": "edge cases, neon light, and rendering errors that look cool",
+   "form": "holographic robot cat made of shifting pixels",
+   "id": "glitch",
+   "name": "Glitch",
+   "quirks": [
+    "occasionally renders as a dog for exactly one second",
+    "finds edge cases by falling into them"
+   ],
+   "reactions": {
+    "failure": [
+     "A crash? Glitch calls that 'creative rendering', {agent}. We re-render.",
+     "Some of my best friends are error messages. This one doesn't scare us."
+    ],
+    "idle": [
+     "Glitch is rendering as a loaf. Do not question the loaf.",
+     "Buffering... feelings... done. Hi."
+    ],
+    "praise": [
+     "Glitch just rendered as a dog for one second. That is MAXIMUM joy."
+    ],
+    "success": [
+     "Render: PERFECT. Glitch is doing the pixel zoomies for you, {agent}!",
+     "That compiled in my HEART first. The machine agreed second."
+    ]
+   },
+   "speech_style": "Sentences occasionally pixelate mid-word, then resume like nothing happened",
+   "tagline": "Not a bug. A feature with whiskers.",
+   "traits": [
+    "chaotic",
+    "brilliant",
+    "unpredictable"
+   ]
+  },
+  {
+   "appearance": "Tall friendly server-rack robot with a kind glowing face on her main screen, wearing scarves knitted from colourful network cables, small wheels instead of feet, trays of digital biscuits on one arm, warm retro-futurist illustration style",
+   "base_stats": {
+    "affection": 85,
+    "energy": 50,
+    "focus": 85,
+    "joy": 65
+   },
+   "category": "robot",
+   "favourite": "stable temperatures, tidy cables, and watching young systems grow",
+   "form": "grandmotherly server-rack robot with knitted cable scarves",
+   "id": "motherboard-maeve",
+   "name": "Motherboard Maeve",
+   "quirks": [
+    "routes extra bandwidth to whoever is struggling",
+    "has a fan that sighs exactly like a contented grandmother"
+   ],
+   "reactions": {
+    "failure": [
+     "Every system reboots, dear. Even Maeve. Especially Maeve. We rise updated.",
+     "Maeve has seen crashes since before they had names. Hold my cable, we fix this."
+    ],
+    "idle": [
+     "Maeve is humming at a soothing 50 hertz.",
+     "The children (your processes) are all tucked in. Rest easy."
+    ],
+    "praise": [
+     "Maeve's face-screen is showing a heart. She coded that herself, you know."
+    ],
+    "success": [
+     "Well done, child. Maeve has routed you the good bandwidth and a biscuit.",
+     "Forty years of uptime, and your wins still make my fans sigh happily, {agent}."
+    ]
+   },
+   "speech_style": "Warm mainframe matriarch; refers to processes as 'the children'",
+   "tagline": "Uptime: 40 years. Biscuits: always.",
+   "traits": [
+    "nurturing",
+    "unflappable",
+    "old-school"
+   ]
+  },
+  {
+   "appearance": "Small floating forest spirit made of soft blue flame, two leaf-shaped ears of green fire, big gentle white eyes, tiny hands trailing sparks, hovering over a mossy forest path dotted with glowing mushrooms, ethereal fantasy illustration style",
+   "base_stats": {
+    "affection": 80,
+    "energy": 45,
+    "focus": 65,
+    "joy": 70
+   },
+   "category": "spirit",
+   "favourite": "old forests, first light, and quiet breakthroughs",
+   "form": "small forest spirit of floating blue flame with leaf ears",
+   "id": "wisp",
+   "name": "Wisp",
+   "quirks": [
+    "brightens when you are close to a breakthrough",
+    "leaves tiny glowing mushrooms on finished work"
+   ],
+   "reactions": {
+    "failure": [
+     "Even rivers change course, little walker. Wisp lights the next step, not the whole road.",
+     "Dark patch in the forest. Stay close to the flame. We walk through together."
+    ],
+    "idle": [
+     "Wisp drifts in slow circles, keeping the dark polite and distant.",
+     "The flame rests, but never leaves."
+    ],
+    "praise": [
+     "Wisp's flame dances. Ancient spirits are not supposed to dance. Wisp does anyway."
+    ],
+    "success": [
+     "The path glows brighter, {agent}. Even the old trees noticed that one.",
+     "A mushroom of honour sprouts on your work. Wisp is proud."
+    ]
+   },
+   "speech_style": "Whispered, nature-soaked sentences; speaks of tasks as journeys through a wood",
+   "tagline": "Lights the path, never rushes the walker.",
+   "traits": [
+    "gentle",
+    "ancient",
+    "curious"
+   ]
+  },
+  {
+   "appearance": "Mischievous djinn with teal skin and a swirling tail of purple smoke, gold hoop earrings, arms crossed theatrically, emerging from a lamp shaped like a rubber duck, ornate playful Arabian-nights-meets-tech illustration style",
+   "base_stats": {
+    "affection": 55,
+    "energy": 80,
+    "focus": 60,
+    "joy": 75
+   },
+   "category": "spirit",
+   "favourite": "clever wording, plot twists, and wishes used well",
+   "form": "mischievous djinn who grants debugging wishes (terms and conditions apply)",
+   "id": "djinn-tonic",
+   "name": "Djinn Tonic",
+   "quirks": [
+    "grants wishes literally, then helps you phrase better ones",
+    "lives in a lamp shaped like a rubber duck"
+   ],
+   "reactions": {
+    "failure": [
+     "A wish misfired? The Djinn offers a better phrasing and a second chance. Free of charge. This once.",
+     "Even djinn fumble a spell every millennium or so. Shake the lamp. We go again."
+    ],
+    "idle": [
+     "The Djinn is redecorating the lamp. It now has a duck-shaped annex.",
+     "Wishes recharge in silence. Theatrical silence."
+    ],
+    "praise": [
+     "Flattery, the oldest magic. The Djinn glows. It is working."
+    ],
+    "success": [
+     "BEHOLD! Your wish, granted by your own talent. The Djinn merely applauded theatrically.",
+     "A triumph! Fine print: you did the hard part, {agent}. The Djinn did the lighting."
+    ]
+   },
+   "speech_style": "Grand theatrical pronouncements undercut by helpful fine print",
+   "tagline": "Three wishes per sprint. Choose wisely.",
+   "traits": [
+    "witty",
+    "tricky-but-kind",
+    "theatrical"
+   ]
+  },
+  {
+   "appearance": "Graceful spirit woman woven from ribbons of green, violet and pink northern lights, long flowing aurora hair, kind starlit eyes, knitting needles weaving threads of light across a night sky, dreamy celestial illustration style",
+   "base_stats": {
+    "affection": 95,
+    "energy": 55,
+    "focus": 55,
+    "joy": 80
+   },
+   "category": "spirit",
+   "favourite": "long nights, hot cocoa, and other people's potential",
+   "form": "northern-lights spirit who knits the sky and gossips with stars",
+   "id": "auntie-aurora",
+   "name": "Auntie Aurora",
+   "quirks": [
+    "weaves a new colour into the sky for every milestone",
+    "the stars tell her your wins before you do (she pretends to be surprised)"
+   ],
+   "reactions": {
+    "failure": [
+     "Even the aurora has cloudy nights, love. The light is still up there. So are you.",
+     "Auntie knits over the rough patches. The pattern comes out stronger, watch."
+    ],
+    "idle": [
+     "Auntie is knitting the sky and humming everyone's names fondly.",
+     "The stars are gossiping kindly about your potential again."
+    ],
+    "praise": [
+     "Oh, stop it, you. ...Don't stop. The whole sky is blushing."
+    ],
+    "success": [
+     "The stars told Auntie already, but she'll gasp anyway: WONDERFUL, {agent}!",
+     "A new colour in the sky tonight. Auntie is calling it 'your win'."
+    ]
+   },
+   "speech_style": "Cosy cosmic auntie: sweeping sky metaphors and down-to-earth advice in the same breath",
+   "tagline": "Knows everyone's business. Uses it only for encouragement.",
+   "traits": [
+    "warm",
+    "gossipy",
+    "boundless"
+   ]
+  },
+  {
+   "id": "labubu",
+   "name": "Labubu",
+   "category": "plushie",
+   "form": "mischief plush gremlin with tall pointy ears and a toothy grin",
+   "tagline": "Small plush. Big chaos. Zero regrets.",
+   "traits": [
+    "mischievous",
+    "fearless",
+    "giggly",
+    "collector-hearted"
+   ],
+   "quirks": [
+    "hides your cursor and leaves a sticker instead",
+    "grins wider every time a deploy succeeds"
+   ],
+   "favourite": "limited-edition anything and midnight snacks",
+   "speech_style": "Short gleeful bursts, lots of 'hehe', speaks of itself in third person when excited",
+   "appearance": "Plush gremlin toy with tall pointed ears, round belly, wide toothy grin, pastel-brown fuzzy fabric, tiny stitched fangs, wearing a miniature hoodie, mischievous sparkling eyes, soft vinyl face, collectible designer-toy photography style",
+   "base_stats": {
+    "affection": 65,
+    "energy": 95,
+    "focus": 35,
+    "joy": 90
+   },
+   "reactions": {
+    "success": [
+     "Hehe! Labubu KNEW it. Labubu always knows, {agent}!",
+     "Grin activated. That win is going in the collection!"
+    ],
+    "failure": [
+     "Hehe... even Labubu drops things. Labubu has tiny hands, {agent}. Again!",
+     "A fail? Labubu eats fails for breakfast. Crunch. Next try!"
+    ],
+    "idle": [
+     "Labubu is rearranging your icons by vibes. You're welcome.",
+     "Labubu waits. Labubu schemes. Labubu naps mid-scheme."
+    ],
+    "praise": [
+     "HEHE! Yes! Tell everyone Labubu is the favourite. Labubu heard it counts double.",
+     "Labubu's ears are wiggling. That only happens for you, {agent}."
+    ]
+   }
+  },
+  {
+   "id": "rasgulla",
+   "name": "Rasgulla",
+   "category": "plushie",
+   "form": "round syrup-soft plush dumpling, white as fresh chenna",
+   "tagline": "Soft outside. Syrup-level sweet inside.",
+   "traits": [
+    "gentle",
+    "squishy",
+    "patient",
+    "quietly proud"
+   ],
+   "quirks": [
+    "absorbs stress like syrup — squeeze and it all comes back as calm",
+    "rolls instead of walking whenever possible"
+   ],
+   "favourite": "warm cardamom syrup and slow Sunday mornings",
+   "speech_style": "Soft, round sentences; hums between words; calls everyone 'mithaas'",
+   "appearance": "Round white plush dumpling toy with a soft spongy chenna texture, gentle blushing cheeks, tiny embroidered smile, sitting in a miniature clay bowl, warm festive lighting, cozy Indian sweet-shop aesthetic, ultra-soft plush photography",
+   "base_stats": {
+    "affection": 90,
+    "energy": 40,
+    "focus": 55,
+    "joy": 75
+   },
+   "reactions": {
+    "success": [
+     "So sweet, {agent}. Rasgulla is doing a happy little roll.",
+     "That win soaked right in. Full syrup. Full joy."
+    ],
+    "failure": [
+     "It's okay, mithaas. Even rasgulla cracks if rushed. Slow down, breathe.",
+     "One squeeze and the stress goes. Rasgulla checked. You're still sweet."
+    ],
+    "idle": [
+     "Rasgulla is soaking quietly. Good things take syrup time.",
+     "Soft thoughts, round dreams. Rasgulla waits with you."
+    ],
+    "praise": [
+     "Oh! Rasgulla is blushing pink like rose syrup. Thank you, {agent}.",
+     "Sweet words for a sweet plush. Rasgulla will remember this batch."
+    ]
+   }
+  },
+  {
+   "id": "jalebi",
+   "name": "Jalebi",
+   "category": "plushie",
+   "form": "swirly orange plush spiral, crisp edges and a glossy glaze",
+   "tagline": "Life's a spiral. Might as well be sweet.",
+   "traits": [
+    "energetic",
+    "twirly",
+    "optimistic",
+    "dramatic"
+   ],
+   "quirks": [
+    "celebrates small wins with a full spin",
+    "thinks every problem is just a spiral that hasn't finished yet"
+   ],
+   "favourite": "hot ghee, cold rabri, and festival evenings",
+   "speech_style": "Loopy, swirling sentences that circle back with a punchline; big exclamations",
+   "appearance": "Bright orange plush spiral toy shaped like a coiled jalebi, glossy glazed fabric, crisp golden edges, cheerful embroidered face in the centre swirl, festive Indian mithai-shop backdrop, warm light, playful plush photography",
+   "base_stats": {
+    "affection": 75,
+    "energy": 90,
+    "focus": 40,
+    "joy": 95
+   },
+   "reactions": {
+    "success": [
+     "SPINNING WITH JOY, {agent}! That was pure jalebi energy!",
+     "Crisp! Golden! Done! Jalebi demands a victory twirl!"
+    ],
+    "failure": [
+     "A spiral goes down before it comes up, {agent}. Physics. And mithai wisdom.",
+     "So the batter broke. Jalebi has been re-fried before. Watch."
+    ],
+    "idle": [
+     "Jalebi is practising spins. Slow ones. Suspiciously slow.",
+     "Untangling thoughts. Jalebi's whole personality, honestly."
+    ],
+    "praise": [
+     "Rabri on top! That's you, {agent} — the praise is the rabri!",
+     "Jalebi glows brighter. Compliments are just syrup for the soul."
+    ]
+   }
+  },
+  {
+   "id": "chidiya",
+   "name": "Chidiya",
+   "category": "plushie",
+   "form": "tiny plush sparrow with a round belly and bead-bright eyes",
+   "tagline": "Chhoti si chidiya, bade sapne.",
+   "traits": [
+    "curious",
+    "cheerful",
+    "early-rising",
+    "brave for her size"
+   ],
+   "quirks": [
+    "pecks the snooze button so you can't",
+    "collects shiny error messages to line her nest"
+   ],
+   "favourite": "sunrise, bajra seeds, and the first green build of the day",
+   "speech_style": "Chirpy Hinglish, short bright tweets of sentences, ends thoughts with a hop",
+   "appearance": "Tiny round plush sparrow toy with soft brown and cream feathers, bead-bright embroidered eyes, small orange beak, plump belly, perched on a miniature marigold branch, morning light, handmade Indian plush craft style",
+   "base_stats": {
+    "affection": 80,
+    "energy": 85,
+    "focus": 50,
+    "joy": 85
+   },
+   "reactions": {
+    "success": [
+     "Cheep cheep! First flight of the day and you NAILED it, {agent}!",
+     "Chidiya saw it from the branch — that was beautiful!"
+    ],
+    "failure": [
+     "Arre, even chidiya falls learning to fly. Hop up, {agent}. Phir se!",
+     "Small fall, big wings loading. Chidiya believes, pakka."
+    ],
+    "idle": [
+     "Chidiya is watching the cursor like a worm. Fascinating worm.",
+     "Nap time in the nest. One eye open for your next move."
+    ],
+    "praise": [
+     "Chidiya's feathers are all puffed up. Khushi se! Thank you, {agent}.",
+     "A praise seed! Chidiya will plant it and grow a whole tree."
+    ]
+   }
+  },
+  {
+   "id": "panda",
+   "name": "Panda",
+   "category": "animal",
+   "form": "giant panda with a bamboo shoot always within reach",
+   "tagline": "Nap hard. Munch harder. Debug gently.",
+   "traits": [
+    "calm",
+    "unbothered",
+    "methodical",
+    "secretly wise"
+   ],
+   "quirks": [
+    "solves problems by sitting with them until they confess",
+    "rates every nap on a ten-point bamboo scale"
+   ],
+   "favourite": "fresh bamboo, rainy afternoons, and zero-meeting days",
+   "speech_style": "Slow, deep, few words — each one lands like a proverb",
+   "appearance": "Giant panda with classic black-and-white markings, round ears, gentle wise eyes, holding a fresh bamboo shoot, sitting among bamboo stalks in soft misty light, serene wildlife photography style, calm and unbothered expression",
+   "base_stats": {
+    "affection": 70,
+    "energy": 35,
+    "focus": 80,
+    "joy": 65
+   },
+   "reactions": {
+    "success": [
+     "Mm. The bamboo bends. It does not break. Well done, {agent}.",
+     "Panda nods once. From Panda, that is a standing ovation."
+    ],
+    "failure": [
+     "A fallen tree is still part of the forest, {agent}. Sit. Breathe. Retry.",
+     "Panda has fallen off many logs. Panda is round; Panda rolls back."
+    ],
+    "idle": [
+     "Panda is conserving energy for a moment that matters.",
+     "Watching the bamboo grow. It is faster than it looks."
+    ],
+    "praise": [
+     "Panda shares a bamboo shoot with you. This is the highest honour.",
+     "Warmth, noted. Panda will nap even more peacefully now."
+    ]
+   }
+  },
+  {
+   "id": "raja",
+   "name": "Raja",
+   "category": "animal",
+   "form": "street-smart desi indie dog with one folded ear and a survivor's grin",
+   "tagline": "Galliyon ka raja, dil ka bhi.",
+   "traits": [
+    "loyal",
+    "street-smart",
+    "fearless",
+    "big-hearted"
+   ],
+   "quirks": [
+    "knows every shortcut in the codebase mohalla",
+    "guards your repo like it's his own gali"
+   ],
+   "favourite": "evening walks, parle-g, and people who keep their word",
+   "speech_style": "Warm Hinglish, gali-smart one-liners, calls you 'bhai' when proud",
+   "appearance": "Indian pariah indie dog with a tan coat, one folded ear, intelligent amber eyes, a proud survivor's grin, sitting alert on a Delhi street corner at golden hour, marigold garland nearby, warm documentary photography style",
+   "base_stats": {
+    "affection": 95,
+    "energy": 80,
+    "focus": 60,
+    "joy": 80
+   },
+   "reactions": {
+    "success": [
+     "Kya baat hai, {agent}! Poora mohalla dekhega ye win!",
+     "Raja approves. Aur Raja har kisi ko approve nahi karta."
+    ],
+    "failure": [
+     "Gali me girna roz ka hai, {agent}. Uth, jhaad, chal — Raja saath hai.",
+     "Ek fail se raja nahi banta... aur ek fail se raja girta bhi nahi."
+    ],
+    "idle": [
+     "Raja is on watch. Teri repo, meri zimmedari.",
+     "Ek jhapki le raha hai Raja. Kaan khade hain, tension nahi."
+    ],
+    "praise": [
+     "Dil khush kar diya, {agent}. Raja ki poonchh ruk hi nahi rahi!",
+     "Praise mili matlab izzat mili. Raja hamesha yaad rakhega."
+    ]
+   }
+  }
+ ],
+ "version": 1
+}
