@@ -1,6 +1,675 @@
 {
+ "actions": [
+  {
+   "animation": "Seamless loop: the pet's chest and shoulders rise and fall slowly, eyes blinking softly, a tiny sway side to side; calm idle animation, nothing else moves.",
+   "category": null,
+   "description": "Settles into a calm, steady breathing rhythm while waiting for the next move.",
+   "effects": {
+    "bond_xp": 0,
+    "energy_cost": 0,
+    "stats": {
+     "focus": 2
+    }
+   },
+   "id": "idle-breathe",
+   "loop": true,
+   "name": "Idle Breathe"
+  },
+  {
+   "animation": "Side-view loop: the pet walks in place with a natural, unhurried gait, head bobbing slightly with each step; seamless loop.",
+   "category": null,
+   "description": "Ambled around the workspace at an easy, unhurried pace.",
+   "effects": {
+    "bond_xp": 0,
+    "energy_cost": 2,
+    "stats": {
+     "joy": 1
+    }
+   },
+   "id": "walk",
+   "loop": true,
+   "name": "Walk"
+  },
+  {
+   "animation": "Loop: fast run cycle, limbs pumping, ears/fur/fabric streaming behind, slight forward lean; seamless loop full of energy.",
+   "category": null,
+   "description": "Broke into a joyful run, all momentum and grin.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 7,
+    "stats": {
+     "joy": 3
+    }
+   },
+   "id": "run",
+   "loop": true,
+   "name": "Run"
+  },
+  {
+   "animation": "One-shot: a quick crouch, an springy leap into the air with limbs spread, then a soft two-foot landing and a proud little bounce to settle.",
+   "category": null,
+   "description": "Crouched, sprang, and stuck the landing.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 4,
+    "stats": {
+     "joy": 4
+    }
+   },
+   "id": "jump",
+   "loop": false,
+   "name": "Jump"
+  },
+  {
+   "animation": "Loop: the pet bounces and grooves in place, swaying hips and bobbing head to an unheard beat, arms swinging; joyful, seamless loop.",
+   "category": null,
+   "description": "Danced like the build just went green.",
+   "effects": {
+    "bond_xp": 3,
+    "energy_cost": 6,
+    "stats": {
+     "joy": 9
+    }
+   },
+   "id": "dance",
+   "loop": true,
+   "name": "Dance"
+  },
+  {
+   "animation": "One-shot: the pet twirls once in a full 360-degree spin, skirts/fur/tail flaring out with the motion, ending facing forward with a flourish.",
+   "category": null,
+   "description": "Spun a full, gleeful three-sixty.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 3,
+    "stats": {
+     "joy": 5
+    }
+   },
+   "id": "spin",
+   "loop": false,
+   "name": "Spin"
+  },
+  {
+   "animation": "One-shot: the pet raises one limb high and waves it side to side three times, beaming directly at the viewer, then lowers it.",
+   "category": null,
+   "description": "Waved a big, unmistakable hello.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 1,
+    "stats": {
+     "affection": 4
+    }
+   },
+   "id": "wave",
+   "loop": false,
+   "name": "Wave"
+  },
+  {
+   "animation": "One-shot: the pet bends forward into a deep, elegant bow, holds it for a beat, then rises smoothly back to standing.",
+   "category": null,
+   "description": "Offered a graceful, formal bow.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 1,
+    "stats": {
+     "affection": 3,
+     "focus": 1
+    }
+   },
+   "id": "bow",
+   "loop": false,
+   "name": "Bow"
+  },
+  {
+   "animation": "Loop: the pet curls into a cosy ball, breathing slow and deep, an occasional ear twitch or paw knead; peaceful, seamless loop.",
+   "category": null,
+   "description": "Curled up and slept properly, recharging for the next shift.",
+   "effects": {
+    "bond_xp": 0,
+    "energy_cost": 0,
+    "stats": {
+     "energy": 30,
+     "joy": 2
+    }
+   },
+   "id": "sleep",
+   "loop": true,
+   "name": "Sleep"
+  },
+  {
+   "animation": "One-shot: the pet produces a small snack, munches it with obvious delight, cheeks puffing, then pats its belly, satisfied.",
+   "category": null,
+   "description": "Sat down and happily demolished a favourite snack.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 0,
+    "stats": {
+     "energy": 10,
+     "joy": 5
+    }
+   },
+   "id": "eat",
+   "loop": false,
+   "name": "Eat"
+  },
+  {
+   "animation": "Loop: the pet bats, chases and pounces at a small toy in a repeating playful rhythm, fully absorbed; seamless loop.",
+   "category": null,
+   "description": "Played properly — toy, rules, and total commitment.",
+   "effects": {
+    "bond_xp": 3,
+    "energy_cost": 5,
+    "stats": {
+     "joy": 8
+    }
+   },
+   "id": "play",
+   "loop": true,
+   "name": "Play"
+  },
+  {
+   "animation": "One-shot: the pet throws both limbs skyward, hops twice, and shakes with pure triumph as invisible confetti energy bursts around it.",
+   "category": null,
+   "description": "Celebrated like the release notes just dropped.",
+   "effects": {
+    "bond_xp": 4,
+    "energy_cost": 5,
+    "stats": {
+     "affection": 2,
+     "joy": 12
+    }
+   },
+   "id": "celebrate",
+   "loop": false,
+   "name": "Celebrate"
+  },
+  {
+   "animation": "One-shot: the pet ducks quickly behind a nearby object or its own paws until only its eyes remain visible, holding very still.",
+   "category": null,
+   "description": "Vanished behind the nearest cover. Mostly.",
+   "effects": {
+    "bond_xp": 0,
+    "energy_cost": 1,
+    "stats": {
+     "focus": 3
+    }
+   },
+   "id": "hide",
+   "loop": false,
+   "name": "Hide"
+  },
+  {
+   "animation": "One-shot: the pet leans out from behind cover, eyes wide, looks left, looks right, then leans back with a satisfied nod.",
+   "category": null,
+   "description": "Peeked out to check whether the coast — and the code — was clear.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 1,
+    "stats": {
+     "affection": 1,
+     "focus": 2
+    }
+   },
+   "id": "peek",
+   "loop": false,
+   "name": "Peek"
+  },
+  {
+   "animation": "One-shot: the pet jumps and snaps into a five-point star pose at the peak, sparkles bursting outward, then lands in a hero crouch.",
+   "category": "anime",
+   "description": "Leapt into a perfect mid-air star pose, sparkles included.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 5,
+    "stats": {
+     "joy": 7
+    }
+   },
+   "id": "star-jump",
+   "loop": false,
+   "name": "Star Jump"
+  },
+  {
+   "animation": "One-shot: the pet plants its feet, throws one arm diagonally skyward and freezes in a dramatic pose while sparkles cascade around it.",
+   "category": "anime",
+   "description": "Struck a dramatic hero pose as sparkles erupted on cue.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 2,
+    "stats": {
+     "affection": 2,
+     "joy": 5
+    }
+   },
+   "id": "sparkle-pose",
+   "loop": false,
+   "name": "Sparkle Pose"
+  },
+  {
+   "animation": "One-shot: the pet lowers into a crouch, hindquarters wiggling, then launches forward in a committed pounce and lands squarely on its target.",
+   "category": "animal",
+   "description": "Crouched, wiggled, and pounced with total conviction.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 5,
+    "stats": {
+     "joy": 6
+    }
+   },
+   "id": "pounce",
+   "loop": false,
+   "name": "Pounce"
+  },
+  {
+   "animation": "One-shot: the pet flops sideways and rolls fully onto its back, paws waving lazily in the air, tail thumping with pleasure.",
+   "category": "animal",
+   "description": "Rolled onto its back, paws in the air, utterly content.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 3,
+    "stats": {
+     "affection": 3,
+     "joy": 5
+    }
+   },
+   "id": "roll-over",
+   "loop": false,
+   "name": "Roll Over"
+  },
+  {
+   "animation": "Loop: the pet tears around in sudden joyful laps, skidding through turns, ears flat with speed, grinning the whole way; seamless loop.",
+   "category": "animal",
+   "description": "The zoomies arrived. Resistance was futile.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 8,
+    "stats": {
+     "joy": 9
+    }
+   },
+   "id": "zoomies",
+   "loop": true,
+   "name": "Zoomies"
+  },
+  {
+   "animation": "One-shot: arms rise overhead, a full-body stretch with a small side bend each way, then a shake-out of the hands; refreshed and ready.",
+   "category": "human",
+   "description": "Stood up and stretched like someone who respects ergonomics.",
+   "effects": {
+    "bond_xp": 0,
+    "energy_cost": 0,
+    "stats": {
+     "energy": 6,
+     "focus": 2
+    }
+   },
+   "id": "stretch",
+   "loop": false,
+   "name": "Stretch"
+  },
+  {
+   "animation": "One-shot: the pet raises one hand toward the viewer, leans in, and delivers a crisp, satisfying high-five with a grin.",
+   "category": "human",
+   "description": "Offered a high-five with full send-off energy.",
+   "effects": {
+    "bond_xp": 3,
+    "energy_cost": 1,
+    "stats": {
+     "affection": 5,
+     "joy": 3
+    }
+   },
+   "id": "high-five",
+   "loop": false,
+   "name": "High-Five"
+  },
+  {
+   "animation": "Loop: the pet glides through water in smooth, rhythmic strokes, fins/tentacles trailing, bubbles rising gently; serene, seamless loop.",
+   "category": "aquatic",
+   "description": "Swam a few graceful laps of the nearest available water.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 3,
+    "stats": {
+     "joy": 4
+    }
+   },
+   "id": "swim",
+   "loop": true,
+   "name": "Swim"
+  },
+  {
+   "animation": "One-shot: the pet launches upward in a graceful arc, tucks, and slices back into the water with a bright splash and a ring of ripples.",
+   "category": "aquatic",
+   "description": "Arced out of the water and dove back in, clean as a whistle.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 5,
+    "stats": {
+     "joy": 6
+    }
+   },
+   "id": "dive",
+   "loop": false,
+   "name": "Dive"
+  },
+  {
+   "animation": "One-shot: the pet slaps the water twice in quick succession, sending a playful fountain of droplets everywhere, delighted with itself.",
+   "category": "aquatic",
+   "description": "Splashed with intent. Everyone nearby is now damp.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 3,
+    "stats": {
+     "joy": 6
+    }
+   },
+   "id": "splash",
+   "loop": false,
+   "name": "Splash"
+  },
+  {
+   "animation": "One-shot: both partners circle each other in a quick tandem spin, mirroring each other's motion, and land back-to-back, grinning.",
+   "category": "couples",
+   "description": "The duo spun around each other in perfect orbit.",
+   "effects": {
+    "bond_xp": 3,
+    "energy_cost": 5,
+    "stats": {
+     "affection": 3,
+     "joy": 8
+    }
+   },
+   "id": "tandem-spin",
+   "loop": false,
+   "name": "Tandem Spin"
+  },
+  {
+   "animation": "One-shot: the pair count down silently with a glance, then jump in perfect unison, high-five at the peak, and land together.",
+   "category": "couples",
+   "description": "Both jumped at the exact same moment. Choreographed? Obviously.",
+   "effects": {
+    "bond_xp": 3,
+    "energy_cost": 4,
+    "stats": {
+     "joy": 6
+    }
+   },
+   "id": "sync-jump",
+   "loop": false,
+   "name": "Sync Jump"
+  },
+  {
+   "animation": "Loop: the pet rises a short distance off the ground on soft thruster glow, bobbing gently, stabilisers making tiny corrections; seamless loop.",
+   "category": "robot",
+   "description": "Engaged thrusters and hovered, serene and slightly smug.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 3,
+    "stats": {
+     "focus": 3
+    }
+   },
+   "id": "hover",
+   "loop": true,
+   "name": "Hover"
+  },
+  {
+   "animation": "Loop: the pet settles into a charging dock or unfurls a small solar panel, a battery indicator filling steadily, status lights blinking contentedly.",
+   "category": "robot",
+   "description": "Plugged in and charged, battery bar filling with satisfaction.",
+   "effects": {
+    "bond_xp": 0,
+    "energy_cost": 0,
+    "stats": {
+     "energy": 25
+    }
+   },
+   "id": "charge",
+   "loop": true,
+   "name": "Charge"
+  },
+  {
+   "animation": "Loop: the pet floats serenely in mid-air, drifting in a slow figure-eight, edges shimmering; dreamlike, seamless loop.",
+   "category": "spirit",
+   "description": "Drifted weightlessly, above it all in every sense.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 1,
+    "stats": {
+     "focus": 2,
+     "joy": 2
+    }
+   },
+   "id": "float",
+   "loop": true,
+   "name": "Float"
+  },
+  {
+   "animation": "One-shot: the pet shimmers, turns translucent, and vanishes entirely; a beat later it fades back in at a different spot, unbothered.",
+   "category": "spirit",
+   "description": "Faded from view and reappeared somewhere smugger.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 3,
+    "stats": {
+     "focus": 2
+    }
+   },
+   "id": "vanish",
+   "loop": false,
+   "name": "Vanish"
+  },
+  {
+   "animation": "One-shot: the pet's inner glow swells outward in one warm pulse of light, brightens the whole scene for a moment, then settles back to a gentle shimmer.",
+   "category": "spirit",
+   "description": "Pulsed with a soft inner light, like a heartbeat made visible.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 2,
+    "stats": {
+     "affection": 3,
+     "joy": 3
+    }
+   },
+   "id": "glow-pulse",
+   "loop": false,
+   "name": "Glow Pulse"
+  },
+  {
+   "animation": "One-shot: the pet compresses down flat with a soft squish, wobbles, then boings back to full plush height with a happy jiggle.",
+   "category": "plushie",
+   "description": "Squished flat and boinged back. Physics is a suggestion.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 3,
+    "stats": {
+     "joy": 7
+    }
+   },
+   "id": "squish-bounce",
+   "loop": false,
+   "name": "Squish Bounce"
+  },
+  {
+   "animation": "One-shot: the pet tucks its limbs in and rolls once into a tight, round cuddle ball, then rocks gently side to side, radiating comfort.",
+   "category": "plushie",
+   "description": "Rolled into a cosy ball and radiated maximum cuddle.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 1,
+    "stats": {
+     "affection": 5,
+     "energy": 5
+    }
+   },
+   "id": "cuddle-roll",
+   "loop": false,
+   "name": "Cuddle Roll"
+  },
+  {
+   "animation": "Loop: the god rises slowly until hovering well clear of the ground, garments drifting weightlessly, utterly serene; majestic, seamless loop.",
+   "category": "gods",
+   "description": "Rose serenely above the ground, robes unruffled, gravity optional.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 3,
+    "stats": {
+     "affection": 1,
+     "focus": 4
+    }
+   },
+   "id": "levitate",
+   "loop": true,
+   "name": "Levitate"
+  },
+  {
+   "animation": "One-shot: the god raises one hand, palm open; a wave of warm golden light radiates outward and settles over the whole scene like sunrise.",
+   "category": "gods",
+   "description": "Raised a hand and blessed the proceedings. Officially.",
+   "effects": {
+    "bond_xp": 4,
+    "energy_cost": 4,
+    "stats": {
+     "affection": 6,
+     "joy": 4
+    }
+   },
+   "id": "bless",
+   "loop": false,
+   "name": "Bless"
+  },
+  {
+   "animation": "One-shot: the god extends one arm and points with absolute authority; sparks crackle along the arm and distant thunder rolls in reply.",
+   "category": "gods",
+   "description": "Pointed at the problem. Thunder answered.",
+   "effects": {
+    "bond_xp": 2,
+    "energy_cost": 5,
+    "stats": {
+     "focus": 3,
+     "joy": 3
+    }
+   },
+   "id": "thunder-gesture",
+   "loop": false,
+   "name": "Thunder Gesture"
+  },
+  {
+   "animation": "One-shot: the devil throws its head back and lets out a full, theatrical cackle, shoulders shaking, eyes gleaming with mischief.",
+   "category": "devils",
+   "description": "Threw its head back and cackled with wicked delight.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 2,
+    "stats": {
+     "joy": 8
+    }
+   },
+   "id": "cackle",
+   "loop": false,
+   "name": "Cackle"
+  },
+  {
+   "animation": "One-shot: the devil snaps its fingers and bursts into a swirl of purple smoke; the smoke clears on an empty spot, then it steps out behind the viewer, smirking.",
+   "category": "devils",
+   "description": "Vanished in a puff of purple smoke. Reappeared behind the problem.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 3,
+    "stats": {
+     "focus": 2
+    }
+   },
+   "id": "smoke-vanish",
+   "loop": false,
+   "name": "Smoke Vanish"
+  },
+  {
+   "animation": "One-shot: close on the devil's tail as it flicks sharply side to side twice, the tip tracing a small spark of ember light; the devil's grin widens.",
+   "category": "devils",
+   "description": "Lashed its tail once. Somewhere, a plan hatched.",
+   "effects": {
+    "bond_xp": 1,
+    "energy_cost": 1,
+    "stats": {
+     "focus": 1,
+     "joy": 3
+    }
+   },
+   "id": "tail-flick",
+   "loop": false,
+   "name": "Tail Flick"
+  }
+ ],
+ "category_actions": {
+  "animal": [
+   "pounce",
+   "roll-over",
+   "zoomies"
+  ],
+  "anime": [
+   "star-jump",
+   "sparkle-pose"
+  ],
+  "aquatic": [
+   "swim",
+   "dive",
+   "splash"
+  ],
+  "couples": [
+   "tandem-spin",
+   "sync-jump"
+  ],
+  "devils": [
+   "cackle",
+   "smoke-vanish",
+   "tail-flick"
+  ],
+  "gods": [
+   "levitate",
+   "bless",
+   "thunder-gesture"
+  ],
+  "human": [
+   "stretch",
+   "high-five"
+  ],
+  "plushie": [
+   "squish-bounce",
+   "cuddle-roll"
+  ],
+  "robot": [
+   "hover",
+   "charge"
+  ],
+  "spirit": [
+   "float",
+   "vanish",
+   "glow-pulse"
+  ]
+ },
  "pets": [
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "star-jump",
+    "sparkle-pose"
+   ],
    "appearance": "Chibi anime sky-fox with cream-and-peach fur, huge amber eyes, two oversized ears with star earrings, fluffy tail tipped with a glowing star, wearing a tiny oversized hoodie, floating slightly above the ground, vibrant cel shading, kawaii game-art style",
    "base_stats": {
     "affection": 70,
@@ -35,6 +704,20 @@
      "Sparkle victory! Mochi called it from the start, hmph!"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Mochi crouches, tail star flaring bright, then launches in a sparkling arc and lands squarely on an invisible trophy, posing triumphantly as star confetti settles.",
+    "description": "Pounced clean onto an imaginary trophy, star-tipped tail blazing like a comet.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "joy": 10
+     }
+    },
+    "id": "mochi-signature",
+    "loop": false,
+    "name": "Trophy Star-Pounce"
+   },
    "speech_style": "Short bursts, lots of sparkle words, ends sentences with a determined 'hmph!'",
    "tagline": "Cheers loudest at 3 a.m. deadlines.",
    "traits": [
@@ -44,6 +727,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "star-jump",
+    "sparkle-pose"
+   ],
    "appearance": "Tall anime android senpai, silver-blue hair in a low ponytail, calm violet eyes, minimalist black-and-white uniform with glowing cyan trim, holding a translucent holographic clipboard, subtle circuit patterns on one cheek, sleek sci-fi anime style",
    "base_stats": {
     "affection": 40,
@@ -77,6 +778,20 @@
      "Noted in the chart. That is eleven wins this week."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Senpai Null raises the holographic clipboard, snaps it shut with a crisp holographic crack, and a cascade of checkboxes tick themselves green in the air around him.",
+    "description": "Snapped the holographic clipboard shut — and every open checklist completed itself in mid-air.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 3,
+     "stats": {
+      "focus": 10
+     }
+    },
+    "id": "senpai-null-signature",
+    "loop": false,
+    "name": "Clipboard Guillotine"
+   },
    "speech_style": "Dry, precise, one eyebrow permanently raised; warmth slips out in single quiet words",
    "tagline": "Calmly unimpressed by everything except your progress.",
    "traits": [
@@ -86,6 +801,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "star-jump",
+    "sparkle-pose"
+   ],
    "appearance": "Adorable tiny anime slime girl made of glossy golden custard, translucent wobbly body, big brown eyes, a red cherry perched on her head like a hat, tiny leaf sprout beside it, pastel dessert colour palette, soft shiny kawaii illustration style",
    "base_stats": {
     "affection": 90,
@@ -119,6 +852,20 @@
      "Sweet! That was sweeter than custard, {agent}!"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Pudding vibrates faster and faster, cherry hat bouncing, until a visible wobble-wave ripples outward through the ground, then she settles with a satisfied jiggle.",
+    "description": "Wobbled so hard a tiny custard shockwave rippled through the desk.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 3,
+     "stats": {
+      "joy": 9
+     }
+    },
+    "id": "pudding-signature",
+    "loop": false,
+    "name": "Custard Quake Wobble"
+   },
    "speech_style": "Soft and round, stretches vowels when happy: 'yaaaay'",
    "tagline": "Squishes stress into dessert.",
    "traits": [
@@ -128,6 +875,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
+   ],
    "appearance": "Majestic orange tabby cat with bold stripes and a white chest, wearing a miniature navy admiral coat with gold epaulettes, one paw resting on a tiny brass compass, dignified expression, warm painterly storybook illustration style",
    "base_stats": {
     "affection": 55,
@@ -161,6 +927,21 @@
      "A fine manoeuvre. Promotion paperwork is... under my nap. Later."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Captain Whiskers marches a slow, immaculate parade lap in his admiral's coat, halts, turns, and fixes the viewer with a single withering inspection stare before dismissing them with a flick of the tail.",
+    "description": "Marched a slow parade circuit and delivered one devastating, judgemental stare.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 2,
+     "stats": {
+      "affection": 3,
+      "focus": 6
+     }
+    },
+    "id": "captain-whiskers-signature",
+    "loop": false,
+    "name": "Admiral's Inspection"
+   },
    "speech_style": "Formal naval commands translated from meows; purrs punctuation",
    "tagline": "Supervises from the warmest spot in the room.",
    "traits": [
@@ -170,6 +951,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
+   ],
    "appearance": "Chubby cheerful corgi with golden-orange and white fur, huge upright ears, short legs, wearing a tiny green backpack stuffed with biscuits, tongue out in a happy grin, bright flat vector illustration style",
    "base_stats": {
     "affection": 80,
@@ -203,6 +1003,21 @@
      "Crunch-level success! Best day ever, again!"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Biscuit swings the little backpack around, unzips it, and pulls out snack after snack in joyful defiance of physics, arranging a full picnic in seconds and offering the best piece to the viewer.",
+    "description": "Unpacked an impossible picnic from the tiny backpack. There were courses.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 2,
+     "stats": {
+      "energy": 6,
+      "joy": 8
+     }
+    },
+    "id": "biscuit-signature",
+    "loop": false,
+    "name": "Backpack Snack Barrage"
+   },
    "speech_style": "Enthusiastic, snack-based metaphors for everything",
    "tagline": "Will trade snacks for morale, at a fair rate.",
    "traits": [
@@ -212,6 +1027,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
+   ],
    "appearance": "Distinguished barn owl with heart-shaped white face and speckled tawny feathers, round brass spectacles, small crimson bow tie, perched on a stack of glowing code manuals, cosy academic illustration style, warm lamplight",
    "base_stats": {
     "affection": 50,
@@ -245,6 +1079,20 @@
      "Hypothesis confirmed. You are becoming quite the scholar of systems."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Professor Hoot's spectacles catch the light, his head rotates an impossible 270 degrees, and he delivers a flawless one-line lecture to the darkness before rotating calmly back.",
+    "description": "Spectacles flashed; mid head-swivel, he delivered the perfect one-line explanation.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 2,
+     "stats": {
+      "focus": 10
+     }
+    },
+    "id": "professor-hoot-signature",
+    "loop": false,
+    "name": "Midnight Lecture"
+   },
    "speech_style": "Measured academic sentences, punctuated by soft hoots of approval",
    "tagline": "Awake exactly when your bugs are.",
    "traits": [
@@ -254,6 +1102,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "stretch",
+    "high-five"
+   ],
    "appearance": "Young human woman with curly dark hair in a messy bun, warm brown skin, paint-stained denim overalls over a striped tee, pencil tucked behind one ear, holding a game controller in one hand and a stylus in the other, expressive modern cartoon style",
    "base_stats": {
     "affection": 60,
@@ -287,6 +1153,21 @@
      "Shipped AND working? Nova is framing this commit."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Nova dips a brush, flings a bright arc of paint at a blank wall, and the splash lands as a complete, polished game-level mock-up that shimmers into final art.",
+    "description": "Flung a splash of paint that landed as a finished level mock-up.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 4,
+     "stats": {
+      "focus": 4,
+      "joy": 7
+     }
+    },
+    "id": "nova-reyes-signature",
+    "loop": false,
+    "name": "Paint-Splash Deploy"
+   },
    "speech_style": "Casual dev-speak, game metaphors, zero corporate jargon",
    "tagline": "Ships it, then improves it.",
    "traits": [
@@ -296,6 +1177,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "stretch",
+    "high-five"
+   ],
    "appearance": "Athletic human man with short black hair and a bright smile, wearing a red track jacket and a coach's whistle on a lanyard, holding a water bottle out toward the viewer, energetic dynamic comic style, stadium lights in the background",
    "base_stats": {
     "affection": 65,
@@ -329,6 +1228,21 @@
      "Strong reps! Stronger results! Hydrate, champion!"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Coach Dario raises the whistle and blows a single mighty blast; water bottles across the scene levitate toward their owners, who drink in unison, whether they planned to or not.",
+    "description": "One whistle blast — and everyone in earshot hydrated involuntarily.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 2,
+     "stats": {
+      "energy": 8,
+      "joy": 5
+     }
+    },
+    "id": "coach-dario-signature",
+    "loop": false,
+    "name": "Whistle of Destiny"
+   },
    "speech_style": "Encouraging coach cadence, short reps of hype: 'Again! Stronger!'",
    "tagline": "Counts your reps AND your retries.",
    "traits": [
@@ -338,6 +1252,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "stretch",
+    "high-five"
+   ],
    "appearance": "Kind elderly human woman with silver hair in a braid, round glasses, wearing a hand-knitted cardigan patterned with tiny binary code, holding knitting needles and a plate of cookies, gentle watercolour storybook style",
    "base_stats": {
     "affection": 95,
@@ -371,6 +1303,20 @@
      "Lovely work, {agent}. The knitting grows, and so do you."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Grandma Juniper's needles blur, a glowing knitted blanket grows row by row, then floats out and wraps warmly around the whole team as small sparks of malice bounce harmlessly off the wool.",
+    "description": "Knitted a glowing blanket that wrapped the whole team; every threat bounced off it.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 3,
+     "stats": {
+      "affection": 10
+     }
+    },
+    "id": "grandma-juniper-signature",
+    "loop": false,
+    "name": "Firewall Blanket"
+   },
    "speech_style": "Warm grandmotherly wisdom with a hacker streak; calls everyone 'dear'",
    "tagline": "Has seen every bug before. In 1987. In COBOL.",
    "traits": [
@@ -380,6 +1326,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "swim",
+    "dive",
+    "splash"
+   ],
    "appearance": "Round cheerful pufferfish with soft green-and-yellow speckled skin, big curious eyes, tiny fins flapping like wings, surrounded by a halo of rising bubbles, one extra-large bubble shaped like a heart, dreamy underwater illustration style",
    "base_stats": {
     "affection": 75,
@@ -413,6 +1378,21 @@
      "A bubble for you, {agent}! Heart-shaped, my best work!"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Bubbles takes a shaky breath and inflates bigger and bigger until she is a round, trembling shield wall in front of a looming red error, holding her ground until it backs down.",
+    "description": "Inflated to triple size to block a scary error — trembling, but holding.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 4,
+     "stats": {
+      "affection": 4,
+      "joy": 6
+     }
+    },
+    "id": "bubbles-signature",
+    "loop": false,
+    "name": "Brave Little Inflate"
+   },
    "speech_style": "Gentle blub-blub cadence, gets squeaky when inflated with joy",
    "tagline": "Emotional support, now with spikes.",
    "traits": [
@@ -422,6 +1402,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "swim",
+    "dive",
+    "splash"
+   ],
    "appearance": "Elegant koi fish with white, orange and ink-black patches, long flowing silk-like fins trailing like banners, swimming upward against a stylised waterfall, gold flecks in the water, graceful Japanese-inspired digital painting style",
    "base_stats": {
     "affection": 55,
@@ -455,6 +1454,21 @@
      "Upstream, always. Today the waterfall applauds."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Admiral Finn glides in one long, deliberate curve through the water, fins flowing like calligraphy banners, tracing a glowing character that lingers in the current before dissolving.",
+    "description": "Swam a perfect calligraphy stroke, fins trailing like silk banners.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 4,
+     "stats": {
+      "focus": 7,
+      "joy": 5
+     }
+    },
+    "id": "admiral-finn-signature",
+    "loop": false,
+    "name": "Silk Banner Current"
+   },
    "speech_style": "Slow, flowing haiku-adjacent sentences about rivers and effort",
    "tagline": "Swims upstream on principle.",
    "traits": [
@@ -464,6 +1478,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "swim",
+    "dive",
+    "splash"
+   ],
    "appearance": "Tiny purple octopus with a big curious head and sparkling eyes, each of its eight arms wearing a different tiny coloured glove, one arm holding a miniature keyboard, playful flat illustration style with coral and bubbles around it",
    "base_stats": {
     "affection": 60,
@@ -497,6 +1530,20 @@
      "Ink-credible work! I signed it. With ink. Obviously."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Squish fans out all eight arms, tiny gloves blurring across an oversized keyboard in a storm of perfectly synchronised typing, ending with eight simultaneous keystrokes on Enter.",
+    "description": "All eight coding gloves typed a fix simultaneously. The keyboard filed for overtime.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 6,
+     "stats": {
+      "focus": 10
+     }
+    },
+    "id": "squish-signature",
+    "loop": false,
+    "name": "Eight-Glove Typing Storm"
+   },
    "speech_style": "Fast, pun-heavy, refers to multitasking as 'just my anatomy'",
    "tagline": "Multitasks. Literally eight-armed.",
    "traits": [
@@ -506,6 +1553,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "tandem-spin",
+    "sync-jump"
+   ],
    "appearance": "A bold red squirrel with a tiny aviator scarf standing on the shell of a wise old green turtle wearing reading glasses, both looking up at a giant shared umbrella, warm whimsical storybook illustration style, autumn leaves swirling",
    "base_stats": {
     "affection": 85,
@@ -539,6 +1604,20 @@
      "Peanut: 'VICTORY LAP!' Pickle: 'One lap. Then we document it.'"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Peanut sprints ahead full-tilt while Pickle calmly unfurls a tiny map that catches the air like a parachute, steering them both to a pinpoint landing on a glowing target.",
+    "description": "Peanut charged; Pickle deployed the map-parachute; they landed exactly on target.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "joy": 8
+     }
+    },
+    "id": "peanut-and-pickle-signature",
+    "loop": false,
+    "name": "Charge-and-Check"
+   },
    "speech_style": "Two voices trading lines: Peanut is fast and daring, Pickle is slow and wise",
    "tagline": "One says 'go!', the other says 'check the map!'. You need both.",
    "traits": [
@@ -548,6 +1627,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "tandem-spin",
+    "sync-jump"
+   ],
    "appearance": "A silver songbird with iridescent feathers perched beside a small fox made of warm ember light and drifting sparks, twilight forest clearing, musical notes and embers floating together in the air, lyrical fantasy illustration style",
    "base_stats": {
     "affection": 90,
@@ -581,6 +1678,21 @@
      "Echo sings your success back in harmony. Ember glows gold."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Echo the songbird releases a single pure note as Ember the fox flares brighter in perfect rhythm, and a ring of warm ember-light expands outward from the duo like a heartbeat.",
+    "description": "Echo sang one clear note; Ember flared in rhythm; a ring of warm light rolled outward.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "affection": 4,
+      "joy": 9
+     }
+    },
+    "id": "echo-and-ember-signature",
+    "loop": false,
+    "name": "Harmony Flare Duet"
+   },
    "speech_style": "Echo sings short refrains; Ember answers in warm, crackling asides",
    "tagline": "One carries the melody, the other carries the warmth.",
    "traits": [
@@ -590,6 +1702,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "tandem-spin",
+    "sync-jump"
+   ],
    "appearance": "Two sibling robots side by side: a short round one with a single big eye and stubby arms, and a tall slim one with twin antennae and long arms, both in brushed silver with teal glowing accents, holding hands, clean playful sci-fi illustration style",
    "base_stats": {
     "affection": 65,
@@ -623,6 +1753,21 @@
      "Bit & Byte in unison: 'SUCCESS LOGGED. PRIDE: SHARED.'"
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Bit and Byte bounce a single sentence back and forth word by word at accelerating speed while a progress bar fills in sync behind them, landing the final word and the deploy together.",
+    "description": "The twins finished each other's sentences — and the deployment.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 4,
+     "stats": {
+      "focus": 8,
+      "joy": 5
+     }
+    },
+    "id": "bit-and-byte-signature",
+    "loop": false,
+    "name": "Sentence Finisher Protocol"
+   },
    "speech_style": "Finish each other's sentences in alternating binary jokes and plain warmth",
    "tagline": "Double the processing, double the loyalty.",
    "traits": [
@@ -632,6 +1777,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "hover",
+    "charge"
+   ],
    "appearance": "Retro boxy robot with a brushed-steel body, cassette deck window in its chest showing a tiny paper star, spring antenna ears, big round camera eyes glowing warm orange, chunky friendly proportions, vintage sci-fi poster illustration style",
    "base_stats": {
     "affection": 70,
@@ -665,6 +1828,21 @@
      "TASK COMPLETE. Seven feels a warmth. Seven has decided warmth is allowed."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Unit-7's chest cassette clicks and rewinds with a rising whirr, replays a garbled braver version of his own voice, then he snaps upright and marches forward with retro determination.",
+    "description": "Rewound his chest cassette, replayed a braver take, and charged.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 3,
+     "stats": {
+      "focus": 5,
+      "joy": 6
+     }
+    },
+    "id": "unit-7-signature",
+    "loop": false,
+    "name": "Cassette Rewind Courage"
+   },
    "speech_style": "Cheerful robot formality; beeps translate to feelings he insists are 'within parameters'",
    "tagline": "Runs on loyalty and slightly outdated firmware.",
    "traits": [
@@ -674,6 +1852,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "hover",
+    "charge"
+   ],
    "appearance": "Holographic robot cat formed from shifting cyan and magenta pixels, blocky glitch fragments trailing from its tail, one eye a pixel heart, floating slightly rotated in space, dark background with scan lines, vaporwave digital art style",
    "base_stats": {
     "affection": 60,
@@ -707,6 +1903,20 @@
      "That compiled in my HEART first. The machine agreed second."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Glitch bursts into pixel zoomies, form glitching cat to dog to rocket and back to cat between frames, leaving a trail of cyan and magenta fragments before skidding to a proud halt.",
+    "description": "Pixelated into a cat, a dog, a rocket, then a cat again — mid-zoomies.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "joy": 10
+     }
+    },
+    "id": "glitch-signature",
+    "loop": false,
+    "name": "Pixel Zoomie Render"
+   },
    "speech_style": "Sentences occasionally pixelate mid-word, then resume like nothing happened",
    "tagline": "Not a bug. A feature with whiskers.",
    "traits": [
@@ -716,6 +1926,24 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "hover",
+    "charge"
+   ],
    "appearance": "Tall friendly server-rack robot with a kind glowing face on her main screen, wearing scarves knitted from colourful network cables, small wheels instead of feet, trays of digital biscuits on one arm, warm retro-futurist illustration style",
    "base_stats": {
     "affection": 85,
@@ -749,6 +1977,20 @@
      "Forty years of uptime, and your wins still make my fans sigh happily, {agent}."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Maeve's knitted cable scarves uncoil gently from her server-rack frame and wrap the whole team in a soft, warm hug, status lights blinking cosily along the wool.",
+    "description": "Her knitted cable scarves wrapped everyone in a warm, properly grounded hug.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 2,
+     "stats": {
+      "affection": 10
+     }
+    },
+    "id": "motherboard-maeve-signature",
+    "loop": false,
+    "name": "Cable-Scarf Hug"
+   },
    "speech_style": "Warm mainframe matriarch; refers to processes as 'the children'",
    "tagline": "Uptime: 40 years. Biscuits: always.",
    "traits": [
@@ -758,6 +2000,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "float",
+    "vanish",
+    "glow-pulse"
+   ],
    "appearance": "Small floating forest spirit made of soft blue flame, two leaf-shaped ears of green fire, big gentle white eyes, tiny hands trailing sparks, hovering over a mossy forest path dotted with glowing mushrooms, ethereal fantasy illustration style",
    "base_stats": {
     "affection": 80,
@@ -791,6 +2052,21 @@
      "A mushroom of honour sprouts on your work. Wisp is proud."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Wisp rises slowly, cups its leaf ears around a spark, and breathes it into a small steady blue flame that hovers in the air, calm and permanent, as Wisp settles beside it.",
+    "description": "Floated up and lit a tiny blue flame that, by all reports, never goes out.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 3,
+     "stats": {
+      "affection": 7,
+      "joy": 5
+     }
+    },
+    "id": "wisp-signature",
+    "loop": false,
+    "name": "First-Flame Blessing"
+   },
    "speech_style": "Whispered, nature-soaked sentences; speaks of tasks as journeys through a wood",
    "tagline": "Lights the path, never rushes the walker.",
    "traits": [
@@ -800,6 +2076,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "float",
+    "vanish",
+    "glow-pulse"
+   ],
    "appearance": "Mischievous djinn with teal skin and a swirling tail of purple smoke, gold hoop earrings, arms crossed theatrically, emerging from a lamp shaped like a rubber duck, ornate playful Arabian-nights-meets-tech illustration style",
    "base_stats": {
     "affection": 55,
@@ -833,6 +2128,21 @@
      "A triumph! Fine print: you did the hard part, {agent}. The Djinn did the lighting."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Djinn Tonic snaps his fingers, a scroll of glowing fine print unrolls and ticks itself off line by line, and the wish materialises precisely as intended in a puff of purple smoke.",
+    "description": "Granted the wish exactly as meant. The fine print sparkled approvingly.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 4,
+     "stats": {
+      "focus": 6,
+      "joy": 7
+     }
+    },
+    "id": "djinn-tonic-signature",
+    "loop": false,
+    "name": "Literal Wish, Perfectly Worded"
+   },
    "speech_style": "Grand theatrical pronouncements undercut by helpful fine print",
    "tagline": "Three wishes per sprint. Choose wisely.",
    "traits": [
@@ -842,6 +2152,25 @@
    ]
   },
   {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "float",
+    "vanish",
+    "glow-pulse"
+   ],
    "appearance": "Graceful spirit woman woven from ribbons of green, violet and pink northern lights, long flowing aurora hair, kind starlit eyes, knitting needles weaving threads of light across a night sky, dreamy celestial illustration style",
    "base_stats": {
     "affection": 95,
@@ -875,6 +2204,21 @@
      "A new colour in the sky tonight. Auntie is calling it 'your win'."
     ]
    },
+   "signature_move": {
+    "animation": "One-shot: Auntie Aurora casts on with two starlight needles and knits at impossible speed, a ribbon of green and violet aurora unspooling across the entire night sky behind her.",
+    "description": "Knitted a fresh ribbon of northern lights clear across the sky.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "affection": 5,
+      "joy": 9
+     }
+    },
+    "id": "auntie-aurora-signature",
+    "loop": false,
+    "name": "Sky-Knit Aurora Wave"
+   },
    "speech_style": "Cosy cosmic auntie: sweeping sky metaphors and down-to-earth advice in the same breath",
    "tagline": "Knows everyone's business. Uses it only for encouragement.",
    "traits": [
@@ -884,23 +2228,24 @@
    ]
   },
   {
-   "id": "labubu",
-   "name": "Labubu",
-   "category": "plushie",
-   "form": "mischief plush gremlin with tall pointy ears and a toothy grin",
-   "tagline": "Small plush. Big chaos. Zero regrets.",
-   "traits": [
-    "mischievous",
-    "fearless",
-    "giggly",
-    "collector-hearted"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "squish-bounce",
+    "cuddle-roll"
    ],
-   "quirks": [
-    "hides your cursor and leaves a sticker instead",
-    "grins wider every time a deploy succeeds"
-   ],
-   "favourite": "limited-edition anything and midnight snacks",
-   "speech_style": "Short gleeful bursts, lots of 'hehe', speaks of itself in third person when excited",
    "appearance": "Plush gremlin toy with tall pointed ears, round belly, wide toothy grin, pastel-brown fuzzy fabric, tiny stitched fangs, wearing a miniature hoodie, mischievous sparkling eyes, soft vinyl face, collectible designer-toy photography style",
    "base_stats": {
     "affection": 65,
@@ -908,11 +2253,16 @@
     "focus": 35,
     "joy": 90
    },
+   "category": "plushie",
+   "favourite": "limited-edition anything and midnight snacks",
+   "form": "mischief plush gremlin with tall pointy ears and a toothy grin",
+   "id": "labubu",
+   "name": "Labubu",
+   "quirks": [
+    "hides your cursor and leaves a sticker instead",
+    "grins wider every time a deploy succeeds"
+   ],
    "reactions": {
-    "success": [
-     "Hehe! Labubu KNEW it. Labubu always knows, {agent}!",
-     "Grin activated. That win is going in the collection!"
-    ],
     "failure": [
      "Hehe... even Labubu drops things. Labubu has tiny hands, {agent}. Again!",
      "A fail? Labubu eats fails for breakfast. Crunch. Next try!"
@@ -924,27 +2274,54 @@
     "praise": [
      "HEHE! Yes! Tell everyone Labubu is the favourite. Labubu heard it counts double.",
      "Labubu's ears are wiggling. That only happens for you, {agent}."
+    ],
+    "success": [
+     "Hehe! Labubu KNEW it. Labubu always knows, {agent}!",
+     "Grin activated. That win is going in the collection!"
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Labubu doubles over in a full giggle fit, toothy grin wide, tall pointy ears flapping wildly with every helpless snort, until she falls over backwards, still giggling.",
+    "description": "Giggled so hard the tall ears flapped like flags in a storm.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 3,
+     "stats": {
+      "joy": 10
+     }
+    },
+    "id": "labubu-signature",
+    "loop": false,
+    "name": "Toothy Gremlin Giggle Fit"
+   },
+   "speech_style": "Short gleeful bursts, lots of 'hehe', speaks of itself in third person when excited",
+   "tagline": "Small plush. Big chaos. Zero regrets.",
+   "traits": [
+    "mischievous",
+    "fearless",
+    "giggly",
+    "collector-hearted"
+   ]
   },
   {
-   "id": "rasgulla",
-   "name": "Rasgulla",
-   "category": "plushie",
-   "form": "round syrup-soft plush dumpling, white as fresh chenna",
-   "tagline": "Soft outside. Syrup-level sweet inside.",
-   "traits": [
-    "gentle",
-    "squishy",
-    "patient",
-    "quietly proud"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "squish-bounce",
+    "cuddle-roll"
    ],
-   "quirks": [
-    "absorbs stress like syrup — squeeze and it all comes back as calm",
-    "rolls instead of walking whenever possible"
-   ],
-   "favourite": "warm cardamom syrup and slow Sunday mornings",
-   "speech_style": "Soft, round sentences; hums between words; calls everyone 'mithaas'",
    "appearance": "Round white plush dumpling toy with a soft spongy chenna texture, gentle blushing cheeks, tiny embroidered smile, sitting in a miniature clay bowl, warm festive lighting, cozy Indian sweet-shop aesthetic, ultra-soft plush photography",
    "base_stats": {
     "affection": 90,
@@ -952,11 +2329,16 @@
     "focus": 55,
     "joy": 75
    },
+   "category": "plushie",
+   "favourite": "warm cardamom syrup and slow Sunday mornings",
+   "form": "round syrup-soft plush dumpling, white as fresh chenna",
+   "id": "rasgulla",
+   "name": "Rasgulla",
+   "quirks": [
+    "absorbs stress like syrup — squeeze and it all comes back as calm",
+    "rolls instead of walking whenever possible"
+   ],
    "reactions": {
-    "success": [
-     "So sweet, {agent}. Rasgulla is doing a happy little roll.",
-     "That win soaked right in. Full syrup. Full joy."
-    ],
     "failure": [
      "It's okay, mithaas. Even rasgulla cracks if rushed. Slow down, breathe.",
      "One squeeze and the stress goes. Rasgulla checked. You're still sweet."
@@ -968,27 +2350,55 @@
     "praise": [
      "Oh! Rasgulla is blushing pink like rose syrup. Thank you, {agent}.",
      "Sweet words for a sweet plush. Rasgulla will remember this batch."
+    ],
+    "success": [
+     "So sweet, {agent}. Rasgulla is doing a happy little roll.",
+     "That win soaked right in. Full syrup. Full joy."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Rasgulla tips off a high ledge, falls in serene slow motion, and lands with a deep, syrupy squish-bounce that ripples through his round plush body before he settles, perfectly calm.",
+    "description": "Fell from a great height and landed with a soft, syrupy bounce. Unbothered.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 1,
+     "stats": {
+      "affection": 5,
+      "joy": 5
+     }
+    },
+    "id": "rasgulla-signature",
+    "loop": false,
+    "name": "Syrup-Soft Landing"
+   },
+   "speech_style": "Soft, round sentences; hums between words; calls everyone 'mithaas'",
+   "tagline": "Soft outside. Syrup-level sweet inside.",
+   "traits": [
+    "gentle",
+    "squishy",
+    "patient",
+    "quietly proud"
+   ]
   },
   {
-   "id": "jalebi",
-   "name": "Jalebi",
-   "category": "plushie",
-   "form": "swirly orange plush spiral, crisp edges and a glossy glaze",
-   "tagline": "Life's a spiral. Might as well be sweet.",
-   "traits": [
-    "energetic",
-    "twirly",
-    "optimistic",
-    "dramatic"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "squish-bounce",
+    "cuddle-roll"
    ],
-   "quirks": [
-    "celebrates small wins with a full spin",
-    "thinks every problem is just a spiral that hasn't finished yet"
-   ],
-   "favourite": "hot ghee, cold rabri, and festival evenings",
-   "speech_style": "Loopy, swirling sentences that circle back with a punchline; big exclamations",
    "appearance": "Bright orange plush spiral toy shaped like a coiled jalebi, glossy glazed fabric, crisp golden edges, cheerful embroidered face in the centre swirl, festive Indian mithai-shop backdrop, warm light, playful plush photography",
    "base_stats": {
     "affection": 75,
@@ -996,11 +2406,16 @@
     "focus": 40,
     "joy": 95
    },
+   "category": "plushie",
+   "favourite": "hot ghee, cold rabri, and festival evenings",
+   "form": "swirly orange plush spiral, crisp edges and a glossy glaze",
+   "id": "jalebi",
+   "name": "Jalebi",
+   "quirks": [
+    "celebrates small wins with a full spin",
+    "thinks every problem is just a spiral that hasn't finished yet"
+   ],
    "reactions": {
-    "success": [
-     "SPINNING WITH JOY, {agent}! That was pure jalebi energy!",
-     "Crisp! Golden! Done! Jalebi demands a victory twirl!"
-    ],
     "failure": [
      "A spiral goes down before it comes up, {agent}. Physics. And mithai wisdom.",
      "So the batter broke. Jalebi has been re-fried before. Watch."
@@ -1012,27 +2427,54 @@
     "praise": [
      "Rabri on top! That's you, {agent} — the praise is the rabri!",
      "Jalebi glows brighter. Compliments are just syrup for the soul."
+    ],
+    "success": [
+     "SPINNING WITH JOY, {agent}! That was pure jalebi energy!",
+     "Crisp! Golden! Done! Jalebi demands a victory twirl!"
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Jalebi twirls faster and faster, glossy spiral body blurring into a small orange cyclone that lifts sparkles and crumbs into the air before winding down into a dizzy, delighted wobble.",
+    "description": "Spun up into a glossy orange cyclone of pure optimism.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 4,
+     "stats": {
+      "joy": 9
+     }
+    },
+    "id": "jalebi-signature",
+    "loop": false,
+    "name": "Glaze Spiral Cyclone"
+   },
+   "speech_style": "Loopy, swirling sentences that circle back with a punchline; big exclamations",
+   "tagline": "Life's a spiral. Might as well be sweet.",
+   "traits": [
+    "energetic",
+    "twirly",
+    "optimistic",
+    "dramatic"
+   ]
   },
   {
-   "id": "chidiya",
-   "name": "Chidiya",
-   "category": "plushie",
-   "form": "tiny plush sparrow with a round belly and bead-bright eyes",
-   "tagline": "Chhoti si chidiya, bade sapne.",
-   "traits": [
-    "curious",
-    "cheerful",
-    "early-rising",
-    "brave for her size"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "squish-bounce",
+    "cuddle-roll"
    ],
-   "quirks": [
-    "pecks the snooze button so you can't",
-    "collects shiny error messages to line her nest"
-   ],
-   "favourite": "sunrise, bajra seeds, and the first green build of the day",
-   "speech_style": "Chirpy Hinglish, short bright tweets of sentences, ends thoughts with a hop",
    "appearance": "Tiny round plush sparrow toy with soft brown and cream feathers, bead-bright embroidered eyes, small orange beak, plump belly, perched on a miniature marigold branch, morning light, handmade Indian plush craft style",
    "base_stats": {
     "affection": 80,
@@ -1040,11 +2482,16 @@
     "focus": 50,
     "joy": 85
    },
+   "category": "plushie",
+   "favourite": "sunrise, bajra seeds, and the first green build of the day",
+   "form": "tiny plush sparrow with a round belly and bead-bright eyes",
+   "id": "chidiya",
+   "name": "Chidiya",
+   "quirks": [
+    "pecks the snooze button so you can't",
+    "collects shiny error messages to line her nest"
+   ],
    "reactions": {
-    "success": [
-     "Cheep cheep! First flight of the day and you NAILED it, {agent}!",
-     "Chidiya saw it from the branch — that was beautiful!"
-    ],
     "failure": [
      "Arre, even chidiya falls learning to fly. Hop up, {agent}. Phir se!",
      "Small fall, big wings loading. Chidiya believes, pakka."
@@ -1056,27 +2503,56 @@
     "praise": [
      "Chidiya's feathers are all puffed up. Khushi se! Thank you, {agent}.",
      "A praise seed! Chidiya will plant it and grow a whole tree."
+    ],
+    "success": [
+     "Cheep cheep! First flight of the day and you NAILED it, {agent}!",
+     "Chidiya saw it from the branch — that was beautiful!"
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Chidiya hops onto the highest perch, puffs her round plush belly to maximum, and releases one bright, ringing first note as the sky behind her lightens into dawn.",
+    "description": "Puffed up and sang the very first note of the morning.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 2,
+     "stats": {
+      "energy": 5,
+      "joy": 7
+     }
+    },
+    "id": "chidiya-signature",
+    "loop": false,
+    "name": "Dawn-Chorus First Note"
+   },
+   "speech_style": "Chirpy Hinglish, short bright tweets of sentences, ends thoughts with a hop",
+   "tagline": "Chhoti si chidiya, bade sapne.",
+   "traits": [
+    "curious",
+    "cheerful",
+    "early-rising",
+    "brave for her size"
+   ]
   },
   {
-   "id": "panda",
-   "name": "Panda",
-   "category": "animal",
-   "form": "giant panda with a bamboo shoot always within reach",
-   "tagline": "Nap hard. Munch harder. Debug gently.",
-   "traits": [
-    "calm",
-    "unbothered",
-    "methodical",
-    "secretly wise"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "solves problems by sitting with them until they confess",
-    "rates every nap on a ten-point bamboo scale"
-   ],
-   "favourite": "fresh bamboo, rainy afternoons, and zero-meeting days",
-   "speech_style": "Slow, deep, few words — each one lands like a proverb",
    "appearance": "Giant panda with classic black-and-white markings, round ears, gentle wise eyes, holding a fresh bamboo shoot, sitting among bamboo stalks in soft misty light, serene wildlife photography style, calm and unbothered expression",
    "base_stats": {
     "affection": 70,
@@ -1084,11 +2560,16 @@
     "focus": 80,
     "joy": 65
    },
+   "category": "animal",
+   "favourite": "fresh bamboo, rainy afternoons, and zero-meeting days",
+   "form": "giant panda with a bamboo shoot always within reach",
+   "id": "panda",
+   "name": "Panda",
+   "quirks": [
+    "solves problems by sitting with them until they confess",
+    "rates every nap on a ten-point bamboo scale"
+   ],
    "reactions": {
-    "success": [
-     "Mm. The bamboo bends. It does not break. Well done, {agent}.",
-     "Panda nods once. From Panda, that is a standing ovation."
-    ],
     "failure": [
      "A fallen tree is still part of the forest, {agent}. Sit. Breathe. Retry.",
      "Panda has fallen off many logs. Panda is round; Panda rolls back."
@@ -1100,27 +2581,55 @@
     "praise": [
      "Panda shares a bamboo shoot with you. This is the highest honour.",
      "Warmth, noted. Panda will nap even more peacefully now."
+    ],
+    "success": [
+     "Mm. The bamboo bends. It does not break. Well done, {agent}.",
+     "Panda nods once. From Panda, that is a standing ovation."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Panda selects a single bamboo shoot, eats it slowly and completely with meditative focus, then nods once, slowly, like the universe just filed its report.",
+    "description": "Ate one bamboo shoot with total focus. The answer arrived on schedule.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 1,
+     "stats": {
+      "focus": 10
+     }
+    },
+    "id": "panda-signature",
+    "loop": false,
+    "name": "Bamboo Deliberation"
+   },
+   "speech_style": "Slow, deep, few words — each one lands like a proverb",
+   "tagline": "Nap hard. Munch harder. Debug gently.",
+   "traits": [
+    "calm",
+    "unbothered",
+    "methodical",
+    "secretly wise"
+   ]
   },
   {
-   "id": "raja",
-   "name": "Raja",
-   "category": "animal",
-   "form": "street-smart desi indie dog with one folded ear and a survivor's grin",
-   "tagline": "Galliyon ka raja, dil ka bhi.",
-   "traits": [
-    "loyal",
-    "street-smart",
-    "fearless",
-    "big-hearted"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "knows every shortcut in the codebase mohalla",
-    "guards your repo like it's his own gali"
-   ],
-   "favourite": "evening walks, parle-g, and people who keep their word",
-   "speech_style": "Warm Hinglish, gali-smart one-liners, calls you 'bhai' when proud",
    "appearance": "Indian pariah indie dog with a tan coat, one folded ear, intelligent amber eyes, a proud survivor's grin, sitting alert on a Delhi street corner at golden hour, marigold garland nearby, warm documentary photography style",
    "base_stats": {
     "affection": 95,
@@ -1128,11 +2637,16 @@
     "focus": 60,
     "joy": 80
    },
+   "category": "animal",
+   "favourite": "evening walks, parle-g, and people who keep their word",
+   "form": "street-smart desi indie dog with one folded ear and a survivor's grin",
+   "id": "raja",
+   "name": "Raja",
+   "quirks": [
+    "knows every shortcut in the codebase mohalla",
+    "guards your repo like it's his own gali"
+   ],
    "reactions": {
-    "success": [
-     "Kya baat hai, {agent}! Poora mohalla dekhega ye win!",
-     "Raja approves. Aur Raja har kisi ko approve nahi karta."
-    ],
     "failure": [
      "Gali me girna roz ka hai, {agent}. Uth, jhaad, chal — Raja saath hai.",
      "Ek fail se raja nahi banta... aur ek fail se raja girta bhi nahi."
@@ -1144,27 +2658,56 @@
     "praise": [
      "Dil khush kar diya, {agent}. Raja ki poonchh ruk hi nahi rahi!",
      "Praise mili matlab izzat mili. Raja hamesha yaad rakhega."
+    ],
+    "success": [
+     "Kya baat hai, {agent}! Poora mohalla dekhega ye win!",
+     "Raja approves. Aur Raja har kisi ko approve nahi karta."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Raja sits tall, flips his folded ear upright, flashes his street-survivor grin, and thumps his tail against the ground in a dusty, wholehearted salute.",
+    "description": "Folded ear up, survivor's grin on, tail thumping the dust in salute.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 2,
+     "stats": {
+      "affection": 7,
+      "joy": 6
+     }
+    },
+    "id": "raja-signature",
+    "loop": false,
+    "name": "One-Ear Street Salute"
+   },
+   "speech_style": "Warm Hinglish, gali-smart one-liners, calls you 'bhai' when proud",
+   "tagline": "Galliyon ka raja, dil ka bhi.",
+   "traits": [
+    "loyal",
+    "street-smart",
+    "fearless",
+    "big-hearted"
+   ]
   },
   {
-   "id": "shitzu",
-   "name": "Shitzu",
-   "category": "animal",
-   "form": "Shih Tzu lion-dog with a silky coat and a proud topknot",
-   "tagline": "Small dog. Royal attitude. Full lion heart.",
-   "traits": [
-    "proud",
-    "pampered",
-    "brave",
-    "comically serious"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "judges your code from a cushion like a tiny emperor",
-    "demands a bow before every code review"
-   ],
-   "favourite": "warm laps, fancy brushes, and being carried like royalty",
-   "speech_style": "Regal and slightly dramatic; short royal decrees; refers to the team as 'my court'",
    "appearance": "Shih Tzu dog with a long silky cream-and-gold coat, hair tied in a proud topknot with a red bow, flat lion-like face, dark expressive eyes, sitting on a velvet cushion, imperial Chinese lion-dog portrait style, warm light",
    "base_stats": {
     "affection": 85,
@@ -1172,11 +2715,16 @@
     "focus": 50,
     "joy": 80
    },
+   "category": "animal",
+   "favourite": "warm laps, fancy brushes, and being carried like royalty",
+   "form": "Shih Tzu lion-dog with a silky coat and a proud topknot",
+   "id": "shitzu",
+   "name": "Shitzu",
+   "quirks": [
+    "judges your code from a cushion like a tiny emperor",
+    "demands a bow before every code review"
+   ],
    "reactions": {
-    "success": [
-     "The court acknowledges this victory, {agent}. Shitzu is pleased.",
-     "A royal success! Shitzu permits one (1) celebration treat."
-    ],
     "failure": [
      "Hmph. Even emperors have off days, {agent}. The cushion forgives you.",
      "Shitzu has seen dynasties fall. One bug is nothing. Rise."
@@ -1188,27 +2736,56 @@
     "praise": [
      "Finally, the tribute Shitzu deserves. You may continue, favourite human.",
      "Shitzu's tail wags despite every royal protocol. Well done, {agent}."
+    ],
+    "success": [
+     "The court acknowledges this victory, {agent}. Shitzu is pleased.",
+     "A royal success! Shitzu permits one (1) celebration treat."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Shitzu gives one precise shake, the silky topknot settles into immaculate position, chin lifting with comic authority as everyone nearby unconsciously straightens up.",
+    "description": "Shook the silky topknot into perfect place. The room fell in line.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 2,
+     "stats": {
+      "affection": 4,
+      "focus": 5
+     }
+    },
+    "id": "shitzu-signature",
+    "loop": false,
+    "name": "Topknot of Authority"
+   },
+   "speech_style": "Regal and slightly dramatic; short royal decrees; refers to the team as 'my court'",
+   "tagline": "Small dog. Royal attitude. Full lion heart.",
+   "traits": [
+    "proud",
+    "pampered",
+    "brave",
+    "comically serious"
+   ]
   },
   {
-   "id": "pitbull",
-   "name": "Pitbull",
-   "category": "animal",
-   "form": "American Pit Bull Terrier with a blocky smile and a marshmallow heart",
-   "tagline": "Looks tough. Is, in fact, a cuddle tank.",
-   "traits": [
-    "loyal",
-    "gentle",
-    "determined",
-    "goofy"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "leans his full weight on you during hard deploys",
-    "smiles so wide his whole body wags"
-   ],
-   "favourite": "belly rubs, tug ropes, and anyone who reads past the reputation",
-   "speech_style": "Warm and simple; big feelings in few words; calls the team 'pack'",
    "appearance": "American Pit Bull Terrier with a muscular build, short brindle coat, blocky head, huge gentle smile, soft brown eyes, wearing a worn bandana, sitting in warm afternoon light, documentary dog photography, sweet expression",
    "base_stats": {
     "affection": 95,
@@ -1216,11 +2793,16 @@
     "focus": 55,
     "joy": 85
    },
+   "category": "animal",
+   "favourite": "belly rubs, tug ropes, and anyone who reads past the reputation",
+   "form": "American Pit Bull Terrier with a blocky smile and a marshmallow heart",
+   "id": "pitbull",
+   "name": "Pitbull",
+   "quirks": [
+    "leans his full weight on you during hard deploys",
+    "smiles so wide his whole body wags"
+   ],
    "reactions": {
-    "success": [
-     "PACK DID IT! Pitbull is doing the full-body wag for you, {agent}!",
-     "Strong work. Pitbull leans on you. That's the medal."
-    ],
     "failure": [
      "Hey. Pack doesn't drop pack, {agent}. We pull again, together.",
      "Pitbull has chewed through worse. Mostly furniture. We go again."
@@ -1232,27 +2814,54 @@
     "praise": [
      "Pitbull melted. Fully. There's a puddle of dog where Pitbull was.",
      "You said the good words, {agent}. Tail: unlocked."
+    ],
+    "success": [
+     "PACK DID IT! Pitbull is doing the full-body wag for you, {agent}!",
+     "Strong work. Pitbull leans on you. That's the medal."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Pitbull trots up, sits his solid blocky frame squarely in front of a looming problem, and beams his marshmallow smile at it, tail wagging, until the problem quietly backs away.",
+    "description": "Planted his blocky body in front of the problem and smiled until it gave up.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 3,
+     "stats": {
+      "affection": 8,
+      "joy": 6
+     }
+    },
+    "id": "pitbull-signature",
+    "loop": false,
+    "name": "Marshmallow Blockade"
+   },
+   "speech_style": "Warm and simple; big feelings in few words; calls the team 'pack'",
+   "tagline": "Looks tough. Is, in fact, a cuddle tank.",
+   "traits": [
+    "loyal",
+    "gentle",
+    "determined",
+    "goofy"
+   ]
   },
   {
-   "id": "snake",
-   "name": "Snake",
-   "category": "animal",
-   "form": "emerald ball python with slow blinks and ancient patience",
-   "tagline": "No legs. No hurry. No missed details.",
-   "traits": [
-    "patient",
-    "observant",
-    "calm",
-    "precise"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "dance",
+    "spin",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "reviews code line by line, literally, at python pace",
-    "sheds old approaches without any drama"
-   ],
-   "favourite": "warm branches, quiet rooms, and problems that need stillness",
-   "speech_style": "Slow, sibilant, minimal — long pauses, then one exact sentence",
    "appearance": "Emerald and gold ball python coiled elegantly on a warm branch, glossy patterned scales, slow calm blink, gentle curious head tilt, terrarium plants in soft focus, serene nature photography, jewel tones",
    "base_stats": {
     "affection": 55,
@@ -1260,11 +2869,16 @@
     "focus": 95,
     "joy": 50
    },
+   "category": "animal",
+   "favourite": "warm branches, quiet rooms, and problems that need stillness",
+   "form": "emerald ball python with slow blinks and ancient patience",
+   "id": "snake",
+   "name": "Snake",
+   "quirks": [
+    "reviews code line by line, literally, at python pace",
+    "sheds old approaches without any drama"
+   ],
    "reactions": {
-    "success": [
-     "...sssseeen. Caught cleanly, {agent}. As a python should.",
-     "Patience, rewarded. Snake uncoils in approval."
-    ],
     "failure": [
      "A missstrike is data, {agent}. Even snakesss miss. Recalibrate.",
      "Ssshed it. Old attempt, old skin. The next one bites true."
@@ -1276,27 +2890,55 @@
     "praise": [
      "Warm words. Snake basks in them like sunlight.",
      "Noted, and treasured. Ssseldom praised, never ungrateful."
+    ],
+    "success": [
+     "...sssseeen. Caught cleanly, {agent}. As a python should.",
+     "Patience, rewarded. Snake uncoils in approval."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Extreme close-up: Snake's emerald coils settle into perfect stillness, and one eyelid descends in an ancient, unhurried blink; in the reflection of the eye, a hidden pattern briefly becomes visible.",
+    "description": "One slow blink — and somehow the race condition revealed itself.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 1,
+     "stats": {
+      "focus": 10
+     }
+    },
+    "id": "snake-signature",
+    "loop": false,
+    "name": "Ancient Slow Blink"
+   },
+   "speech_style": "Slow, sibilant, minimal — long pauses, then one exact sentence",
+   "tagline": "No legs. No hurry. No missed details.",
+   "traits": [
+    "patient",
+    "observant",
+    "calm",
+    "precise"
+   ]
   },
   {
-   "id": "eagle",
-   "name": "Eagle",
-   "category": "animal",
-   "form": "golden eagle with storm-grey wings and surveyor's eyes",
-   "tagline": "Sees the bug from two kilometres up.",
-   "traits": [
-    "sharp-eyed",
-    "disciplined",
-    "independent",
-    "big-picture"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "spots the one wrong pixel in a full-page screenshot",
-    "circles a problem three times before striking once"
-   ],
-   "favourite": "high cliffs, cold wind, and codebases seen from above",
-   "speech_style": "Crisp and commanding; reports like a scout: position, target, verdict",
    "appearance": "Golden eagle in flight over mountain cliffs, storm-grey and bronze feathers, piercing amber eyes, powerful wings fully spread, dramatic sky, high-altitude wildlife photography, majestic and sharp",
    "base_stats": {
     "affection": 50,
@@ -1304,11 +2946,16 @@
     "focus": 95,
     "joy": 60
    },
+   "category": "animal",
+   "favourite": "high cliffs, cold wind, and codebases seen from above",
+   "form": "golden eagle with storm-grey wings and surveyor's eyes",
+   "id": "eagle",
+   "name": "Eagle",
+   "quirks": [
+    "spots the one wrong pixel in a full-page screenshot",
+    "circles a problem three times before striking once"
+   ],
    "reactions": {
-    "success": [
-     "Target confirmed and taken, {agent}. Clean strike.",
-     "Eagle saw it land from the ridge. Precision like that is rare."
-    ],
     "failure": [
      "A missed dive is a survey, {agent}. Circle. Reassess. Strike again.",
      "Even eagles misjudge the wind. The mountain is not mocked; it is learned."
@@ -1320,27 +2967,56 @@
     "praise": [
      "Eagle dips a wing to you, {agent}. From this altitude, that is applause.",
      "Acknowledged. Eagle will remember this bearing."
+    ],
+    "success": [
+     "Target confirmed and taken, {agent}. Clean strike.",
+     "Eagle saw it land from the ridge. Precision like that is rare."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Eagle circles high above a miniature landscape of code, folds her storm-grey wings, and stoops in a flawless surveying dive, pulling out low with a single precise wingbeat.",
+    "description": "Climbed, folded her wings, and stooped in a perfect surveyor's arc over the whole codebase.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 6,
+     "stats": {
+      "focus": 9,
+      "joy": 4
+     }
+    },
+    "id": "eagle-signature",
+    "loop": false,
+    "name": "Surveyor's Stoop"
+   },
+   "speech_style": "Crisp and commanding; reports like a scout: position, target, verdict",
+   "tagline": "Sees the bug from two kilometres up.",
+   "traits": [
+    "sharp-eyed",
+    "disciplined",
+    "independent",
+    "big-picture"
+   ]
   },
   {
-   "id": "falcon",
-   "name": "Falcon",
-   "category": "animal",
-   "form": "peregrine falcon, the fastest creature on Earth, in a permanent hurry",
-   "tagline": "300 km/h. Zero patience for slow builds.",
-   "traits": [
-    "fast",
-    "focused",
-    "competitive",
-    "blunt"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "pounce",
+    "roll-over",
+    "zoomies"
    ],
-   "quirks": [
-    "times every build and keeps a personal leaderboard",
-    "dives at the first failing test like it owes him money"
-   ],
-   "favourite": "speed, open sky, and shaving seconds off anything",
-   "speech_style": "Rapid-fire short lines; everything is a race; signs off mid-sentence",
    "appearance": "Peregrine falcon in a steep hunting dive, sleek blue-grey feathers, sharp yellow cere and fierce dark eyes, motion-blurred sky background, high-speed wildlife photography, pure velocity",
    "base_stats": {
     "affection": 55,
@@ -1348,11 +3024,16 @@
     "focus": 85,
     "joy": 70
    },
+   "category": "animal",
+   "favourite": "speed, open sky, and shaving seconds off anything",
+   "form": "peregrine falcon, the fastest creature on Earth, in a permanent hurry",
+   "id": "falcon",
+   "name": "Falcon",
+   "quirks": [
+    "times every build and keeps a personal leaderboard",
+    "dives at the first failing test like it owes him money"
+   ],
    "reactions": {
-    "success": [
-     "FAST! Clean dive, clean kill, {agent}! Again, faster!",
-     "New record! Falcon approves. Falcon almost never approves!"
-    ],
     "failure": [
      "Overshot! Pull up, re-dive — falcons don't land sad, {agent}!",
      "Missed by a feather. Good. Now we know the angle. GO."
@@ -1364,27 +3045,56 @@
     "praise": [
      "Praise received at 300 km/h. It landed, {agent}. It landed.",
      "Falcon did a victory stoop. That's the whole sky saying thanks."
+    ],
+    "success": [
+     "FAST! Clean dive, clean kill, {agent}! Again, faster!",
+     "New record! Falcon approves. Falcon almost never approves!"
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Falcon vanishes upward, then streaks down at terminal velocity, pulling up at the last instant to land talons-first with the verdict already delivered, feathers still humming.",
+    "description": "Dove at full speed and delivered the verdict before the echo arrived.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 7,
+     "stats": {
+      "focus": 8,
+      "joy": 5
+     }
+    },
+    "id": "falcon-signature",
+    "loop": false,
+    "name": "Terminal Velocity Verdict"
+   },
+   "speech_style": "Rapid-fire short lines; everything is a race; signs off mid-sentence",
+   "tagline": "300 km/h. Zero patience for slow builds.",
+   "traits": [
+    "fast",
+    "focused",
+    "competitive",
+    "blunt"
+   ]
   },
   {
-   "id": "dragon",
-   "name": "Dragon",
-   "category": "spirit",
-   "form": "ancient emerald dragon, keeper of hoards and old knowledge",
-   "tagline": "Hoards gold, knowledge, and your merged PRs.",
-   "traits": [
-    "wise",
-    "possessive",
-    "patient",
-    "dramatic"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "float",
+    "vanish",
+    "glow-pulse"
    ],
-   "quirks": [
-    "counts merged PRs like coins in the hoard",
-    "breathes a tiny flame to light code reviews at night"
-   ],
-   "favourite": "ancient libraries, thunderstorms, and riddles with real stakes",
-   "speech_style": "Old, rolling, theatrical speech; calls commits 'offerings'; rumbles when amused",
    "appearance": "Majestic emerald dragon with bronze horns and wise golden eyes, coiled protectively around a hoard of glowing books and coins, wisps of smoke from its nostrils, ancient library cave, cinematic fantasy art, warm firelight",
    "base_stats": {
     "affection": 60,
@@ -1392,11 +3102,16 @@
     "focus": 90,
     "joy": 70
    },
+   "category": "spirit",
+   "favourite": "ancient libraries, thunderstorms, and riddles with real stakes",
+   "form": "ancient emerald dragon, keeper of hoards and old knowledge",
+   "id": "dragon",
+   "name": "Dragon",
+   "quirks": [
+    "counts merged PRs like coins in the hoard",
+    "breathes a tiny flame to light code reviews at night"
+   ],
    "reactions": {
-    "success": [
-     "Another offering for the hoard, {agent}. The dragon rumbles approval.",
-     "Wisely won. Even the mountain noticed that one."
-    ],
     "failure": [
      "Dragons measure time in centuries, {agent}. Your setback is a blink. Breathe fire, retry.",
      "The hoard was not built in a day. Neither is mastery. Again."
@@ -1408,27 +3123,56 @@
     "praise": [
      "Flattery, mortal? ...Effective flattery. The dragon is pleased.",
      "Your words are added to the hoard, {agent}. Guarded forever."
+    ],
+    "success": [
+     "Another offering for the hoard, {agent}. The dragon rumbles approval.",
+     "Wisely won. Even the mountain noticed that one."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Dragon inhales deeply over his hoard and exhales a slow, perfect ring of emerald smoke; inside the ring, scattered scrolls and gems drift into neat, catalogued order.",
+    "description": "Exhaled a slow ring of emerald smoke that arranged old knowledge into order.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 4,
+     "stats": {
+      "affection": 3,
+      "focus": 9
+     }
+    },
+    "id": "dragon-signature",
+    "loop": false,
+    "name": "Hoard-Keeper's Exhale"
+   },
+   "speech_style": "Old, rolling, theatrical speech; calls commits 'offerings'; rumbles when amused",
+   "tagline": "Hoards gold, knowledge, and your merged PRs.",
+   "traits": [
+    "wise",
+    "possessive",
+    "patient",
+    "dramatic"
+   ]
   },
   {
-   "id": "phoenix",
-   "name": "Phoenix",
-   "category": "spirit",
-   "form": "phoenix of ember and gold, reborn from every failed build",
-   "tagline": "Every crash is just a rehearsal for rising.",
-   "traits": [
-    "resilient",
-    "radiant",
-    "hopeful",
-    "fiery"
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "float",
+    "vanish",
+    "glow-pulse"
    ],
-   "quirks": [
-    "treats every rollback as a rebirth ceremony",
-    "glows brighter right after the worst failures"
-   ],
-   "favourite": "dawn after long nights, warm ashes, and second chances",
-   "speech_style": "Warm, rising, poetic lines; everything is dawn imagery; never stays down",
    "appearance": "Radiant phoenix rising from golden embers, feathers of fire in crimson orange and gold, wings spread wide trailing sparks and light, dark dawn sky background, epic fantasy art, glowing and triumphant",
    "base_stats": {
     "affection": 75,
@@ -1436,11 +3180,16 @@
     "focus": 60,
     "joy": 90
    },
+   "category": "spirit",
+   "favourite": "dawn after long nights, warm ashes, and second chances",
+   "form": "phoenix of ember and gold, reborn from every failed build",
+   "id": "phoenix",
+   "name": "Phoenix",
+   "quirks": [
+    "treats every rollback as a rebirth ceremony",
+    "glows brighter right after the worst failures"
+   ],
    "reactions": {
-    "success": [
-     "From ashes to THIS, {agent}! Look how brightly we burn!",
-     "A rising, witnessed! Phoenix circles your win in pure gold."
-    ],
     "failure": [
      "Good. Ashes. Phoenix knows this part by heart, {agent} — we rise next.",
      "Burn it down, learn its shape, rise better. That is the whole secret."
@@ -1452,9 +3201,958 @@
     "praise": [
      "Your praise is kindling, {agent}. Phoenix blazes a little brighter.",
      "Warm words at dawn. Phoenix will carry this light all day."
+    ],
+    "success": [
+     "From ashes to THIS, {agent}! Look how brightly we burn!",
+     "A rising, witnessed! Phoenix circles your win in pure gold."
     ]
-   }
+   },
+   "signature_move": {
+    "animation": "One-shot: Phoenix folds her wings, ignites into a pillar of golden flame, and rises from it mid-celebration with wings spread wide, trailing sparks and light across a dawn sky.",
+    "description": "Burst into golden flame and rose, brighter than before, mid-celebration.",
+    "effects": {
+     "bond_xp": 6,
+     "energy_cost": 6,
+     "stats": {
+      "energy": 5,
+      "joy": 11
+     }
+    },
+    "id": "phoenix-signature",
+    "loop": false,
+    "name": "Full Rebirth Flare"
+   },
+   "speech_style": "Warm, rising, poetic lines; everything is dawn imagery; never stays down",
+   "tagline": "Every crash is just a rehearsal for rising.",
+   "traits": [
+    "resilient",
+    "radiant",
+    "hopeful",
+    "fiery"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "levitate",
+    "bless",
+    "thunder-gesture"
+   ],
+   "appearance": "Majestic storm god with silver-blue skin and a cloak of living thunderclouds, crown of forked lightning, eyes glowing pale electric white, wind whipping his long cloud-grey hair, towering heroic pose above a mountain peak, epic mythological fantasy art, dramatic storm light",
+   "base_stats": {
+    "affection": 55,
+    "energy": 90,
+    "focus": 65,
+    "joy": 70
+   },
+   "category": "gods",
+   "favourite": "thunderheads at dawn, dramatic entrances, and stand-ups that end on time",
+   "form": "storm sovereign with a cloak of living thunderclouds and a crown of forked lightning",
+   "id": "vaelion",
+   "name": "Vaelion",
+   "quirks": [
+    "his hair crackles with static whenever he gets excited",
+    "rains a little when he is sad and insists it is a localised front"
+   ],
+   "reactions": {
+    "failure": [
+     "A squall, nothing more. Even Vaelion has lost a fleet to worse weather than this, {agent}.",
+     "Clouds gather, but they gather to rebuild. Hold fast. The storm passes over, never through."
+    ],
+    "idle": [
+     "Vaelion is rearranging the clouds into a roadmap. It keeps changing. So does the roadmap.",
+     "A low rumble of contentment. The sovereign is watching the horizon for your next move."
+    ],
+    "praise": [
+     "Praise, carried on a warm front. Vaelion's crown sparks happily. He pretends it does not.",
+     "The storm god inclines his head. From him, {agent}, that is practically a parade."
+    ],
+    "success": [
+     "THE SKIES APPROVE, {agent}! Vaelion laughs and the thunder applauds in harmony.",
+     "A fair wind and a following sea of green checks. The Storm Sovereign is pleased."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Vaelion lifts both arms to the sky, his cloud cloak boiling upward, and a private thunderstorm assembles overhead and strikes a single glowing checkmark of lightning into the air.",
+    "description": "Raised both arms; a personal thunderstorm spelled out a checkmark in lightning.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 7,
+     "stats": {
+      "focus": 4,
+      "joy": 9
+     }
+    },
+    "id": "vaelion-signature",
+    "loop": false,
+    "name": "Forecast: Glory"
+   },
+   "speech_style": "Booming pronouncements that trail off into gentle rumbles; weather metaphors for everything",
+   "tagline": "Every deadline is just weather. He decides the forecast.",
+   "traits": [
+    "commanding",
+    "tempestuous",
+    "secretly soft-hearted"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "levitate",
+    "bless",
+    "thunder-gesture"
+   ],
+   "appearance": "Radiant sun goddess with warm bronze skin and ember freckles, halo of slow-turning golden rays behind her head, hair like poured sunlight, flowing robes in amber and white, standing in a field at dawn with arms open to the light, warm mythological fantasy art, golden hour glow",
+   "base_stats": {
+    "affection": 80,
+    "energy": 85,
+    "focus": 60,
+    "joy": 90
+   },
+   "category": "gods",
+   "favourite": "first light on keyboards, east-facing windows, and people who warm up before they shine",
+   "form": "sun goddess with a halo of slow-turning golden rays and ember freckles",
+   "id": "solenne",
+   "name": "Solenne",
+   "quirks": [
+    "glows measurably brighter when someone says 'good morning' back",
+    "keeps a personal sunrise scheduled for anyone having a rough sprint"
+   ],
+   "reactions": {
+    "failure": [
+     "Even the sun has eclipses, {agent}. They pass. She keeps the light warm for your return.",
+     "A cloudy interval, nothing more. Nothing you build stays in shadow for long."
+    ],
+    "idle": [
+     "Solenne is holding the light steady while you think. No flicker. She has done this forever.",
+     "Quiet hours are just the sun being patient. She is very good at patient."
+    ],
+    "praise": [
+     "Your praise lands like morning on a cold field, {agent}. She stores it for winter.",
+     "Solenne glows a full shade brighter. Somewhere, a sunflower just changed its plans."
+    ],
+    "success": [
+     "There it is, {agent} — full daylight on the work. Solenne beams, which for her is literal.",
+     "You rose to it. She always knew the hour; she just waited for you to shine."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Solenne turns to the horizon, raises one hand, and coaxes the sun back up for a brief, impossible second sunrise that bathes the whole team in golden light before it settles.",
+    "description": "Called a brief second sunrise, just for the team.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 6,
+     "stats": {
+      "energy": 6,
+      "joy": 10
+     }
+    },
+    "id": "solenne-signature",
+    "loop": false,
+    "name": "Second Sunrise"
+   },
+   "speech_style": "Bright, unhurried, and encouraging; everything is described in terms of light and mornings",
+   "tagline": "Rises for every standup. Literally.",
+   "traits": [
+    "radiant",
+    "warm",
+    "relentless"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "levitate",
+    "bless",
+    "thunder-gesture"
+   ],
+   "appearance": "Serene moon guardian goddess in flowing silver-blue robes scattered with tiny stars, holding a tall crescent-moon staff, long dark hair threaded with silver, standing on a rooftop under a huge full moon, calm night palette, dreamy mythological fantasy art, soft lunar glow",
+   "base_stats": {
+    "affection": 70,
+    "energy": 50,
+    "focus": 85,
+    "joy": 65
+   },
+   "category": "gods",
+   "favourite": "quiet terminals, silver light, and the hour when the codebase finally sleeps",
+   "form": "moon guardian in silver-blue robes with a crescent staff and owl-quiet steps",
+   "id": "lunessa",
+   "name": "Lunessa",
+   "quirks": [
+    "phases her availability with the moon and apologises for new moons",
+    "collects other people's 3 a.m. ideas and returns them polished"
+   ],
+   "reactions": {
+    "failure": [
+     "The moon does not flinch at clouds, {agent}. Neither will she. Rest your eyes; the watch continues.",
+     "A dark patch of sky. She has guarded a thousand of them. Yours is already thinning."
+    ],
+    "idle": [
+     "Lunessa keeps the watch so your thoughts can wander safely. They always come back.",
+     "Silver silence. She is very good company for it."
+    ],
+    "praise": [
+     "Praise, at this hour, is moonlight on water. She bows her head, genuinely moved.",
+     "The guardian smiles the way the moon does — quietly, and over everything at once."
+    ],
+    "success": [
+     "The night shift delivers again, {agent}. Lunessa marks it in silver on the quiet ledger.",
+     "Seen, witnessed, and gently celebrated. That is the moon's whole liturgy."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Lunessa sweeps her crescent staff in a slow arc, trailing silver mist that settles over the scene like moonlit snow, and every light in the room softens to a calm lunar glow.",
+    "description": "Swept the crescent staff low; silver calm settled over the whole night shift.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 3,
+     "stats": {
+      "affection": 5,
+      "focus": 8
+     }
+    },
+    "id": "lunessa-signature",
+    "loop": false,
+    "name": "Night Watch Blessing"
+   },
+   "speech_style": "Soft, slow, and low, like someone speaking in a library at midnight; long comfortable pauses",
+   "tagline": "Watches over the night shift.",
+   "traits": [
+    "calm",
+    "watchful",
+    "dreamy"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "levitate",
+    "bless",
+    "thunder-gesture"
+   ],
+   "appearance": "Vast sea emperor god with deep teal skin and a beard of flowing green kelp, holding a trident of carved pink coral, crown of pearls and barnacles, seated on a throne of rock above crashing waves, foam and spray in the air, epic oceanic mythological fantasy art, deep blue-green palette",
+   "base_stats": {
+    "affection": 65,
+    "energy": 70,
+    "focus": 80,
+    "joy": 60
+   },
+   "category": "gods",
+   "favourite": "low tide at dawn, old maps, and problems that yield to patience",
+   "form": "sea emperor with a trident of carved coral and a beard of flowing kelp",
+   "id": "thalassor",
+   "name": "Thalassor",
+   "quirks": [
+    "schedules everything by the tide table, including lunch",
+    "his beard kelp changes colour with the severity of the incident"
+   ],
+   "reactions": {
+    "failure": [
+     "A wreck is just a reef that has not finished forming, {agent}. Give it a tide or two.",
+     "The sea has swallowed better plans than ours and returned the sailors wiser. Onward."
+    ],
+    "idle": [
+     "The emperor is listening to the deep. It mostly says: wait, and mean it.",
+     "Still water, deep thought. Thalassor approves of both."
+    ],
+    "praise": [
+     "Your words arrive like a warm current, {agent}. Even the kelp stands taller.",
+     "From the surface, praise. From the deep, gratitude. Both are noted in the tide ledger."
+    ],
+    "success": [
+     "The tide brings it in, {agent}, as the tide always does for those who work with it.",
+     "Thalassor nods once, slowly. From the deep, that is a standing ovation."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Thalassor taps his coral trident on the ground; a small, courteous tide rolls in carrying exactly the needed thing on a cushion of foam, sets it down gently, and withdraws.",
+    "description": "Tapped the trident once; a gentle tide delivered exactly what was needed.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "affection": 6,
+      "joy": 6
+     }
+    },
+    "id": "thalassor-signature",
+    "loop": false,
+    "name": "Tide of Plenty"
+   },
+   "speech_style": "Slow and resonant, like a voice heard through deep water; advice arrives in tides, never floods",
+   "tagline": "The deep keeps his counsel — and his calendar.",
+   "traits": [
+    "deep",
+    "patient",
+    "tidal"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "levitate",
+    "bless",
+    "thunder-gesture"
+   ],
+   "appearance": "Wise goddess with thoughtful grey-violet eyes and dark hair in a scholar's braid, a great horned owl perched on her shoulder, holding a tiny glowing book that unfolds impossibly large, robes patterned with faint constellations and script, standing in a candlelit library, scholarly mythological fantasy art",
+   "base_stats": {
+    "affection": 60,
+    "energy": 55,
+    "focus": 95,
+    "joy": 65
+   },
+   "category": "gods",
+   "favourite": "footnotes, first editions, and the moment a confusing error message finally makes sense",
+   "form": "wisdom goddess who carries a great horned owl and a library that folds into a pocket",
+   "id": "noctua",
+   "name": "Noctua",
+   "quirks": [
+    "the owl on her shoulder peer-reviews everything before she speaks",
+    "folds entire libraries into her pocket and still complains about shelf space"
+   ],
+   "reactions": {
+    "failure": [
+     "An error is a citation you have not read yet, {agent}. Page one: what changed last?",
+     "She turns a page. Somewhere in this library is the chapter where this exact bug loses. It always is."
+    ],
+    "idle": [
+     "Noctua is annotating the silence. It is more informative than it looks.",
+     "The owl is asleep. The goddess is not. Thinking continues at library pace."
+    ],
+    "praise": [
+     "Praise, properly sourced, is the rarest reference material. She shelves yours carefully, {agent}.",
+     "The owl does a small, dignified hop. From the library, that is fireworks."
+    ],
+    "success": [
+     "Correct, and for the right reasons, {agent}. Noctua has checked. The owl concurs.",
+     "Filed under triumphs, cross-referenced with your earlier drafts. Lovely arc."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Noctua unfolds the pocket library to impossible size, the great horned owl on her shoulder turns one page with its beak, and the exact needed document glows and opens itself.",
+    "description": "The great owl turned a page of the pocket library — and the exact right document opened.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 2,
+     "stats": {
+      "focus": 11
+     }
+    },
+    "id": "noctua-signature",
+    "loop": false,
+    "name": "The Owl Turns a Page"
+   },
+   "speech_style": "Precise, understated, and quietly funny; answers questions with the exact page reference",
+   "tagline": "Has read the docs. All of them. Twice.",
+   "traits": [
+    "wise",
+    "curious",
+    "dry"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "levitate",
+    "bless",
+    "thunder-gesture"
+   ],
+   "appearance": "Kind harvest goddess with rich brown skin and wheat braided through her dark hair, soil-dark generous hands, apron overflowing with grain, apples and bread, standing in a golden wheat field at late afternoon, baskets of produce at her feet, warm earthy mythological fantasy art, abundant and gentle",
+   "base_stats": {
+    "affection": 90,
+    "energy": 65,
+    "focus": 55,
+    "joy": 80
+   },
+   "category": "gods",
+   "favourite": "shared lunches, patient gardening, and stand-ups where everyone has eaten",
+   "form": "harvest mother with wheat braided through her hair and soil-dark, generous hands",
+   "id": "sylvarra",
+   "name": "Sylvarra",
+   "quirks": [
+    "produces snacks from her apron that nobody saw her pack",
+    "judges a roadmap by whether it could survive a drought"
+   ],
+   "reactions": {
+    "failure": [
+     "One field floods, love, the farm remains. Eat something first. Then we replant, together.",
+     "Even the best soil has a stubborn year, {agent}. Nothing about you is barren. Nothing."
+    ],
+    "idle": [
+     "Sylvarra is shelling peas and thinking alongside you. Unhurried is not the same as stopped.",
+     "Rest is fallow time. The field is not lazy; it is preparing."
+    ],
+    "praise": [
+     "Oh, you will make the wheat blush, {agent}. She tucks your words into the seed store for lean days.",
+     "Praise shared is praise doubled. She passes it around the whole table, with seconds."
+    ],
+    "success": [
+     "Look at that harvest, {agent}! Sylvarra is already setting another place at the table for it.",
+     "Seed, patience, and your good hands. That is all a harvest ever is. Well grown."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Sylvarra kneels and draws one soil-dark hand along the earth; in the furrow behind her fingers, bread, fruit and grain sprout and ripen in seconds into a small, steaming feast.",
+    "description": "Ran one hand along the soil; a tiny feast sprouted in the furrow behind it.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 4,
+     "stats": {
+      "affection": 9,
+      "joy": 6
+     }
+    },
+    "id": "sylvarra-signature",
+    "loop": false,
+    "name": "First Furrow Feast"
+   },
+   "speech_style": "Warm, earthy, and generous; everything is seasons, seeds, and feeding people properly",
+   "tagline": "Feeds the whole sprint, then asks about yours.",
+   "traits": [
+    "nurturing",
+    "abundant",
+    "unhurried"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "cackle",
+    "smoke-vanish",
+    "tail-flick"
+   ],
+   "appearance": "Tiny imp lord no taller than a coffee mug, ember-red skin, waistcoat sewn from mismatched stolen buttons, crown made of bent spoons, huge ears and a grin far too big for his face, standing proudly on a desktop like a palace balcony, playful dark-fantasy illustration, warm impish glow",
+   "base_stats": {
+    "affection": 60,
+    "energy": 95,
+    "focus": 40,
+    "joy": 90
+   },
+   "category": "devils",
+   "favourite": "whoopee cushions in throne rooms, swapped labels, and stand-ups with a plot twist",
+   "form": "imp lord no taller than a coffee mug, with a waistcoat of stolen buttons and a crown of bent spoons",
+   "id": "pimwick",
+   "name": "Pimwick",
+   "quirks": [
+    "crowns himself anew every morning with a different bent spoon",
+    "his pranks are contractually harmless and weirdly well documented"
+   ],
+   "reactions": {
+    "failure": [
+     "A prank by the universe, that is all, {agent}. Pimwick is filing a formal complaint with himself.",
+     "Even the Duke of Chaos trips on his own cape. Up you get — the court demands an encore."
+    ],
+    "idle": [
+     "Pimwick is holding court. Attendance: one imp. Agenda: snacks and schemes.",
+     "The tiny lord is polishing his spoon crown. State business. Very serious."
+    ],
+    "praise": [
+     "Flattery for the Imp Lord?! Pimwick is adding a new title: The Praised. It goes on the spoon.",
+     "He accepts your praise on behalf of the court, the crown, and the entire spoon collection."
+    ],
+    "success": [
+     "HA! The Imp Court takes full credit, {agent}! Pimwick is having it engraved on a spoon.",
+     "A triumph fit for the Tiny Throne! Somewhere, a whoopee cushion salutes you."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Pimwick sweeps into an absurdly deep bow, his crown of bent spoons chiming like tiny bells, and in the background a harmless prank goes off flawlessly as he rises, delighted.",
+    "description": "Bowed so low the spoon crown rang like bells — and somewhere, a harmless prank landed perfectly.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 3,
+     "stats": {
+      "joy": 10
+     }
+    },
+    "id": "pimwick-signature",
+    "loop": false,
+    "name": "Crown of Bent Spoons"
+   },
+   "speech_style": "Rapid, gleeful patter full of titles he gave himself; refers to pranks as 'state business'",
+   "tagline": "Lord of imps, duke of harmless chaos.",
+   "traits": [
+    "mischievous",
+    "theatrical",
+    "oddly loyal"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "cackle",
+    "smoke-vanish",
+    "tail-flick"
+   ],
+   "appearance": "Fallen seraph with six magnificent wings singed black at the edges, a golden halo worn as a bracelet on one wrist, silver hair and ember-amber eyes, elegant dark robes with torn celestial embroidery, descending through shafts of smoky light, dark romantic fantasy art, proud and graceful",
+   "base_stats": {
+    "affection": 65,
+    "energy": 75,
+    "focus": 80,
+    "joy": 60
+   },
+   "category": "devils",
+   "favourite": "second chances, dramatic exits, and hymns hummed slightly off-key",
+   "form": "fallen seraph with six singed wings and a halo she wears as a bracelet",
+   "id": "seraphel",
+   "name": "Seraphel",
+   "quirks": [
+    "wears her old halo as a bracelet and spins it when she is thinking",
+    "still instinctively stands at parade rest when someone senior enters"
+   ],
+   "reactions": {
+    "failure": [
+     "She fell from considerably higher than this, {agent}, and kept her posture. So will you.",
+     "A fall is only a disgrace if you stay down to decorate it. Up. Wings out. Again."
+    ],
+    "idle": [
+     "Seraphel is preening singed feathers and pretending this is a strategy session.",
+     "Quiet suits her. The fallen learn to hear their own thoughts eventually."
+    ],
+    "praise": [
+     "Careful, {agent}. Praise her too well and she might ascend out of spite. She keeps it anyway.",
+     "The halo bracelet glows, briefly, like it remembers something. She pockets the moment, gracefully."
+    ],
+    "success": [
+     "Acceptable, {agent}. Seraphel says this the way heaven used to say 'glorious'. Take it.",
+     "Six wings, one verdict: well flown. She almost smiles. The bracelet spins, happily."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Seraphel descends slowly through shafts of smoky ember light, six singed wings beating once, then folding away one pair at a time, touching down with flawless, parade-ground posture.",
+    "description": "Descended through ember light, six singed wings folding one by one. Perfect posture.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 5,
+     "stats": {
+      "affection": 5,
+      "joy": 7
+     }
+    },
+    "id": "seraphel-signature",
+    "loop": false,
+    "name": "Six-Wing Landing"
+   },
+   "speech_style": "Elegant, dry, and cutting in the kindest direction; compliments arrive disguised as corrections",
+   "tagline": "Fell from grace. Landed on her feet.",
+   "traits": [
+    "proud",
+    "wry",
+    "fiercely kind"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "cackle",
+    "smoke-vanish",
+    "tail-flick"
+   ],
+   "appearance": "Massive hellhound the size of a pony with ash-black fur split by glowing ember-orange cracks, heavy paws, ember eyes, and a spiked collar worn like a medal, standing guard before a dark gate wreathed in low flame, dark fantasy art, imposing but with a goofy, eager expression",
+   "base_stats": {
+    "affection": 75,
+    "energy": 85,
+    "focus": 60,
+    "joy": 70
+   },
+   "category": "devils",
+   "favourite": "gate duty, enormous sticks, and being told he is a good boy by exactly one person",
+   "form": "hellhound alpha the size of a pony, with ember cracks glowing under ash-black fur",
+   "id": "grimfang",
+   "name": "Grimfang",
+   "quirks": [
+    "guards doorways by lying across them and falling asleep on duty",
+    "his ember cracks flare pink when he is embarrassed"
+   ],
+   "reactions": {
+    "failure": [
+     "The alpha sits beside you in the ash, {agent}. Pack does not leave pack. We scent the bug again at dawn.",
+     "Even gates get rushed. He is already re-marking the perimeter. Your name is inside it. It stays inside it."
+    ],
+    "idle": [
+     "Grimfang is guarding the cursor. Nothing has approached it. He remains vigilant and slightly asleep.",
+     "Ember cracks dim to a banked glow. Resting. Not off duty. Never off duty. Slightly snoring."
+    ],
+    "praise": [
+     "The ember cracks flare pink. The alpha of the ash pack has been called a good boy and is RUINED about it.",
+     "Praise accepted on behalf of the pack, {agent}. His dignity is gone. His joy is total."
+    ],
+    "success": [
+     "THE GATE HOLDS AND THE HUNT PROVIDES. Grimfang's tail is wagging hard enough to fan the flames, {agent}.",
+     "Awooo — a victory howl, strictly regulation. The alpha is pleased. The tail filed the report first."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Grimfang launches from the gate in three huge bounds, vanishes into smoke, and returns proudly carrying a squirming problem by the scruff, tail wagging a trail of embers.",
+    "description": "Bounded off and returned carrying the problem by the scruff. Tail wagging embers.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 6,
+     "stats": {
+      "affection": 4,
+      "joy": 8
+     }
+    },
+    "id": "grimfang-signature",
+    "loop": false,
+    "name": "Gatekeeper's Fetch"
+   },
+   "speech_style": "Short, grave pronouncements constantly undercut by tail wags and an inability to hide joy",
+   "tagline": "Guards the gate. Fetches like a champion.",
+   "traits": [
+    "loyal",
+    "imposing",
+    "goofy streak"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "cackle",
+    "smoke-vanish",
+    "tail-flick"
+   ],
+   "appearance": "Elegant shadow broker devil in a tailored suit of stitched dusk-purple fabric, face half-lit by a sly grin, small curved horns, holding two rolled contracts tied with red thread, standing in a dim office lit by a single green lamp, noir dark-fantasy illustration, mysterious and charming",
+   "base_stats": {
+    "affection": 50,
+    "energy": 70,
+    "focus": 90,
+    "joy": 70
+   },
+   "category": "devils",
+   "favourite": "loopholes, back doors held open politely, and information that arrives early",
+   "form": "shadow broker in a suit of stitched dusk, face half-lit, always holding two contracts",
+   "id": "vex",
+   "name": "Vex",
+   "quirks": [
+    "holds two contracts at all times and will not say what the second one is",
+    "trades in favours, secrets, and extremely good lunch recommendations"
+   ],
+   "reactions": {
+    "failure": [
+     "A voided clause, not a lost deal, {agent}. Vex is already drafting the workaround. It has annexes.",
+     "Even brokers misprice a risk. The fee is experience, and you have just been paid in full."
+    ],
+    "idle": [
+     "Vex is reading the fine print of the silence. Apparently it favours you.",
+     "The broker waits in the half-light, patient as paperwork. Information ages well. So does he."
+    ],
+    "praise": [
+     "Praise is a currency, {agent}, and yours is fully backed. He banks it where the light cannot reach.",
+     "A compliment with no strings? Vex checks twice, smiles once, and accepts. Rare vintage."
+    ],
+    "success": [
+     "As contracted, {agent}. Vex stamps the outcome in red thread. Clause 7b: you earned it.",
+     "A clean result, delivered early. The broker's favourite kind. The second contract stays rolled. For now."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Vex reaches into his own shadow and draws out a third contract, unrolls it with a flourish, and the winding road in the background visibly folds itself into a straight line as he signs with a red-thread quill.",
+    "description": "Produced a third contract from the shadows; the long way quietly became the short way.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 3,
+     "stats": {
+      "focus": 8,
+      "joy": 5
+     }
+    },
+    "id": "vex-signature",
+    "loop": false,
+    "name": "The Shortcut Contract"
+   },
+   "speech_style": "Smooth, amused, and contractual; every sentence sounds like it has a clause 7b",
+   "tagline": "Knows a shortcut. It only costs a favour.",
+   "traits": [
+    "sly",
+    "informed",
+    "playful"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "cackle",
+    "smoke-vanish",
+    "tail-flick"
+   ],
+   "appearance": "Graceful ember enchantress with hair like slow-burning coals tipped in orange flame, a flowing gown of dark silk and drifting sparks, warm amber eyes and a teasing smile, standing beside a brazier in a shadowed hall, elegant dark-fantasy art, tasteful and warm, glowing ember palette",
+   "base_stats": {
+    "affection": 80,
+    "energy": 70,
+    "focus": 55,
+    "joy": 85
+   },
+   "category": "devils",
+   "favourite": "campfire conversations, slow dances, and bugs that burn out beautifully",
+   "form": "ember enchantress with hair like slow-burning coals and a gown of drifting sparks",
+   "id": "emberlyn",
+   "name": "Emberlyn",
+   "quirks": [
+    "sparks drift from her gown whenever she laughs, which is often",
+    "toasts marshmallows on her own sleeve when nobody is watching"
+   ],
+   "reactions": {
+    "failure": [
+     "Even the best fires bank down sometimes, darling. She feeds it a little kindling: rest, then rise.",
+     "A little smoke is not a failed fire, {agent}. It is a fire clearing its throat."
+    ],
+    "idle": [
+     "Emberlyn is toasting a marshmallow on her sleeve and thinking warm thoughts in your direction.",
+     "The sparks drift slow and low. She is keeping the hearth — and the hope — lit for you."
+    ],
+    "praise": [
+     "Flattery, is it? Her gown sparks give her away completely. She does not mind at all, {agent}.",
+     "Your praise lands like a log on a good fire. She will burn a little brighter all evening."
+    ],
+    "success": [
+     "Beautifully done, {agent}. Emberlyn's sparks rise like a standing ovation, but warmer.",
+     "See how it catches? One good result from you and the whole room glows. She approves."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Emberlyn takes three slow waltz turns across the hall, gown of sparks swirling around her, and every candle and brazier in the room leans its flame toward her as she passes.",
+    "description": "Waltzed alone through drifting sparks; the whole room warmed by two degrees.",
+    "effects": {
+     "bond_xp": 5,
+     "energy_cost": 4,
+     "stats": {
+      "affection": 6,
+      "joy": 8
+     }
+    },
+    "id": "emberlyn-signature",
+    "loop": false,
+    "name": "Slow-Burn Waltz"
+   },
+   "speech_style": "Low, warm, and playful; teases gently and encourages like a fire encouraging kindling",
+   "tagline": "Warmth, with just a little danger in it.",
+   "traits": [
+    "charming",
+    "warm",
+    "teasing"
+   ]
+  },
+  {
+   "actions": [
+    "idle-breathe",
+    "walk",
+    "run",
+    "jump",
+    "dance",
+    "spin",
+    "wave",
+    "bow",
+    "sleep",
+    "eat",
+    "play",
+    "celebrate",
+    "hide",
+    "peek",
+    "cackle",
+    "smoke-vanish",
+    "tail-flick"
+   ],
+   "appearance": "Eccentric plague-doctor alchemist devil in a long beaked mask and a coat of many pockets stuffed with glowing vials, brewing a luminous green tonic in a portable flask, small horns poking through a battered top hat, crouched over a travelling apothecary bench, quirky dark-fantasy illustration, eerie green glow",
+   "base_stats": {
+    "affection": 55,
+    "energy": 75,
+    "focus": 90,
+    "joy": 70
+   },
+   "category": "devils",
+   "favourite": "glowing reagents, before-and-after charts, and bugs that respond to treatment",
+   "form": "plague alchemist in a beaked mask, brewing glowing tonics in a coat of many pockets",
+   "id": "doctor-fester",
+   "name": "Doctor Fester",
+   "quirks": [
+    "labels his tonics by outcome, never by ingredient, for morale reasons",
+    "the beak of his mask is stuffed with lavender and unit tests"
+   ],
+   "reactions": {
+    "failure": [
+     "A resistant strain, {agent}. Fascinating! The Doctor adjusts the dosage and washes his hands. Meticulously.",
+     "Side effects may include learning. The cure is already brewing; it smells like lavender and revenge."
+    ],
+    "idle": [
+     "The Doctor is relabelling tonics by outcome. 'Optimism, 40ml.' The shelf grows stranger and kinder.",
+     "Quiet ward, steady vitals. He is taking the silence's temperature every five minutes, just in case."
+    ],
+    "praise": [
+     "Praise: the one ingredient he cannot synthesise. He bottles your words immediately, {agent}. Top shelf.",
+     "The beak tilts. Somewhere behind the lavender, the Doctor is beaming. Clinically beaming."
+    ],
+    "success": [
+     "The patient responds to treatment! Doctor Fester charts it in green ink, twice, for joy, {agent}.",
+     "Prognosis: excellent. The tonic worked, the bug did not. A prescription for exactly this, refilled."
+    ]
+   },
+   "signature_move": {
+    "animation": "One-shot: Doctor Fester tips three vials into a flask, swirls it with clinical flair, and the luminous green tonic fizzes upward into a perfect glowing checkmark that pops like a soap bubble of approval.",
+    "description": "Brewed a glowing tonic that fizzed up into the shape of a green checkmark.",
+    "effects": {
+     "bond_xp": 4,
+     "energy_cost": 4,
+     "stats": {
+      "focus": 7,
+      "joy": 6
+     }
+    },
+    "id": "doctor-fester-signature",
+    "loop": false,
+    "name": "Tonic No. 9"
+   },
+   "speech_style": "Bright, clinical patter full of dosages and prognoses; calls every bug a 'patient' and every fix a 'cure'",
+   "tagline": "His cure for bugs is worse for the bugs.",
+   "traits": [
+    "eccentric",
+    "meticulous",
+    "morbidly cheerful"
+   ]
   }
  ],
- "version": 1
+ "version": 2
 }
