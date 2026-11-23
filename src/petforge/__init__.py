@@ -10,7 +10,7 @@ from .catalogue import by_category, categories, get_pet, load_catalogue, random_
 from .companion import Companion, PetForge
 from .models import CATEGORIES, Pet
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 __all__ = [
     "CATEGORIES",
