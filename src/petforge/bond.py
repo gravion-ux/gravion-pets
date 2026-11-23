@@ -54,7 +54,12 @@ class Bond:
         """Add XP for an event. Returns (xp_gained, levelled_up)."""
         if event not in EVENT_XP:
             raise ValueError(f"unknown event kind: {event!r}")
+        return self.gain_amount(EVENT_XP[event])
+
+    def gain_amount(self, amount: int) -> tuple[int, bool]:
+        """Add an arbitrary XP amount (e.g. an action's bond_xp)."""
+        if amount < 0:
+            raise ValueError("bond XP gain cannot be negative")
         before = self.level
-        gained = EVENT_XP[event]
-        self.xp += gained
-        return gained, self.level > before
+        self.xp += amount
+        return amount, self.level > before

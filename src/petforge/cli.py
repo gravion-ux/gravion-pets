@@ -3,6 +3,7 @@
     python -m petforge.cli                 # random pet
     python -m petforge.cli --pet glitch    # a specific pet
     python -m petforge.cli --list          # show the whole catalogue
+    python -m petforge.cli --pet vaelion --act bless --act vaelion-signature
 """
 
 from __future__ import annotations
@@ -30,7 +31,21 @@ def list_catalogue() -> None:
     print("\nBy category:", categories())
 
 
-def run_demo(pet_id: str | None) -> None:
+def _show_performance(buddy, action_id: str) -> None:
+    performance = buddy.act(action_id)
+    star = "  *** SIGNATURE MOVE ***" if performance["signature"] else ""
+    print(f"[act    ] {performance['name']}{star}")
+    print(f"  {performance['description']}")
+    print(f"  Motion : {performance['animation']}")
+    print(
+        f"  mood={performance['mood']}  bond Lv{performance['level']} "
+        f"({performance['level_title']})  +{performance['bond_xp_gained']} XP  "
+        f"energy cost {performance['energy_cost']}"
+    )
+    print()
+
+
+def run_demo(pet_id: str | None, acts: list[str] | None = None) -> None:
     forge = PetForge(agent_name="demo-subagent")
     buddy = forge.adopt(pet_id) if pet_id else forge.adopt_random(rng_seed=7)
     pet = buddy.pet
@@ -41,6 +56,8 @@ def run_demo(pet_id: str | None) -> None:
     print(f"Voice   : {pet.speech_style}")
     print(f"Loves   : {pet.favourite}")
     print(f"Look    : {pet.image_prompt()}")
+    repertoire = ", ".join(action.id for action in buddy.available_actions())
+    print(f"Moves   : {repertoire}")
     print("=" * 68)
     print(buddy.greeting())
     print()
@@ -55,6 +72,10 @@ def run_demo(pet_id: str | None) -> None:
             f"{level_note}"
         )
         print()
+    for action_id in acts or []:
+        _show_performance(buddy, action_id)
+    if pet.signature_move is not None:
+        _show_performance(buddy, pet.signature_move.id)
     status = buddy.status()
     print("-" * 68)
     print(
@@ -69,11 +90,19 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="petforge", description=__doc__)
     parser.add_argument("--pet", help="catalogue id of the pet to adopt")
     parser.add_argument("--list", action="store_true", help="list all pets")
+    parser.add_argument(
+        "--act",
+        action="append",
+        default=[],
+        metavar="ACTION",
+        help="perform an action from the pet's repertoire (repeatable); "
+        "the demo always ends with the pet's signature move",
+    )
     args = parser.parse_args(argv)
     if args.list:
         list_catalogue()
     else:
-        run_demo(args.pet)
+        run_demo(args.pet, args.act)
     return 0
 
 

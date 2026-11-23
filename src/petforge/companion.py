@@ -16,8 +16,8 @@ import random
 from dataclasses import dataclass, field
 
 from .bond import Bond
-from .catalogue import get_pet, random_pet
-from .models import EVENT_KINDS, Pet
+from .catalogue import get_pet, load_actions, pet_action, random_pet
+from .models import EVENT_KINDS, Action, Pet
 from .mood import MoodEngine
 
 
@@ -41,6 +41,42 @@ class Reaction:
             "mood": self.mood,
             "stats": dict(self.stats),
             "bond_xp_gained": self.bond_xp_gained,
+            "level": self.level,
+            "level_title": self.level_title,
+            "levelled_up": self.levelled_up,
+        }
+
+
+@dataclass
+class Performance:
+    pet_id: str
+    action: str
+    name: str
+    description: str
+    animation: str
+    loop: bool
+    signature: bool
+    mood: str
+    stats: dict[str, int]
+    bond_xp_gained: int
+    energy_cost: int
+    level: int
+    level_title: str
+    levelled_up: bool
+
+    def to_dict(self) -> dict:
+        return {
+            "pet_id": self.pet_id,
+            "action": self.action,
+            "name": self.name,
+            "description": self.description,
+            "animation": self.animation,
+            "loop": self.loop,
+            "signature": self.signature,
+            "mood": self.mood,
+            "stats": dict(self.stats),
+            "bond_xp_gained": self.bond_xp_gained,
+            "energy_cost": self.energy_cost,
             "level": self.level,
             "level_title": self.level_title,
             "levelled_up": self.levelled_up,
@@ -92,6 +128,47 @@ class Companion:
             levelled_up=levelled_up,
         )
         return reaction.to_dict()
+
+    # -- actions & movement ------------------------------------------------
+    def available_actions(self) -> list[Action]:
+        """Every action this pet can perform, signature move last."""
+        library = load_actions()
+        actions = [library[action_id] for action_id in self.pet.actions]
+        if self.pet.signature_move is not None:
+            actions.append(self.pet.signature_move)
+        return actions
+
+    def act(self, action_id: str) -> dict:
+        """Perform an action: 'dance', 'swim', the pet's signature id, ...
+
+        Validates the action is in the pet's repertoire, applies its
+        mood/bond/energy effects, and returns a plain dict describing
+        the performance (including the animation prompt, so callers can
+        render the pet actually doing it).
+        """
+        action = pet_action(self.pet, action_id)  # ValueError if not known
+        mood = self._mood.apply_deltas(action.stats, action.energy_cost)
+        gained, levelled_up = self._bond.gain_amount(action.bond_xp)
+        performance = Performance(
+            pet_id=self.pet.id,
+            action=action.id,
+            name=action.name,
+            description=f"{self.pet.name}: {action.description}",
+            animation=action.animation,
+            loop=action.loop,
+            signature=(
+                self.pet.signature_move is not None
+                and action_id == self.pet.signature_move.id
+            ),
+            mood=mood,
+            stats=self._mood.snapshot(),
+            bond_xp_gained=gained,
+            energy_cost=action.energy_cost,
+            level=self._bond.level,
+            level_title=self._bond.title,
+            levelled_up=levelled_up,
+        )
+        return performance.to_dict()
 
     def tick(self) -> str:
         """Let time pass (call on a heartbeat); returns the current mood."""

@@ -49,6 +49,18 @@ class MoodEngine:
         self.history.append(mood)
         return mood
 
+    def apply_deltas(self, stats: dict[str, int], energy_cost: int = 0) -> str:
+        """Apply arbitrary stat deltas (an action's effects); return mood."""
+        for stat, delta in stats.items():
+            if stat not in STATS:
+                raise ValueError(f"unknown stat: {stat!r}")
+            setattr(self, stat, _clamp(getattr(self, stat) + delta))
+        if energy_cost:
+            self.energy = _clamp(self.energy - energy_cost)
+        mood = self.mood
+        self.history.append(mood)
+        return mood
+
     def tick(self) -> str:
         """Let time pass: stats drift gently downward (pets get sleepy)."""
         for stat, delta in TICK_DRIFT.items():
