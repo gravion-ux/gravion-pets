@@ -24,17 +24,18 @@ Each pet is a complete character, not a skin:
 
 ## The roster
 
-21 original pets, three in every category:
+27 original pets across eight categories:
 
 | Category | Pets |
 |---|---|
 | `anime` | Mochi · Senpai Null · Pudding |
-| `animal` | Captain Whiskers · Biscuit · Professor Hoot |
+| `animal` | Captain Whiskers · Biscuit · Professor Hoot · Panda · Raja |
 | `human` | Nova Reyes · Coach Dario · Grandma Juniper |
 | `aquatic` | Bubbles · Admiral Finn · Squish |
 | `couples` | Peanut & Pickle · Echo & Ember · Bit & Byte |
 | `robot` | Unit-7 "Seven" · Glitch · Motherboard Maeve |
 | `spirit` | Wisp · Djinn Tonic · Auntie Aurora |
+| `plushie` | Labubu · Rasgulla · Jalebi · Chidiya |
 
 `couples` pets are paired duos with two voices — Peanut charges ahead while
 Pickle checks the map; Bit & Byte finish each other's sentences (and each
@@ -131,7 +132,7 @@ src/petforge/
 ├── companion.py   # Companion + PetForge: the adopt/react agent API
 ├── cli.py         # demo CLI (petforge --pet <id> | --list)
 └── data/
-    └── catalogue.json   # the 21 pets, all content data-driven
+    └── catalogue.json   # the 27 pets, all content data-driven
 ```
 
 Adding a pet is a JSON edit — no code changes. The test suite validates that
