@@ -189,7 +189,7 @@ Best Friend → Partner in Crime → Family → Soulbound.
 
 ```bash
 python -m venv .venv && .venv/bin/pip install pytest
-.venv/bin/python -m pytest     # 39 tests: catalogue, mood, bond, companion API
+.venv/bin/python -m pytest     # 50 tests: catalogue, mood, bond, companion API
 ```
 
 ## License
