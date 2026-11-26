@@ -6,7 +6,7 @@ import json
 import random
 from importlib import resources
 
-from .models import CATEGORIES, Action, Pet
+from .models import CATEGORIES, CULTURES, Action, Pet
 
 _cache: list[Pet] | None = None
 _raw_cache: dict | None = None
@@ -61,6 +61,11 @@ def category_actions() -> dict[str, list[str]]:
     return {cat: list(ids) for cat, ids in _raw().get("category_actions", {}).items()}
 
 
+def culture_actions() -> dict[str, list[str]]:
+    """Culture -> ids of that culture's signature library moves."""
+    return {cul: list(ids) for cul, ids in _raw().get("culture_actions", {}).items()}
+
+
 def pet_action(pet: Pet, action_id: str) -> Action:
     """Resolve an action a pet can perform (library entry or signature)."""
     if pet.signature_move is not None and action_id == pet.signature_move.id:
@@ -89,6 +94,20 @@ def categories() -> dict[str, int]:
     for pet in load_catalogue():
         counts[pet.category] += 1
     return counts
+
+
+def by_culture(culture: str) -> list[Pet]:
+    if culture not in CULTURES:
+        raise ValueError(f"unknown culture: {culture!r}")
+    return [pet for pet in load_catalogue() if pet.culture == culture]
+
+
+def cultures() -> dict[str, int]:
+    """Culture -> number of pets, for every culture with at least one pet."""
+    counts: dict[str, int] = {}
+    for pet in load_catalogue():
+        counts[pet.culture] = counts.get(pet.culture, 0) + 1
+    return dict(sorted(counts.items()))
 
 
 def random_pet(rng: random.Random | None = None) -> Pet:

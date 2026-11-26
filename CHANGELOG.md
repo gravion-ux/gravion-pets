@@ -1,5 +1,41 @@
 # Changelog
 
+## 0.6.0 — 2026-11-26
+
+- Catalogue expanded from 103 to **849 pets** across **26 culture
+  families** (Greek 58, Japanese 67, Indian 52, Chinese 43, Norse 36,
+  Egyptian/Korean/Celtic/African 32 each, and 17 more), generated
+  deterministically by `tools/build_catalogue.py` from culture tables.
+  Body plans (`form_type`): 473 creatures, 250 humanoids, 79 orb-primary
+  spirits, 19 anime, 10 plush, 9 robots, 9 duos — all family-friendly.
+- **Evolution system:** bond XP now evolves every pet through three
+  stages with culture-flavoured titles (e.g. *Young Spirit → Shrine
+  Guardian → Great Kami*). Evolving grants a stat bonus and an evolved
+  form; `react()`/`act()` report `evolved`, `evolution_stage`,
+  `stage_title` and `xp_to_evolution`, and `status()` exposes the full
+  evolution state.
+- **Culture signature moves:** 78 new library actions (3 per culture,
+  127 total), unlocked at evolution stages 1/2/3 — Greek *Aegis Aura*,
+  Japanese *Shrine Bell Chime*, Indian *Monsoon Dance*, and 75 more.
+  `available_actions()` returns stage-unlocked moves;
+  `locked_actions()` lists the rest.
+- **API:** `by_culture()` / `cultures()` / `culture_actions()` added;
+  `Pet.evolution_stage()`, `stage_title()`, `stage_form()`,
+  `stage_bonus()` and `xp_to_evolution()` helpers. Catalogue data
+  schema bumped to v4. Web gallery regenerated (849 pets, culture
+  search). 69 Python tests + 7 web tests, all passing.
+
+## 0.5.0 — 2026-11-25
+
+- Catalogue expanded from 46 to **103 pets** across the ten categories.
+- Every pet now has an **orb face form**: palette, face, glow and a ready
+  image-generation prompt (`pet.orb_prompt()`).
+- Ten new shared orb/face animations (blink, ear-wiggle, tail-wag,
+  orb-pulse, float-bob, sparkle-trail, yawn, hop, twirl, nod) added to the
+  action library and to every pet's repertoire — 49 library actions total.
+- Catalogue data schema bumped to v3.
+
+
 ## 0.4.0 — Gods, devils & the actions update
 
 - **Two new categories:** `gods` and `devils` (8 → 10 categories),

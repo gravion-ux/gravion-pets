@@ -126,5 +126,17 @@ def test_available_actions_includes_signature_last():
     buddy = forge.adopt("squish")
     actions = buddy.available_actions()
     assert actions[-1].id == "squish-signature"
-    assert {a.id for a in actions} == set(buddy.pet.repertoire_ids())
+    # Stage-1 view: everything unlocked, nothing stage-gated (v4 evolution).
+    unlocked = {
+        a.id for a in actions
+    }
+    assert unlocked == {
+        action_id
+        for action_id in buddy.pet.repertoire_ids()
+        if action_id == "squish-signature"
+        or get_action(action_id).unlock_stage <= buddy.evolution_stage
+    }
+    assert {a.id for a in buddy.locked_actions()} == (
+        set(buddy.pet.repertoire_ids()) - unlocked
+    )
     assert "swim" in buddy.pet.actions  # an aquatic pet swims

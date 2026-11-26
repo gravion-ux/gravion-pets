@@ -1,4 +1,4 @@
-# Gravion Pets
+# petforge
 
 **Forge a companion pet for your agent.**
 
@@ -19,6 +19,10 @@ Each pet is a complete character, not a skin:
   pet can be drawn exactly as described.
 - **Bond / level system** — shared work earns bond XP. Wins count, praise
   counts, and sticking around after a failure counts almost as much.
+- **Evolution** — bond XP also evolves the pet through three stages
+  (stage titles per culture, e.g. *Young Spirit → Shrine Guardian → Great
+  Kami*). Evolving grants a stat bonus, an evolved form, and unlocks the
+  pet's culture signature moves.
 - **Actions & movements** — pets *do* things: a shared action library
   (walk, dance, sleep, celebrate…), category-flavoured moves (gods
   levitate and bless, devils cackle and vanish in smoke), and one
@@ -29,7 +33,18 @@ Each pet is a complete character, not a skin:
 
 ## The roster
 
-46 original pets across ten categories:
+**849 pets** across ten categories and **26 culture families** — Greek,
+Japanese and Indian mythology lead the roster, joined by Chinese, Norse,
+Egyptian, Korean, Celtic, African, Roman, Arabian, Persian, Thai, Filipino,
+Slavic, European folklore, Aztec, Mayan, Mesopotamian, Vietnamese,
+Polynesian, Native American, Inuit, Aboriginal Australian, Arthurian and
+global-modern companions. Every pet has an orb face form, a full animation
+repertoire, three stage-gated culture signature moves, and a three-stage
+evolution path. Body plans span humanoids, chibi anime characters,
+creatures, orb-primary spirits, plushies, robots and paired duos — all
+family-friendly designs.
+
+The original 103 hand-written pets include:
 
 | Category | Pets |
 |---|---|
@@ -91,6 +106,7 @@ from three layers:
 |---|---|---|
 | Shared actions | `idle-breathe` · `walk` · `run` · `jump` · `dance` · `spin` · `wave` · `bow` · `sleep` · `eat` · `play` · `celebrate` · `hide` · `peek` | (almost) every pet |
 | Category flavours | aquatic: `swim` `dive` `splash` · robot: `hover` `charge` · spirit: `float` `vanish` `glow-pulse` · gods: `levitate` `bless` `thunder-gesture` · devils: `cackle` `smoke-vanish` `tail-flick` · … | pets of that category |
+| Culture moves | Greek `greek-aegis-aura` · Japanese `japanese-shrine-bell` · Indian `indian-monsoon-dance`… one per evolution stage | pets of that culture; stages 2–3 unlock the stronger moves |
 | Signature move | Vaelion's *Forecast: Glory*, Glitch's *Pixel Zoomie Render*, Grimfang's *Gatekeeper's Fetch* | one per pet, unique |
 
 Every action entry carries:
@@ -116,6 +132,31 @@ buddy.act("swim")                                   # ValueError — gods don't 
 
 CLI: `petforge --pet pimwick --act cackle` performs actions after the
 demo shift, and every demo ends with the pet's signature move.
+
+## Evolution & culture moves
+
+Using a pet earns bond XP — and bond XP evolves it. Each pet has three
+stages with culture-flavoured titles (a Japanese spirit grows *Young
+Spirit → Shrine Guardian → Great Kami*; a Greek companion *Mortal Spark →
+Olympian → Titanic*). Crossing a stage threshold (roughly 130–190 XP,
+then 360–550 XP, per pet) grants a one-off stat bonus, an evolved form
+description, and unlocks the next culture signature move. Stage-gated
+moves refuse to perform until unlocked:
+
+```python
+buddy = forge.adopt("mochi")            # Japanese sky-fox
+buddy.act("japanese-shrine-bell")       # ValueError — unlocks at stage 3
+for _ in range(15):
+    reaction = buddy.react("success")   # +12 XP each
+    if reaction["evolved"]:
+        print("Evolved:", reaction["stage_title"])
+print(buddy.status()["xp_to_evolution"])  # XP to the next stage (None at 3)
+```
+
+`status()` reports `culture`, `form_type`, `evolution_stage`,
+`stage_title`, `stage_form` and `xp_to_evolution`; `react()` and `act()`
+results carry `evolved` so callers can celebrate the moment. Browse by
+culture with `by_culture("indian")` / `cultures()`.
 
 ## Demo output (real run)
 
@@ -174,12 +215,16 @@ src/petforge/
 ├── companion.py   # Companion + PetForge: the adopt/react agent API
 ├── cli.py         # demo CLI (petforge --pet <id> | --list)
 └── data/
-    └── catalogue.json   # the 46 pets + the action library, all content data-driven
+    └── catalogue.json   # the 849 pets + the action library, all content data-driven
 ```
 
-Adding a pet is a JSON edit — no code changes. The test suite validates that
+Adding a pet is a JSON edit — no code changes. The mythology expansion is
+generated deterministically by `tools/build_catalogue.py` from culture
+tables (species, names, moves, stage titles); re-running it on the v3
+catalogue reproduces schema v4 byte-for-byte. The test suite validates that
 every catalogue entry is complete (traits, quirks, reactions for all four
-event kinds, in-range base stats), so a half-written pet fails CI, not users.
+event kinds, in-range base stats, valid culture/form type/evolution), so a
+half-written pet fails CI, not users.
 
 Bond XP per event: success `+12`, failure `+9`, praise `+7`, idle `+2`.
 Levels: Newly Met → Warming Up → Trusted Sidekick → Close Companion →
@@ -189,7 +234,8 @@ Best Friend → Partner in Crime → Family → Soulbound.
 
 ```bash
 python -m venv .venv && .venv/bin/pip install pytest
-.venv/bin/python -m pytest     # 50 tests: catalogue, mood, bond, companion API
+.venv/bin/python -m pytest     # 69 tests: catalogue, cultures, evolution, mood, bond, companion API
+node --test web/tests/web.test.mjs   # 7 web tests
 ```
 
 ## License

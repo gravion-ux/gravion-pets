@@ -32,6 +32,10 @@ class Reaction:
     level: int
     level_title: str
     levelled_up: bool
+    evolution_stage: int = 1
+    stage_title: str = ""
+    evolved: bool = False
+    xp_to_evolution: int | None = None
 
     def to_dict(self) -> dict:
         return {
@@ -44,6 +48,10 @@ class Reaction:
             "level": self.level,
             "level_title": self.level_title,
             "levelled_up": self.levelled_up,
+            "evolution_stage": self.evolution_stage,
+            "stage_title": self.stage_title,
+            "evolved": self.evolved,
+            "xp_to_evolution": self.xp_to_evolution,
         }
 
 
@@ -63,6 +71,10 @@ class Performance:
     level: int
     level_title: str
     levelled_up: bool
+    evolution_stage: int = 1
+    stage_title: str = ""
+    evolved: bool = False
+    xp_to_evolution: int | None = None
 
     def to_dict(self) -> dict:
         return {
@@ -80,6 +92,10 @@ class Performance:
             "level": self.level,
             "level_title": self.level_title,
             "levelled_up": self.levelled_up,
+            "evolution_stage": self.evolution_stage,
+            "stage_title": self.stage_title,
+            "evolved": self.evolved,
+            "xp_to_evolution": self.xp_to_evolution,
         }
 
 
@@ -100,6 +116,28 @@ class Companion:
         self._mood = MoodEngine.from_base(self.pet.base_stats)
         self._bond = Bond()
         self._seen = {kind: 0 for kind in EVENT_KINDS}
+        self._stage = 1
+
+    # -- evolution ---------------------------------------------------------
+    @property
+    def evolution_stage(self) -> int:
+        return self._stage
+
+    @property
+    def stage_title(self) -> str:
+        return self.pet.stage_title(self._stage)
+
+    def _check_evolution(self) -> bool:
+        """Evolve if bond XP crossed a stage threshold; True if it did."""
+        new_stage = self.pet.evolution_stage(self._bond.xp)
+        if new_stage <= self._stage:
+            return False
+        for stage in range(self._stage + 1, new_stage + 1):
+            bonus = self.pet.stage_bonus(stage)
+            if bonus:
+                self._mood.apply_deltas(bonus)
+        self._stage = new_stage
+        return True
 
     # -- the core API -----------------------------------------------------
     def react(self, event: str) -> dict:
@@ -112,6 +150,9 @@ class Companion:
             raise ValueError(f"unknown event kind: {event!r}")
         mood = self._mood.apply(event)
         gained, levelled_up = self._bond.gain(event)
+        evolved = self._check_evolution()
+        if evolved:
+            mood = self._mood.mood
         lines = self.pet.reactions[event]
         # Rotate through the pet's lines so repeats feel fresh, not random.
         line = lines[self._seen[event] % len(lines)]
@@ -126,17 +167,34 @@ class Companion:
             level=self._bond.level,
             level_title=self._bond.title,
             levelled_up=levelled_up,
+            evolution_stage=self._stage,
+            stage_title=self.stage_title,
+            evolved=evolved,
+            xp_to_evolution=self.pet.xp_to_evolution(self._bond.xp),
         )
         return reaction.to_dict()
 
     # -- actions & movement ------------------------------------------------
     def available_actions(self) -> list[Action]:
-        """Every action this pet can perform, signature move last."""
+        """Actions unlocked at the current evolution stage, signature last."""
         library = load_actions()
-        actions = [library[action_id] for action_id in self.pet.actions]
+        actions = [
+            library[action_id]
+            for action_id in self.pet.actions
+            if library[action_id].unlock_stage <= self._stage
+        ]
         if self.pet.signature_move is not None:
             actions.append(self.pet.signature_move)
         return actions
+
+    def locked_actions(self) -> list[Action]:
+        """Repertoire actions still gated behind a higher evolution stage."""
+        library = load_actions()
+        return [
+            library[action_id]
+            for action_id in self.pet.actions
+            if library[action_id].unlock_stage > self._stage
+        ]
 
     def act(self, action_id: str) -> dict:
         """Perform an action: 'dance', 'swim', the pet's signature id, ...
@@ -147,8 +205,16 @@ class Companion:
         render the pet actually doing it).
         """
         action = pet_action(self.pet, action_id)  # ValueError if not known
+        if action.unlock_stage > self._stage:
+            raise ValueError(
+                f"action {action_id!r} unlocks at evolution stage "
+                f"{action.unlock_stage} (currently stage {self._stage})"
+            )
         mood = self._mood.apply_deltas(action.stats, action.energy_cost)
         gained, levelled_up = self._bond.gain_amount(action.bond_xp)
+        evolved = self._check_evolution()
+        if evolved:
+            mood = self._mood.mood
         performance = Performance(
             pet_id=self.pet.id,
             action=action.id,
@@ -167,6 +233,10 @@ class Companion:
             level=self._bond.level,
             level_title=self._bond.title,
             levelled_up=levelled_up,
+            evolution_stage=self._stage,
+            stage_title=self.stage_title,
+            evolved=evolved,
+            xp_to_evolution=self.pet.xp_to_evolution(self._bond.xp),
         )
         return performance.to_dict()
 
@@ -187,6 +257,8 @@ class Companion:
             "pet_id": self.pet.id,
             "pet_name": self.pet.name,
             "category": self.pet.category,
+            "culture": self.pet.culture,
+            "form_type": self.pet.form_type,
             "agent": self.agent_name,
             "mood": self.mood,
             "stats": self._mood.snapshot(),
@@ -194,6 +266,10 @@ class Companion:
             "level": self._bond.level,
             "level_title": self._bond.title,
             "xp_to_next": self._bond.xp_to_next,
+            "evolution_stage": self._stage,
+            "stage_title": self.stage_title,
+            "stage_form": self.pet.stage_form(self._stage),
+            "xp_to_evolution": self.pet.xp_to_evolution(self._bond.xp),
         }
 
     def greeting(self) -> str:

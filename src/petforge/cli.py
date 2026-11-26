@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import argparse
 
-from .catalogue import categories, load_catalogue
+from .catalogue import categories, cultures, load_catalogue
 from .companion import PetForge
 
 # A tiny simulated shift for a subagent: wins, a stumble, a pause, praise.
@@ -27,8 +27,9 @@ DEMO_EVENTS = [
 
 def list_catalogue() -> None:
     for pet in load_catalogue():
-        print(f"{pet.id:<20} [{pet.category:<8}] {pet.name} — {pet.tagline}")
+        print(f"{pet.id:<28} [{pet.category:<8}] {pet.name} — {pet.tagline}")
     print("\nBy category:", categories())
+    print("By culture:", cultures())
 
 
 def _show_performance(buddy, action_id: str) -> None:
@@ -82,6 +83,10 @@ def run_demo(pet_id: str | None, acts: list[str] | None = None) -> None:
         f"End of shift: {pet.name} is {status['mood']}, "
         f"bond level {status['level']} — {status['level_title']} "
         f"({status['bond_xp']} XP total, {status['xp_to_next']} XP to next level)."
+    )
+    print(
+        f"Evolution: stage {status['evolution_stage']} — {status['stage_title']} "
+        f"({status['stage_form']}); {status['xp_to_evolution']} XP to next stage."
     )
     print(f"Stats: {status['stats']}")
 

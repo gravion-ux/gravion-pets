@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>petforge — 849 pocket companions</title>
+<meta name="description" content="Browse all 849 petforge companions, meet their orb forms, check their stats and signature moves, and play their animations.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">petforge</div>
+  <nav>
+    <a href="https://github.com/gravion-ux/petforge">GitHub</a>
+    <a href="https://gravion-ux.github.io/portfolio/">Portfolio</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>849 pocket companions, one orb each</h1>
+    <p>Every petforge companion in orb form — pick one, check its stats and
+      signature move, and make it blink, hop, twirl and sparkle.</p>
+  </section>
+
+  <section class="layout">
+    <div class="browser">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search pets, forms, traits…">
+        <select id="cat"></select>
+      </div>
+      <p id="count" class="muted"></p>
+      <div id="grid" class="grid"></div>
+    </div>
+    <aside id="stage" class="stage"></aside>
+  </section>
+</main>
+
+<footer>
+  <span>Built by <a href="https://github.com/gravion-ux">gravion-ux</a> · MIT licensed</span>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

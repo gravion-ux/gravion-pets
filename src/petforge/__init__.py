@@ -10,8 +10,11 @@ as tasks succeed, fail, stall or get praised — and acts on command.
 
 from .catalogue import (
     by_category,
+    by_culture,
     categories,
     category_actions,
+    culture_actions,
+    cultures,
     get_action,
     get_pet,
     load_actions,
@@ -20,19 +23,24 @@ from .catalogue import (
     random_pet,
 )
 from .companion import Companion, PetForge
-from .models import CATEGORIES, Action, Pet
+from .models import CATEGORIES, CULTURES, FORM_TYPES, Action, Pet
 
-__version__ = "0.4.0"
+__version__ = "0.6.0"
 
 __all__ = [
     "CATEGORIES",
+    "CULTURES",
+    "FORM_TYPES",
     "Action",
     "Companion",
     "Pet",
     "PetForge",
     "by_category",
+    "by_culture",
     "categories",
     "category_actions",
+    "culture_actions",
+    "cultures",
     "get_action",
     "get_pet",
     "load_actions",
