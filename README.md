@@ -1,8 +1,10 @@
-# petforge
+<img src="assets/banner.svg" alt="Gravion Pets" width="100%"/>
+
+# Gravion Pets
 
 **Forge a companion pet for your agent.**
 
-Every hard-working agent deserves a sidekick with opinions. `petforge` is a
+Every hard-working agent deserves a sidekick with opinions. `Gravion Pets` is a
 small, dependency-free Python package of AI companion pets that a chief agent
 or any subagent can *adopt*. The pet rides along on the work: it celebrates
 green builds, sulks (supportively) at failures, drifts off when things idle,
@@ -29,7 +31,7 @@ Each pet is a complete character, not a skin:
   signature move per pet — every action carrying an animation prompt
   and gameplay effects.
 - **Agent-integration API** — plain-dict reactions any agent framework can
-  consume without importing petforge types.
+  consume without importing Gravion Pets types.
 
 ## The roster
 
@@ -67,15 +69,15 @@ other's status reports).
 
 ```bash
 pip install -e .
-petforge --list            # browse the catalogue
-petforge --pet glitch      # adopt Glitch for a demo shift
-petforge                   # adopt a surprise pet
+Gravion Pets --list            # browse the catalogue
+Gravion Pets --pet glitch      # adopt Glitch for a demo shift
+Gravion Pets                   # adopt a surprise pet
 ```
 
 ## Agent-integration API
 
 ```python
-from petforge import PetForge
+from Gravion Pets import PetForge
 
 forge = PetForge(agent_name="research-subagent-3")
 buddy = forge.adopt("glitch")          # or forge.adopt_random()
@@ -130,7 +132,7 @@ buddy.act("vaelion-signature")                      # his unique move
 buddy.act("swim")                                   # ValueError — gods don't swim
 ```
 
-CLI: `petforge --pet pimwick --act cackle` performs actions after the
+CLI: `Gravion Pets --pet pimwick --act cackle` performs actions after the
 demo shift, and every demo ends with the pet's signature move.
 
 ## Evolution & culture moves
@@ -207,13 +209,13 @@ Stats: {'energy': 100, 'joy': 100, 'focus': 69, 'affection': 82}
 ## How it works
 
 ```
-src/petforge/
+src/Gravion Pets/
 ├── catalogue.py   # loads & validates data/catalogue.json
 ├── models.py      # the Pet dataclass (personality core + appearance)
 ├── mood.py        # MoodEngine: stat deltas per event, derived mood label
 ├── bond.py        # Bond: XP curve, 8 levels, "Soulbound" at the top
 ├── companion.py   # Companion + PetForge: the adopt/react agent API
-├── cli.py         # demo CLI (petforge --pet <id> | --list)
+├── cli.py         # demo CLI (Gravion Pets --pet <id> | --list)
 └── data/
     └── catalogue.json   # the 849 pets + the action library, all content data-driven
 ```
