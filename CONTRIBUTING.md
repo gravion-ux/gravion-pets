@@ -1,64 +1,55 @@
-# Contributing to petforge
+# Contributing to gravion-pets
 
-Thanks for your interest in contributing! petforge — full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments.
+Thanks for your interest in contributing! AI pet companion framework — 46 original pets across 10 categories (incl. gods & devils), personalities, moods, bonds and an actions & movements system.
 
-This document explains how to set up the project locally, run its tests, and
-submit changes that can be reviewed and merged quickly.
+This document explains how to propose a change and what is expected before it
+is merged.
 
 ## Getting started
 
 1. Fork the repository and clone your fork:
 
    ```bash
-   git clone https://github.com/<your-username>/petforge.git
-   cd petforge
+   git clone https://github.com/<your-username>/gravion-pets.git
+   cd gravion-pets
    ```
 
-2. Set up the project:
-
-This project has separate `server/` and `client/` packages. Install both:
-
-```bash
-npm --prefix server install
-npm --prefix client install
-```
-
-3. Create a branch for your change:
+2. Create a branch for your change:
 
    ```bash
    git checkout -b my-change
    ```
 
-## Running the tests
-
-Run the full test suite before opening a pull request:
+## Run the tests
 
 ```bash
 python -m pytest -q
 ```
 
-All tests must pass. If your change adds behaviour, add or update tests for it.
+CI runs the same command on every push and pull request, so a green local run
+means the CI check will be green too.
+
+## Ground rules
+
+- **One change per pull request.** Keep it focused.
+- **No secrets.** Never commit API keys, tokens, passwords or personal data.
+- **No drafting markers.** A `TODO`, `FIXME` or placeholder left in the
+  source is a defect, not a note to self.
+- **Match the existing style.** Follow the conventions already used in the
+  files you touch.
+- **Explain the change.** Say what changed, why, and how you verified it.
 
 ## Pull request rules
 
-- **One change per PR.** Keep each pull request focused on a single fix,
-  feature, or improvement — small PRs get reviewed faster.
-- **Tests must pass.** Run the test suite locally and make sure it is green
-  before requesting review; CI must pass on the final commit.
-- **No secrets.** Never commit API keys, tokens, passwords, private keys, or
-  personal data — in code, tests, fixtures, or examples. Use clearly fake
-  placeholder values instead.
-- **Match the existing style.** Follow the naming, formatting, and structure
-  already used in the codebase; don't reformat unrelated code.
-- **Describe your change.** In the PR description, say what changed, why, and
-  how you tested it.
-- **Licence.** By contributing, you agree that your contribution is provided
-  under the repository's existing licence.
+- The tests must pass locally and CI must be green on the final commit.
+- New behaviour has a test, including the case it refuses.
+- Public documentation (`README.md`) matches the code.
+- The commit message says what changed, in one line.
 
 ## Reporting bugs and requesting features
 
 Use the GitHub issue templates (Bug report / Feature request) so reports
-include the information needed to reproduce and evaluate them.
+include the information needed to evaluate them.
 
 ## Reporting security vulnerabilities
 
@@ -69,3 +60,8 @@ the private reporting process in [SECURITY.md](SECURITY.md) instead.
 
 Participation in this project is governed by the
 [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Licence
+
+By contributing, you agree that your contribution is provided under the
+repository's existing licence.
