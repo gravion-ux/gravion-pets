@@ -1,4 +1,4 @@
-# petforge
+# Gravion Pets
 
 **Forge a companion pet for your agent.**
 
