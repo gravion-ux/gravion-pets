@@ -34,6 +34,9 @@ class MoodEngine:
 
     @classmethod
     def from_base(cls, base_stats: dict[str, int]) -> "MoodEngine":
+        missing = [stat for stat in STATS if stat not in base_stats]
+        if missing:
+            raise ValueError(f"base_stats is missing required stat(s): {', '.join(missing)}")
         return cls(**{stat: _clamp(int(base_stats[stat])) for stat in STATS})
 
     def snapshot(self) -> dict[str, int]:

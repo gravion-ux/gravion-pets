@@ -113,7 +113,7 @@ if (typeof document !== "undefined") {
     const list = filterPets(PETS, { category: $("cat").value, query: $("search").value });
     $("count").textContent = `${list.length} of ${PETS.length} pets`;
     $("grid").innerHTML = list.map((p) => `
-      <button class="pet-card ${p.id === selected.id ? "active" : ""}" data-id="${p.id}">
+      <button class="pet-card ${p.id === selected.id ? "active" : ""}" data-id="${esc(p.id)}">
         <span class="orb-wrap">${orbSvg(p, 84)}</span>
         <span class="pet-name">${esc(p.name)}</span>
         <span class="pet-cat">${esc(p.category)}</span>
@@ -156,7 +156,7 @@ if (typeof document !== "undefined") {
   }
 
   $("cat").innerHTML = `<option value="all">All categories</option>` +
-    categories(PETS).map((c) => `<option value="${c}">${c}</option>`).join("");
+    categories(PETS).map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
   $("cat").addEventListener("change", renderGrid);
   $("search").addEventListener("input", renderGrid);
   renderGrid();
